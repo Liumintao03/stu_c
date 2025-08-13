@@ -8,14 +8,22 @@ struct Stu{
     char tele[12];
 };
 
+void prt(struct Stu *s){
+
+    printf("%s %d %s %s\n",(*s).name,(*s).age,(*s).sex,(*s).tele);
+
+
+}
+
+
 int main(){
 
     struct Stu s ={"zhangsan",12,"man","13032866683"};
 
-    printf("%s %d %s %s",s.name,s.age,s.sex,s.tele);
+    printf("%s %d %s %s\n",s.name,s.age,s.sex,s.tele);
 
+    prt(&s);
 
-    
 
 
 
