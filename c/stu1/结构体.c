@@ -11,7 +11,7 @@ struct Stu{
 void prt(struct Stu *s){
 
     printf("%s %d %s %s\n",(*s).name,(*s).age,(*s).sex,(*s).tele);
-
+    printf("%s %d %s %s\n",s->name,s->age,s->sex,s->tele);
 
 }
 
