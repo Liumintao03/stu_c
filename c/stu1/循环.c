@@ -1,7 +1,7 @@
-// #include <stdio.h>
+#include <stdio.h>
 
 // int main(){
-
+         
 
 
 
@@ -24,4 +24,32 @@
 
 
 //     return 0;
-// }
+// } 
+
+
+int main(){
+
+    int pwd[20]={0};
+
+    printf("请输入密码");
+    scanf("%s",pwd);
+
+    getchar();
+    printf("请确认密码");
+    int ret = getchar();
+
+    if('Y'==ret){
+        printf("Yes\n");
+    }
+    else{
+        printf("No\n");
+    }
+
+
+
+
+
+
+    return 0;
+}
+
