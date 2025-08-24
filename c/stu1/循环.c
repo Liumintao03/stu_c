@@ -76,15 +76,21 @@ int main(){
     int ret =1;
     int sum = 0;
     scanf("%d",&n);
+    // for(i=1;i<=n;i++){
+    //     ret = 1;
+    //     for(j=1;j<=i;j++){
+    //         ret = ret*j;
+    //     }
+    //     sum = sum+ret; 
+    // }
+
+    //优化版：
     for(i=1;i<=n;i++){
-
-        for(j=1;j<=i;j++){
-            ret = ret*j;
-        }
+        ret = ret*i;
         sum = sum+ret;
-        ret = 1;
-
     }
+
+
 
     printf("%d\n",sum);
 
