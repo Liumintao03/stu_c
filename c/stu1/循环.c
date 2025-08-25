@@ -68,33 +68,77 @@
 
 //计算 1!+2!+3!+4!+......n!
 
+// int main(){
+
+//     int i=1;
+//     int j=1;
+//     int n=0;
+//     int ret =1;
+//     int sum = 0;
+//     scanf("%d",&n);
+//     // for(i=1;i<=n;i++){
+//     //     ret = 1;
+//     //     for(j=1;j<=i;j++){
+//     //         ret = ret*j;
+//     //     }
+//     //     sum = sum+ret; 
+//     // }
+
+//     //优化版：
+//     for(i=1;i<=n;i++){
+//         ret = ret*i;
+//         sum = sum+ret;
+//     }
+
+
+
+//     printf("%d\n",sum);
+
+
+
+//     return 0;
+// }
+
+
+
+
+//二分法查找有序数组
+
+
+
 int main(){
 
-    int i=1;
-    int j=1;
-    int n=0;
-    int ret =1;
-    int sum = 0;
-    scanf("%d",&n);
-    // for(i=1;i<=n;i++){
-    //     ret = 1;
-    //     for(j=1;j<=i;j++){
-    //         ret = ret*j;
-    //     }
-    //     sum = sum+ret; 
-    // }
+    int arr[] = {1,2,3,4,5,6,7,8,9,10};
+    int k =0;
+    printf("请输入要查找的数\n");
+    scanf("%d",&k);
+    int arr_len = sizeof(arr)/sizeof(arr[0]);
+    int left = 0;
+    int right = arr_len-1;
 
-    //优化版：
-    for(i=1;i<=n;i++){
-        ret = ret*i;
-        sum = sum+ret;
+    while(right<left){
+        int mid = (right+left)/2;
+        if(arr[mid]>k){
+            left = mid+1;
+        }
+        else if (arr[mid]<right)
+        {
+            right = mid-1;
+
+        }
+        else{
+            printf("查找的数下标为%d\n",arr[mid]);
+            
+            break;
+        }
+        
+        
+
     }
 
-
-
-    printf("%d\n",sum);
-
-
+    if(left>right){
+        printf("找不到，超出范围");
+    }
 
     return 0;
 }
