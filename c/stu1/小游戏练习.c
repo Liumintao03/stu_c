@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-menu(){
+void menu(){
     printf("====================猜数字游戏=================\n");
     printf("====================按1开始游戏================\n");
     printf("====================按0退出游戏================\n");
@@ -12,8 +12,9 @@ menu(){
 }
 
 
-gamestart(){
+void gamestart(){
     printf("现在开始游戏\n");
+    srand((unsigned int)time(NULL));//rand函数自带的随机数生成并不随机，所以引入了时间戳来辅助随机函数生成，并且转为无符号
     int num = rand()%10;
     for (int i = 0; i < 10; i++)
 
