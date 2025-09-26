@@ -106,39 +106,39 @@
 
 
 
-int main(){
+// int main(){
 
-    int arr[] = {1,2,3,4,5,6,7,8,9,10};
-    int k =0;
-    printf("请输入要查找的数\n");
-    scanf("%d",&k);
-    int arr_len = sizeof(arr)/sizeof(arr[0]);
-    int left = 0;
-    int right = arr_len-1;
+//     int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//     int k =0;
+//     printf("请输入要查找的数\n");
+//     scanf("%d",&k);
+//     int arr_len = sizeof(arr)/sizeof(arr[0]);
+//     int left = 0;
+//     int right = arr_len-1;
 
-    while(right<left){
-        int mid = (right+left)/2;
-        if(arr[mid]>k){
-            left = mid+1;
-        }
-        else if (arr[mid]<right)
-        {
-            right = mid-1;
+//     while(right<left){
+//         int mid = (right+left)/2;
+//         if(arr[mid]>k){
+//             left = mid+1;
+//         }
+//         else if (arr[mid]<right)
+//         {
+//             right = mid-1;
 
-        }
-        else{
-            printf("查找的数下标为%d\n",arr[mid]);
+//         }
+//         else{
+//             printf("查找的数下标为%d\n",arr[mid]);
             
-            break;
-        }
+//             break;
+//         }
         
         
 
-    }
+//     }
 
-    if(left>right){
-        printf("找不到，超出范围");
-    }
+//     if(left>right){
+//         printf("找不到，超出范围");
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
