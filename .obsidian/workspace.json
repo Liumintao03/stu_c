@@ -16,8 +16,21 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
+          },
+          {
+            "id": "50b9a3cbe7a73043",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,6 +176,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -172,7 +186,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "897b9f46430324db",
+  "active": "50b9a3cbe7a73043",
   "lastOpenFiles": [
     "c/stu1/program.exe",
     "c/program.exe",
