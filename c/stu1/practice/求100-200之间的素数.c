@@ -5,16 +5,20 @@
 int main(){
 
     for(int i=100;i<=200;i++){
-        for(int j=2;j<=i;j++){
-            printf("这个数是%d,j是%d\n",i,j);
+        for(int j=2;j<i;j++){
             if(i%j==0){
-                printf("%d这个数不是素数",i);
+                // printf("%d这个数不是素数\n",i);
                 break;
             }
-            else if (j==i)
+            else 
             {
-                printf("%d\n",i);
+                /* code */
+                printf("这个数是%d,j是%d\n",i,j);
+                break;
             }
+            
+            
+            
             
         }
 
