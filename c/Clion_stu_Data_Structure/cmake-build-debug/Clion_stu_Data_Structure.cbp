@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Clion_stu_Data_Structure"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Clion_stu_Data_Structure">
+				<Option output="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Clion_stu_Data_Structure.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Clion_stu_Data_Structure"/>
+					<CompileFile command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Clion_stu_Data_Structure/fast">
+				<Option output="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Clion_stu_Data_Structure.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/Tools/CLion 2024.1.6/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 Clion_stu_Data_Structure/fast"/>
+					<CompileFile command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Tools/CLION2~1.6/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/main.cpp">
+			<Option target="Clion_stu_Data_Structure"/>
+		</Unit>
+		<Unit filename="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/struct01.cpp">
+			<Option target="Clion_stu_Data_Structure"/>
+		</Unit>
+		<Unit filename="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/struct01.h">
+			<Option target="Clion_stu_Data_Structure"/>
+		</Unit>
+		<Unit filename="D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_Data_Structure/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

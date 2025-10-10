@@ -1,0 +1,14 @@
+//
+// Created by 35376 on 2025/10/10.
+//
+
+#ifndef CLION_STU_DATA_STRUCTURE_STRUCT01_H
+#define CLION_STU_DATA_STRUCTURE_STRUCT01_H
+
+
+class struct01 {
+
+};
+
+
+#endif //CLION_STU_DATA_STRUCTURE_STRUCT01_H
