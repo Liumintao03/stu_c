@@ -5,7 +5,8 @@ typedef struct ABC{
     int b;
     char c;
     short d;
-    double e;
+    unsigned long long e;
+    char f;
 }ABC;
 
 int main(){
@@ -18,11 +19,12 @@ int main(){
     abc.c=0x11;
     abc.d=0x1122;
     abc.e=0x1111111111111111;
+    abc.f=0x21;
     printf("%lu\n",sizeof(struct ABC));
 
     char *p=&abc;
     for(int i=0;i<sizeof(abc);i++){
-        printf("[0x%d]:%02x\n",i,p[i]);
+        printf("[0x%d]:%hx\n",i,p[i]);
     }
 
 
