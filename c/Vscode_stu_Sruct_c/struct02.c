@@ -3,7 +3,7 @@
 typedef struct ABC{
     char a;
     int b;
-    short c;
+    char c;
     short d;
 }ABC;
 
@@ -14,7 +14,7 @@ int main(){
     memset(&abc,0,sizeof(abc));
     abc.a=0x11;
     abc.b=0x12345678;
-    abc.c=0x2233;
+    abc.c=0x11;
     abc.d=0x1122;
     printf("%lu\n",sizeof(struct ABC));
 
