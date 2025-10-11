@@ -12,7 +12,7 @@ int main(){
     ABC abc;
 
     memset(&abc,0,sizeof(abc));
-    abc.a=0x11;
+    abc.a=0x12;
     abc.b=0x12345678;
     abc.c=0x11;
     abc.d=0x1122;
