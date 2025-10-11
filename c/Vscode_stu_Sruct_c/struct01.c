@@ -19,12 +19,11 @@ struct {
 
 // };
 
-typedef struct A
+typedef struct A//A占8个字节，因为内存对齐，以最大的为标准，其余的要补齐这么大
 {
     
-    int a;
-    char b;
-
+    int a;//4个字节
+    char b;//1个字节
 
 }A;
 
@@ -82,7 +81,7 @@ int main(){
 
 
 
-    printf("%d\n",sizeof(A));
+    printf("%d\n",sizeof(A));//
     
     return 0;
 }
