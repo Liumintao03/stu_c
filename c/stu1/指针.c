@@ -72,7 +72,32 @@
 // }
 
 
+#include<stdio.h>
 
+int main(){
+
+    char *p1 = (char*)0x800200;
+    int *p2 = (int*)0x800200;
+
+    printf("sizeof(p1)=%lu,sizeof(p2)=%lu\n",sizeof(p1),sizeof(p2));
+
+
+    printf("%x\t%x\n",p1+1,p2+1);
+    printf("%x\t%x\n",p1-1,p2-1);
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
 
 
 
