@@ -1,4 +1,4 @@
-#include <stdio.h>
+// #include <stdio.h>
 
 
 // int main(){
@@ -15,3 +15,28 @@
 
 //     return 0;
 // }
+
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
+#include <time.h>
+
+
+int main() {
+
+
+    int num = 100;
+    int *p = &num;
+    int **pp = &p;
+
+    printf("num:%d, *p:%d, **pp:%d\n", num, *p, **pp);
+    printf("&num:%p, p:%p, *pp:%p\n", &num, p, *pp);
+    printf("&p:%p, pp:%p\n", &p, pp);
+    printf("&pp:%p\n", &pp);
+	
+
+	return 0;
+}
