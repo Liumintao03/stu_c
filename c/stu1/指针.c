@@ -72,32 +72,47 @@
 // }
 
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
+// int main(){
 
-    char *p1 = (char*)0x800200;
-    int *p2 = (int*)0x800200;
+//     char *p1 = (char*)0x800200;
+//     int *p2 = (int*)0x800200;
 
-    printf("sizeof(p1)=%lu,sizeof(p2)=%lu\n",sizeof(p1),sizeof(p2));
-
-
-    printf("%x\t%x\n",p1+1,p2+1);
-    printf("%x\t%x\n",p1-1,p2-1);
+//     printf("sizeof(p1)=%lu,sizeof(p2)=%lu\n",sizeof(p1),sizeof(p2));
 
 
+//     printf("%x\t%x\n",p1+1,p2+1);
+//     printf("%x\t%x\n",p1-1,p2-1);
 
-
-
+//     return 0;
+// }
 
 
 
+#include <stdio.h>
+
+int main() {
+
+    int arr[5] = {10, 30, 40, 23, 56};
+    
+    int* p1 = &arr[0];
+    int* p2 = &arr[4];
+
+	printf("&arr[0]:%p\n", &arr[0]);
+	printf("&arr[4]:%p\n", &arr[4]);
 
 
+    // 地址1 - 地址2 = (地址1的数值 - 地址2的数值) / 该地址的每个元素的大小
+    printf("%d\n", p2 - p1);
 
+    printf("%zd\n", sizeof(arr) / sizeof(arr[0]));
 
     return 0;
 }
+
+
+
 
 
 
