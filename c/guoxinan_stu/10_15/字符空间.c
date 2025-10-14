@@ -27,16 +27,24 @@ int main(){
     // printf("str2:%p\n",str2);
     // printf("str3:%p\n",str3);
 
-    int arr[]={10,20,30,40,50};
-    fun(arr,sizeof(arr)/sizeof(arr[0]));
+    // int arr[]={10,20,30,40,50};
+    // fun(arr,sizeof(arr)/sizeof(arr[0]));
 
-    char arr1[]="12345678";
-    char arr2[]={'1','2','3','a'};
-    printf("%d\t,------%s\n",sizeof(arr2),arr2);
-
-
+    // char arr1[]="12345678";
+    // char arr2[]={'1','2','3','a'};
+    // printf("%d\t,------%s\n",sizeof(arr2),arr2);
 
 
+    char arr[]="rong";
+    printf("%zd\n",sizeof(arr)/sizeof(arr[0]));
+    printf("%zd\n",sizeof(arr));
+
+    char str[]={'a','b','c','\0','0'};
+    printf("%zd\n",sizeof(str)/sizeof(str[0]));
+    printf("%zd\n",sizeof(str));
+    
+    printf("%s\n",arr);
+    printf("%s\n",str);
 
 
 
