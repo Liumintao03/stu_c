@@ -141,9 +141,46 @@
 //int (*a)(int)
 //int (*a[10])(int)
 
+//==================判断大小端=================
 
 
 
+//联合体判断
+
+// #include<stdio.h>
+
+// typedef union ABC{
+//     int a;
+//     char b;
+
+// }ABC;
+
+
+// int main(){
+
+//     ABC abc;
+//     abc.a=0x12345678;
+//     printf("%x\n",abc.b);//小端是低地址存小数据，此处输出为78，所以为小端
+
+//     return 0;
+// }
+
+
+
+//指针
+
+
+#include<stdio.h>
+int main(){
+
+    int a = 0x12345678;
+    int *p1 = &a;
+    char *p2 = p1;
+    printf("%x\n",*p2);
+
+
+    return 0;
+}
 
 
 
