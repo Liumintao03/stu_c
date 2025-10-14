@@ -112,25 +112,43 @@
 // }
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
 
-int main() {
+// int main() {
 
-	int num = 0x12345678;
+// 	int num = 0x12345678;
 
-	printf("0x%x\n", num);
-	printf("%p\n", &num);
-
-
-	char *p = (char *)&num;
-	printf("%x, %x, %x, %x\n", p[0], p[1], p[2], p[3]);
+// 	printf("0x%x\n", num);
+// 	printf("%p\n", &num);
 
 
-	printf("%x, %x\n", p[-10], p[10]);
+// 	char *p = (char *)&num;
+// 	printf("%x, %x, %x, %x\n", p[0], p[1], p[2], p[3]);
 
-	return 0;
-}
+
+// 	printf("%x, %x\n", p[-10], p[10]);
+
+// 	return 0;
+// }
+
+//int a
+//int *a
+//int **aa
+//int a[10]
+//int *a[10]
+//int (*a)[10]
+//int (*a)(int)
+//int (*a[10])(int)
+
+
+
+
+
+
+
+
+
 
 
 
