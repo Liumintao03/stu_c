@@ -5,6 +5,7 @@
 
 
 void test01(){
+    printf("test01\n\n\n");
     char buf1[] = "abc";
     char buf2[] = {'a','b','c'};
     printf("strlen_buf1:%d\tsizeof_buf1:%d\n",strlen(buf1),sizeof(buf1));//len=3，siziof=4是因为最后有\0
@@ -14,6 +15,7 @@ void test01(){
 
 
 void test02(){
+    printf("test02\n\n\n");
     char buf1[7] = "abc";
     char buf2[7] = {'a','b','c'};
     printf("strlen_buf1:%d\tsizeof_buf1:%d\n",strlen(buf1),sizeof(buf1));
@@ -22,10 +24,20 @@ void test02(){
 }
 
 void test03(){
-    char data[]="123456";
-    char *p="123456";
-    printf("sizeof_data:%d\tsizeof_*p:%d",sizeof(data),sizeof(p));
+    printf("test03\n\n\n");
+    char data[]="123456"; //data里的数据可以修改
+    char *p="123456";//*p解引用为"123456"是常量，不能修改
+    printf("sizeof_data:%d\tsizeof_*p:%d\n",sizeof(data),sizeof(p));//data为7，p为8,因为p为指针，在64位操作系统中占8个字节
 }
+
+void test04(){
+    printf("test04\n\n\n");
+    int arr[]={0x34333231,0x6564};
+    char *p =(char*) arr;
+    printf("%s\n",p);//1234de
+}
+
+
 
 
 
@@ -34,11 +46,11 @@ int main(){
     test01();
     test02();
     test03();
+    test04();
 
 
 
 
 
-    
     return 0;
 }
