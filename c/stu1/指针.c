@@ -170,21 +170,39 @@
 //指针
 
 
+// #include<stdio.h>
+// int main(){
+
+//     int a = 0x12345678;
+//     int *p1 = &a;
+//     char *p2 = p1;
+//     printf("%x\n",*p2);//此处输出结果为78，原理为将12345678中的头两位或者后两位占一个字节的输出，如果是头两位就是大端，后两位就是小端
+
+
+//     return 0;
+// }
+
+
+//设置一个int的数组（可以为2个或5个），按照字节方式显示他们的内存结构分析，这2个或5个数字在内存的结构。
+
 #include<stdio.h>
+
 int main(){
 
-    int a = 0x12345678;
-    int *p1 = &a;
-    char *p2 = p1;
-    printf("%x\n",*p2);
+    int arr[5];
+    for(int i=0;i<=sizeof(arr)/sizeof(arr[0]);i++){
+        arr[i]=i+1;
 
+
+    }
+    char *arr1=arr;
+    for(int i=0;i<20;i++){
+        printf("%x\n",*(arr1+i));
+    }
+    
 
     return 0;
 }
-
-
-
-
 
 
 
