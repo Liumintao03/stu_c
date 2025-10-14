@@ -32,12 +32,24 @@ void test03(){
 
 void test04(){
     printf("test04\n\n\n");
-    int arr[]={0x34333231,0x6564};
+    int arr[]={0x34333231,0x6565};
     char *p =(char*) arr;
-    printf("%s\n",p);//1234de
+    printf("%s\n",p);//1234ee
 }
 
+int test05(char *p){
+    printf("test05\n\n\n");
+    int num=0;
+    for(int i=0;i<sizeof(p)/sizeof(p[0]);i++){
+        if (p[i]>='A'&&p[i]<='Z'){
+            num++;
+        }
 
+    }
+    printf("A——Z:%d\n",num);
+    return num;
+
+}
 
 
 
@@ -48,7 +60,8 @@ int main(){
     test03();
     test04();
 
-
+    char arr1="AKIJsdgdkh67AD";
+    test05("AKIJsdgdkh67AD");
 
 
 
