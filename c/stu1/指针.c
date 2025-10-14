@@ -185,27 +185,41 @@
 
 //设置一个int的数组（可以为2个或5个），按照字节方式显示他们的内存结构分析，这2个或5个数字在内存的结构。
 
+// #include<stdio.h>
+
+// int main(){
+
+//     int arr[5];
+//     for(int i=0;i<=sizeof(arr)/sizeof(arr[0]);i++){
+//         arr[i]=i+1;
+
+
+//     }
+//     char *arr1=arr;
+//     for(int i=0;i<20;i++){//20可写为sizeof(arr)
+//         printf("%x\n",*(arr1+i));
+//     }
+    
+
+//     return 0;
+// }
+
+
+//定义一个float空间，赋初值为3.14，用字节方式打印它的内存结构。 
+
+
 #include<stdio.h>
 
 int main(){
 
-    int arr[5];
-    for(int i=0;i<=sizeof(arr)/sizeof(arr[0]);i++){
-        arr[i]=i+1;
-
-
+    float a = 3.14;
+    char *p=&a;
+    for(int i=0;i<sizeof(float);i++){
+        printf("%x\n",*(p+i));
     }
-    char *arr1=arr;
-    for(int i=0;i<20;i++){
-        printf("%x\n",*(arr1+i));
-    }
-    
 
     return 0;
 }
-
-
-
 
 
 
