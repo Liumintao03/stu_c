@@ -21,10 +21,24 @@ void test02(){
 
 }
 
+void test03(){
+    char data[]="123456";
+    char *p="123456";
+    printf("sizeof_data:%d\tsizeof_*p:%d",sizeof(data),sizeof(p));
+}
+
+
+
 int main(){
 
     test01();
     test02();
+    test03();
 
+
+
+
+
+    
     return 0;
 }
