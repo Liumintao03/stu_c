@@ -1,8 +1,18 @@
 #include<stdio.h>
 #include<string.h>
 
-
-
+int strcmp(const char *cs, const char *ct){
+    unsigned char c1, c2;
+    while (1) {
+        c1 = *cs++;
+        c2 = *ct++;
+        if (c1 != c2)
+            return c1 < c2 ? -1 : 1;
+        if (!c1)
+            break;
+    }
+    return 0;
+}
 int fun(int *p,int size){
     for(int i=0;i<size;i++){
         printf("%d\t",p[i]);
@@ -63,11 +73,17 @@ int main(){
     strcat(buf,"world");
 
     printf("buf:%s\n",buf);
+
     
 
-
-
-
+    char *str ="123";
+    int num = 0;
+    int i= 0;
+    while(str[i] != 0){
+        num = num*10 + (str[i]-'0');
+        i++;
+    }
+    printf("%d\n",num);
 
 
 
