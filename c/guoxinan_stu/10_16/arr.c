@@ -39,26 +39,34 @@ void test04(){
     printf("\n\n\ntest04\n\n\n");
 
     int (*p)[10];
-    int arr[10]={1,2,3,4,5,6,7,8,9,10};
     p = (int (*)[10])0x800200;
     printf("%p\n",p);
     p++;
     printf("%p\n",p);
+    
+    int arr[10]={1,2,3,4,5,6,7,8,9,10};
     p=arr;
     printf("%p\n",p);
     p++;
-    printf("%p\n",p);
+    printf("%p\n",p);//（int类型数组）的指针，每往后移动一次，地址跨越(int类型数组)总大小的单位
 
 }
 
+void test05(){
+    printf("\n\n\ntest05\n\n\n");
+    int a[5]={1,2,3,4,5};
 
+    int *ptr = (int *)(&a+1);
+    printf("%d\t%d\n",*(a+1),(ptr-1));
+
+}
 
 int main(){
     test01();
     test02();
     test03();
     test04();
-
+    test05();
 
 
 
