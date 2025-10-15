@@ -52,15 +52,32 @@ int test05(char *p){
 
 }
 
-void test06(char *p){
+
+void test06(char *p) {
+    printf("test06\n\n\n");
+    
+    char *read_ptr = p;  // 读取指针
+    char *write_ptr = p; // 写入指针
+    
+    while (*read_ptr != '\0') {
+        if (*read_ptr != ' ') {  // 如果不是空格
+            *write_ptr = *read_ptr;  // 复制字符
+            write_ptr++;  // 移动写入指针
+        }
+        read_ptr++;  // 总是移动读取指针
+    }
+    *write_ptr = '\0';  // 添加字符串结束符
+    
+    printf("%s\n", p);
+}
+
+void test07(char *p){
     printf("test06\n\n\n");
     char *temp1;
     temp1=p;
     char *temp2;
-    temp2=temp1++;
-    
-    while(temp1[0]!='\0'){
-        temp2=temp1++;
+    int i =0;
+    while(temp1[i]!='\0'){
         if(temp1[0]==' '){
             temp1=temp2;
         }
