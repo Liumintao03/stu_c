@@ -55,12 +55,24 @@ void test04(){
 void test05(){
     printf("\n\n\ntest05\n\n\n");
     int a[5]={1,2,3,4,5};
-    int *ptr = (int *)(&a+1);
+    int *ptr = (int *)(&a+1);//a的类型是数组指针，取到a的地址后，在+1是在a是数组指针情况下+1，会直接加上整个数组的大小，然后再将取得的值转化为int类型的指针，再赋值给ptr，此时ptr是int类型指针，并非数组类型
     printf("%d\t%d\n",*(a+1),*(ptr-1));
-    printf("a:%p\t(&a+1):%p\tptr:%p\t(ptr-1):%p",a,(&a+1),ptr,(ptr+1));
+    printf("a:%p\t(&a+1):%p\tptr:%p\t(ptr-1):%p\n",a,(&a+1),ptr,(ptr+1));
 
 
 }
+
+
+void test06(){
+    printf("\n\n\ntest05\n\n\n");
+    int data[2][3]={{1,2,3},{4,5,6}};
+    printf("=%d=\n",*(*(data+1)+1));
+
+
+
+
+}
+
 
 int main(){
     test01();
@@ -68,7 +80,7 @@ int main(){
     test03();
     test04();
     test05();
-
+    test06();
 
 
 
