@@ -32,24 +32,31 @@ void test02(){//定义指针变量，保存下⾯数组名。
     char (*p5)[5]=data5;
     char (*p6)[4]=data6;
 
+}
 
 
-
-
-
-
-
-
+void print_f(char *str){
+    for(int i=0;i<sizeof(str)/sizeof(str[0]);i++){
+        printf("%s ",str[i]);
+    }
+    printf("\n");
 }
 
 void test03(){
     printf("\n\ntest03\n");
 
     char *addr[] = {"hello","world", "good","bye"};
+    printf("%s",*addr[0]);
+    char (*addr1)[2]=*addr;
+    char (*addr2)[2]=*(addr+2);
+    //print_f(*addr1);
+    //print_f(*addr2);
 
-    for(int i=0;i<sizeof(*addr)/sizeof(*addr[0]);i++){
-        printf("%s %s\n%s%s")
-    }
+
+
+    // for(int i=0;i<sizeof(*addr)/sizeof(*addr[0]);i++){
+    //     printf("%s %s\n%s%s")
+    // }
 
 
 }
@@ -64,5 +71,6 @@ int main(){
 
     test02();
 
+    test03();
     return 0;
 }
