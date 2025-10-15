@@ -56,7 +56,7 @@ void test05(){
     printf("\n\n\ntest05\n\n\n");
     int a[5]={1,2,3,4,5};
     int *ptr = (int *)(&a+1);
-    printf("%d\t%d\n",*(a+1),(ptr-1));
+    printf("%d\t%d\n",*(a+1),*(ptr-1));
     printf("a:%p\t(&a+1):%p\tptr:%p\t(ptr-1):%p",a,(&a+1),ptr,(ptr+1));
 
 
