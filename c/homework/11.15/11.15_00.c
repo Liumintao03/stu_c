@@ -40,11 +40,12 @@ void test04(){
 int test05(char *p){
     printf("test05\n\n\n");
     int num=0;
-    for(int i=0;i<sizeof(p)/sizeof(p[0]);i++){
-        if (p[i]>='A'&&p[i]<='Z'){
+    int i=0;
+    while(p[i]!='\0'){
+        if(p[i]>='A'&& p[i]<='Z'){
             num++;
         }
-
+        i++;
     }
     printf("A——Z:%d\n",num);
     return num;
