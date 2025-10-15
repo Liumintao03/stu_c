@@ -52,6 +52,18 @@ int test05(char *p){
 
 }
 
+void test06(char *p){
+    printf("test06\n\n\n");
+    int i=0;
+    while(p[i]!='\0'){
+        if(p[i]==' '){
+            p[i]=NULL;
+        }
+        i++;
+    }
+    printf("%s\n",p);
+
+}
 
 
 int main(){
@@ -60,11 +72,8 @@ int main(){
     test02();
     test03();
     test04();
-
-    char arr1="AKIJsdgdkh67AD";
     test05("AKIJsdgdkh67AD");
-
-
+    test06("er af gfdsg  gdfhg g   sgsdg");
 
     return 0;
 }
