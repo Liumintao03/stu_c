@@ -63,10 +63,12 @@ void test06(char *p){
         temp2 = temp1+1;
         printf("%s\t%s\n",temp1,temp2);
         if(*temp1 == ' '){
-            
+            for(int i=0;i<strlen(temp1);i++){
+                temp1[i]=temp2[i];
+            }
 
         }
-        
+        printf("%s\t%s\n",temp1,temp2);
         temp1++;
     }
     printf("%s\n",p);
