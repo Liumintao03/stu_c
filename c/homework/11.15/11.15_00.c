@@ -54,12 +54,18 @@ int test05(char *p){
 
 void test06(char *p){
     printf("test06\n\n\n");
-    int i=0;
-    while(p[i]!='\0'){
-        if(p[i]==' '){
-            p[i]=NULL;
+    char *temp1;
+    temp1=p;
+    char *temp2;
+    temp2=temp1++;
+    
+    while(temp1[0]!='\0'){
+        temp2=temp1++;
+        if(temp1[0]==' '){
+            temp1=temp2;
         }
-        i++;
+        
+        temp1++;
     }
     printf("%s\n",p);
 
