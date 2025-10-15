@@ -64,7 +64,8 @@ void test06(char *p){
         printf("%s\t%s\n",temp1,temp2);
         if(*temp1 == ' '){
             for(int i=0;i<strlen(temp1);i++){
-                printf("%c\t%c\n",temp1[i],temp2[i]);
+                //printf("temp1[i]:%c\ttemp2[i]:%c\n",temp1[i],temp2[i]);
+                //*(temp1+i)=*(temp2+i);
                 //temp1[i]=temp2[i];
             }
 
