@@ -30,14 +30,15 @@ void test03(){
     printf("sizeof_data:%d\tsizeof_*p:%d\n",sizeof(data),sizeof(p));//data为7，p为8,因为p为指针，在64位操作系统中占8个字节
 }
 
-void test04(){
+void test04(){// 已知int arr[] = {0x34333231, 0x6564};如果⽤char *p指向这个空间，%s来显示该空间，会得到什么结果，为什么
+
     printf("test04\n\n\n");
     int arr[]={0x34333231,0x6565};
     char *p =(char*) arr;
     printf("%s\n",p);//1234ee
 }
 
-int test05(char *p){
+int test05(char *p){//构造⼀段字符空间，统计这段空间⾥⼤写字⺟的个数。
     printf("test05\n\n\n");
     int num=0;
     int i=0;
@@ -65,8 +66,8 @@ void test06(char *p){
         if(*temp1 == ' '){
             for(int i=0;i<strlen(temp1);i++){
                 printf("temp1[i]:%c\ttemp2[i]:%c\n",temp1[i],temp2[i]);
-                char ch = temp2[i];
-                temp1[i]=ch;
+                //char ch = temp2[i];
+                temp1[i]=temp2[i];
             }
 
         }
@@ -85,7 +86,9 @@ int main(){
     test03();
     test04();
     test05("AKIJsdgdkh67AD");
-    test06("er af gfdsg  gdfhg g   sgsdg");
+
+    char arr[]="er af gfdsg  gdfhg g   sgsdg";
+    test06(arr);
 
     return 0;
 }
