@@ -42,7 +42,7 @@ void print_f(char *str){
     printf("\n");
 }
 
-void test03(){
+void test03(){//. 已知有⼏个字符串，"hello" "world", , "good",  "bye" 请设计功能将其组合成hello world和 goodbye world的输出信息
     printf("\n\ntest03\n");
 
     char *addr[] = {"hello","world", "good","bye"};
@@ -51,14 +51,13 @@ void test03(){
     char str2[100000];
 
     strcpy(str1,addr[0]);
-    strcpy(str1," ");
-    strcpy(str1,addr[1]);
+    strcat(str1," ");
+    strcat(str1,addr[1]);
 
-
-    addr[2];
-    strcpy(str2,addr[3]);
-    strcpy(str2," ");
-    strcpy(str2,addr[1]);
+    strcpy(str2,addr[2]);
+    strcat(str2,addr[3]);
+    strcat(str2," ");
+    strcat(str2,addr[1]);
 
     printf("%s\n",str1);
     printf("%s\n",str2);
