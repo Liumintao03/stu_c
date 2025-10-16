@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 
 struct abc{
 
@@ -46,12 +46,29 @@ void test03(){
     printf("\n\ntest03\n");
 
     char *addr[] = {"hello","world", "good","bye"};
-    printf("%s",addr[0]);
-    char (*addr1)[2]=*addr;
-    char (*addr2)[2]=*(addr+2);
-   
+
+    char str1[100000];
+    char str2[100000];
+
+    strcpy(str1,addr[0]);
+    strcpy(str1," ");
+    strcpy(str1,addr[1]);
+
+
+    addr[2];
+    strcpy(str2,addr[3]);
+    strcpy(str2," ");
+    strcpy(str2,addr[1]);
+
+    printf("%s\n",str1);
+    printf("%s\n",str2);
+    
+    
 
 }
+
+
+
 
  //print_f(*addr1);
     //print_f(*addr2);
@@ -72,5 +89,24 @@ int main(){
     test02();
 
     test03();
+    // char arr[]="china";
+    // char*p;p=arr;
+    // printf("%c\t%c\t%c\n",*p,*p++,*(p++));//从右向左执行打印程序，结果为i   h   c
+    // printf("%d\t%d\t%d\n",strlen(arr),strlen(p),sizeof(p));
+
+    // int x[10]={0,1,2,3,4,5,6,7,8,9},*p1;
+    // //A选项：
+    // printf("A:%d\n",x[3]);
+    // //B选项：
+    // p1=x+3;
+    // printf("B:%d\n",*p1++);
+    // //C选项
+    // p1=x+2;
+    // printf("C:%d\n",*(p1++));
+    // //D选项
+    // p1=x+2;
+    // printf("D:%d\n",*++p1);
+
+
     return 0;
 }
