@@ -1,26 +1,31 @@
-// #include<stdio.h>
-// #include<string.h>
+#include<stdio.h>
+#include<string.h>
 
-// void fun(){}
+void fun(){}
+void test01(){
+    printf("===test01===");
+    printf("fun:0x%p\n",fun);
+    printf("fun:0x%p\n",fun);
 
+    int arr[5];
+    int*p1 = arr;
 
-// int main(){
+    int (*p2)(const char*,...)=printf;
+    printf("%p\n",printf);
+    printf("%p\n",p2);
 
-//     printf("fun:0x%p\n",fun);
-//     printf("fun:0x%p\n",fun);
-
-//     int arr[5];
-//     int*p1 = arr;
-
-//     int (*p2)(const char*,...)=printf;
-//     printf("%p\n",printf);
-//     printf("%p\n",p2);
-
-//     p2("hello world\n");
-
+    p2("hello world\n");
+}
 
 
-//     return 0;
-// }
+
+int main(){
+
+    test01();
+
+
+
+    return 0;
+}
 
 
