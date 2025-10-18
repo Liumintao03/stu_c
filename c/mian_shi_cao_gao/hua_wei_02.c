@@ -1,12 +1,17 @@
 #include<stdio.h>
 
-void strcmp(char *arr1,char *arr2){
+int strcmp(char *arr1,char *arr2){
 
-    while(((*arr1++==*arr2++)!="\0") ){
+    while(*arr1 != 0 && *arr2 != 0 ){
+        if(*arr1 != *arr2){
+            return -1;
+        }
+        arr1++;
+        arr2++;
 
     }
 
-
+    return 0;
 }
 
 int main(){
@@ -14,6 +19,7 @@ int main(){
     char arr1 = {"asdf"};
     char arr2 = {"adsf"};
 
+    printf("%d",strcmp(arr1,arr2));
 
     return 0;
 }
