@@ -46,13 +46,14 @@ int checkstr(char *str,char *tar){//查找⼀个⻓串中，短串出现的位�
     while(str[i] != '\0'){
         int j=0;
         if(str[i] == tar[0]){
-            while(tar[j] != '\0'){
+            while(tar[j] != '\0' && str[i+j] != '\0'){
                 if(str[i+j] == tar[j]){
                     j++;
-                }
-                else if(tar[j] == '\0'){
+                    if(tar[j] == '\0'){
                     return i+1;
                 }
+                }
+                
                 else{
                     break;
                 }
