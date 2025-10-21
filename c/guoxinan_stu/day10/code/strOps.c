@@ -37,3 +37,29 @@ int delestr(char *str,char ch,int len){//删除字符空间⾥指定的字符，
     return 0;
 
 }
+
+int checkstr(char *str,char *tar){//查找⼀个⻓串中，短串出现的位置，
+    if(str == NULL || tar == NULL){
+        return -1;
+    }
+    int i = 0;
+    while(str[i] != '\0'){
+        int j=0;
+        if(str[i] == tar[0]){
+            while(tar[j] != '\0'){
+                if(str[i+j] == tar[j]){
+                    j++;
+                }
+                else if(tar[j] == '\0'){
+                    return i+1;
+                }
+                else{
+                    break;
+                }
+            }
+        }
+        i++;
+    }
+    return -1;
+}
+
