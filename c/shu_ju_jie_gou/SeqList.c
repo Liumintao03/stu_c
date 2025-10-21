@@ -25,14 +25,20 @@ int appendElem(SeqList *L,ElemType e){
     return 0;
 }
 
-
+//遍历顺序表
+void listElem(SeqList *L){
+    for(int i = 0;i < L->length;i++){
+        printf("%d\n",L->data[i]);
+    }
+    printf("\n");
+}
 
 int main(){
     SeqList list;
     initList(&list);//初始化顺序表
     ElemType e = 100;
-    int add_res = appendElem(&list,e);
-    
+    int add_res = appendElem(&list,e);//顺序表尾部添加元素
+    listElem(&list);////遍历顺序表
 
 
     return  0;
