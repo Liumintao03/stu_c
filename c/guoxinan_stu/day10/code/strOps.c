@@ -8,7 +8,7 @@ int strnum(char *p,char ch){//统计字符串中指定字符出现的个数
         return -1;
     }
     int num =0;
-    int i;
+    int i = 0;
     while(p[i]!='\0'){
         if(p[i]==ch){
             num++;
