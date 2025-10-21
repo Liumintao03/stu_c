@@ -19,7 +19,7 @@ int strnum(char *p,char ch){//统计字符串中指定字符出现的个数
 }
 
 
-int delestr(char *str,char ch,int len){//删除字符空间⾥指定的字符，必须是可变字符串
+int delestr(char *str,char ch){//删除字符空间⾥指定的字符，必须是可变字符串
     if(str==NULL){
         return -1;
     }
