@@ -25,10 +25,11 @@ int delestr(char *str,char ch,int len){//删除字符空间⾥指定的字符，
     }
     int i=0;
     while(str[i]!='\0'){
-        char *tem = str+1;
+        
 
         if(str[i]==ch){
-            strcat(str+i,tem);
+            strcpy(str+i,str+i+1);
+            continue;
         }
         i++;
     }
