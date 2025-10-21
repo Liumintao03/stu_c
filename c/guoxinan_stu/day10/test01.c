@@ -20,9 +20,6 @@
 //     char arr4[]= "owor";
 //     int res3 = checkstr(arr3,arr4);
 //     printf("短串在第%d个字符出现\n",res3);
-
-
-
 //     return 0;
 
 // }
