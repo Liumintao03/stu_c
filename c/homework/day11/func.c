@@ -16,9 +16,9 @@
 //空闲块链表
 typedef struct pool{
     char * star_addrs;//内存池的起始地址
-    char * piece_size;//每个内存块的大小
-    char * total_piece_num;//总共的内存块数
-    char * other_piece_num;//剩余可用的内存块数
+    int piece_size;//每个内存块的大小
+    int total_piece_num;//总共的内存块数
+    int other_piece_num;//剩余可用的内存块数
     char * free_list;//空闲块链表
 }Pool;
 
@@ -57,7 +57,7 @@ Pool *Createmempool(int per_size,int per_num){
 }
 
 //定长内存池的销毁
-void Release(Pool *pool){
+void Releasemempool(Pool *pool){
     if(pool){
         if(pool->star_addrs){
             free(pool->star_addrs);
@@ -67,11 +67,70 @@ void Release(Pool *pool){
 }
 
 
+//内存块的申请
+void *mem_apply_for(Pool *pool){
+    //判断空间是否足够申请空闲块
+    if(pool->other_piece_num <= 0){
+        printf("内存块数量不足,剩余数量为%d\n",pool->other_piece_num);
+        return NULL;
+    }
+    //申请
+    char *ptr = pool->free_list;
+    pool->free_list = *(char**)ptr;
+
+    //可用块数量更新
+    pool->other_piece_num--;
+    return ptr;
+}
+
+//内存块的释放
+int  ReleasememBlock(Pool *pool,void *ptr){
+    if(pool == NULL || ptr ==NULL){
+        printf("传入的为空，不释放\n");
+        return -1;
+    }
+
+    if(pool->other_piece_num >= pool->total_piece_num){
+        printf("剩余的块大于池中块总数\n");
+        return -1;
+    }
+
+    char *p=ptr;
+    *(char **)p = pool->free_list;
+    pool->free_list = ptr;
+
+    //可用块数量更新
+    pool->other_piece_num++;
+    return 0;
+
+}
+
+
+typedef struct pool{
+    char * star_addrs;//内存池的起始地址
+    int piece_size;//每个内存块的大小
+    int total_piece_num;//总共的内存块数
+    int other_piece_num;//剩余可用的内存块数
+    char * free_list;//空闲块链表
+}Pool;
 
 
 
+int showPoolStatus(Pool *pool){
+    if(pool == NULL){
+        printf("Pool为空\n");
+        return 0;
+    }
 
+    printf("pool->star_addrs:%x\n",pool->star_addrs);
+    printf("pool->per_block_size:%d\n",pool->piece_size);
+    printf("pool->total_piece_num:%d\n",pool->total_piece_num);
+    printf("pool->other_piece_num%d\n",pool->other_piece_num);
+    printf("pool->free_list%x\n",pool->free_list);
 
+    return 0;
+
+}
 
 
 
