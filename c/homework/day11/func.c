@@ -1,26 +1,6 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-
+#include"fun.h"
 
 //内存池的实现
-
-
-
-
-//操作结构体poll
-//内存池的起始地址
-//每个内存块的大小
-//总共的内存块数
-//剩余可用的内存块数
-//空闲块链表
-typedef struct pool{
-    char * star_addrs;//内存池的起始地址
-    int piece_size;//每个内存块的大小
-    int total_piece_num;//总共的内存块数
-    int other_piece_num;//剩余可用的内存块数
-    char * free_list;//空闲块链表
-}Pool;
 
 
 //内存池每个块的大小size，内存块的个数num；
@@ -84,7 +64,7 @@ void *mem_apply_for(Pool *pool){
 }
 
 //内存块的释放
-int  ReleasememBlock(Pool *pool,void *ptr){
+int ReleasememBlock(Pool *pool,void *ptr){
     if(pool == NULL || ptr ==NULL){
         printf("传入的为空，不释放\n");
         return -1;
@@ -105,7 +85,7 @@ int  ReleasememBlock(Pool *pool,void *ptr){
 
 }
 
-
+//显示管理结构体信息
 int showPoolStatus(Pool *pool){
     if(pool == NULL){
         printf("Pool为空\n");
@@ -123,36 +103,4 @@ int showPoolStatus(Pool *pool){
 }
 
 
-int main(){
 
-    Pool *pool = Createmempool(128,10);//创建内存池
-    if(pool == NULL){
-        printf("创建失败\n");
-        return -1;
-    }
-    printf("内存池创建成功");
-    showPoolStatus(pool);
-
-    char *arr[12];
-    for(int i = 0;i < sizeof(arr) / sizeof(arr[0]);i++){
-        arr[i] = mem_apply_for(pool);
-        printf("arr[%d]:%x\n",i,arr[i]);
-
-
-
-    }
-    printf("pool->other_piece_num:%d\n",pool->other_piece_num);
-
-    for(int i = 0;i < 10;i++){
-        ReleasememBlock(pool,arr[i]);
-        printf("pool->other_piece_num:%d\n",pool->other_piece_num);
-    }
-
-
-    Releasemempool(pool);
-    printf("退出\n");
-
-
-
-    return 0;
-}
