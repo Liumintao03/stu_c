@@ -15,7 +15,7 @@ void *encode_rlc(void *data,int *len){
     }
     //1==求得堆空间大小
     int src_len = *len;
-    char *src_data = data;
+    unsigned char *src_data = (unsigned char *)data;
     int sybm = 0;//每个需要计数字段的标记
     int cunt = 1;//计数
     for(int i= 0 ;i < src_len;i++){//统计有多少种要压缩的数据
@@ -35,8 +35,7 @@ void *encode_rlc(void *data,int *len){
     int addrs = 0;
     for(int i = 0;i < src_len; i++){//编码过程
         if(src_data[sybm] != src_data[i]){//如果遇到改变的节点
-            //编码的空间更新
-            addrs+=2;
+            addrs+=2;  //编码的空间更新
             sybm = i;
         }
         endata[addrs] = src_data[sybm];
@@ -50,3 +49,59 @@ void *encode_rlc(void *data,int *len){
     *len = cunt;
     return endata;
 }
+
+
+
+//解码
+void *decode_rlc(void *data,int *len){
+    unsigned char *src_data = (unsigned char*)data;
+    int src_len = *len;
+    if(src_data == NULL || src_data[1] == 0){//加入对传入的需要解码的数据进行格式校验
+        printf("当前传入需要解码为空");
+        return NULL;
+    }
+    //判断多长
+
+    int cunt = 0;
+    for(int i = 1;i < src_len;i += 2){
+        cunt = cunt + src_data[i];
+    }
+
+
+    char *dedata = (char*)malloc(cunt);//申请内存长度
+
+    int addrs = 1;
+    for(int i = 1;i < src_len;i+=2){
+        int j = src_data[i];
+        for(;j > 0;j --){
+            strcat(dedata,&src_data[i-1]);
+        }
+
+        // if(src_data[addrs] != 0){
+        //     dedata[i] = src_data[addrs-1];
+        //     src_data[addrs]--;
+        // }
+        // else{
+        //     addrs += 2;
+        //     i--;
+        // }
+    }
+
+    *len = cunt;
+    return dedata;
+
+}
+
+
+
+
+void rlcinfo(void *data,int *len){
+    //判断是否为空
+
+
+
+
+}
+
+
+
