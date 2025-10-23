@@ -56,7 +56,7 @@ void *encode_rlc(void *data,int *len){
 void *decode_rlc(void *data,int *len){
     unsigned char *src_data = (unsigned char*)data;
     int src_len = *len;
-    if(src_data == NULL || src_data[1] == 0){//加入对传入的需要解码的数据进行格式校验
+    if(src_data == NULL || src_data[1] == 0 || src_len % 2 ==1){//加入对传入的需要解码的数据进行格式校验
         printf("当前传入需要解码为空");
         return NULL;
     }
@@ -66,15 +66,13 @@ void *decode_rlc(void *data,int *len){
     for(int i = 1;i < src_len;i += 2){
         cunt = cunt + src_data[i];
     }
-
-
     char *dedata = (char*)malloc(cunt);//申请内存长度
-
-    int addrs = 1;
+    int addrs = 0;
     for(int i = 1;i < src_len;i+=2){
         int j = src_data[i];
         for(;j > 0;j --){
-            strcat(dedata,&src_data[i-1]);
+            dedata[addrs] = src_data[i-1];
+            addrs++;
         }
 
         // if(src_data[addrs] != 0){
@@ -95,13 +93,49 @@ void *decode_rlc(void *data,int *len){
 
 
 
-void rlcinfo(void *data,int *len){
+show_rlcinfo(void *data,int *len){//打印
     //判断是否为空
+    unsigned char *src_data = (unsigned char*)data;
+    int src_len = *len;
+    if(src_data == NULL){
+        printf("传入为空\n");
+        return NULL;
+    }
 
+
+    for(int i=0;i < src_len;i ++){
+        printf("%x\n",src_data[i]);
+    }
 
 
 
 }
 
 
+void free_rlc(void *data){
+    if(data){
+        free(data);
+    }
+}
 
+int main(){
+    unsigned char data[] = {0x11, 0x11, 0x11,0x22, 0x22, 0x22, 0x33,0x45, 0x56, 0x56, 0x56};
+    int len = sizeof(data)/sizeof(data[0]);
+    show_rlcinfo(data,&len);
+
+    //编码
+    unsigned char *encode_data = (unsigned char *)encode_rlc(data,&len);
+    show_rlcinfo(data,&len);
+    int incode_len = len;
+    printf("len:%d\n",len);
+
+    //解码
+    unsigned char *decode_data = (unsigned char *)decode_rlc(data,&len);
+    show_rlcinfo(data,&len);
+    
+
+    free_rlc(encode_data);
+    free_rlc(decode_data);
+
+    return 0;
+}
