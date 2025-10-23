@@ -27,6 +27,10 @@ void *encode_rlc(void *data,int *len){
     }
     sybm = 0;//重置标记
     cunt = cunt * 2;//因为每个空间都要有其需要计数的数字,所以要×2
+    if(cunt>255){
+        printf("所需空间太大\n");
+        return NULL;
+    }
     char *endata = (char *)malloc(cunt);//申请空间
     int addrs = 0;
     for(int i = 0;i < src_len; i++){//编码过程
