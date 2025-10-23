@@ -2,9 +2,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
-
-
 //编码
 //传入参数:要编码的数据,数据长度
 void *encode_rlc(void *data,int *len){
@@ -17,7 +14,7 @@ void *encode_rlc(void *data,int *len){
     int src_len = *len;
     char *src_data = data;
     int sybm = 0;//每个需要计数字段的标记
-    int cunt;//计数
+    int cunt = 0;//计数
     for(int i= 0 ;i < src_len;i++){//统计有多少种要压缩的数据
         if(src_data[sybm] != src_data[i]){//如果当前的字段和上个空间不匹配,说明有了新的要压缩的数,计数加一
             cunt++;
@@ -30,21 +27,18 @@ void *encode_rlc(void *data,int *len){
 
     char *endata = (char *)malloc(cunt);//申请空间
     int addrs = 0;
-    for(int i = 0;i < src_len; i++){
+    for(int i = 0;i < src_len; i++){//编码过程
         
-        if(src_data[sybm] != src_data[i]){
-            endata[addrs] = src_data[sybm];
+        if(src_data[sybm] != src_data[i]){//如果遇到改变的节点
+            endata[addrs] = src_data[sybm];//编码的空间更新
             endata[addrs+1] = i - sybm;
-            sybm = i;
             addrs+=2;
+            sybm = i;
         }
     }
 
-
-
-
-
-
+    
+    return endata;
 
 
 }
