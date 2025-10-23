@@ -38,13 +38,14 @@ void *encode_rlc(void *data,int *len){
             sybm = i;
         }
         endata[addrs] = src_data[sybm];
-        endata[addrs+1] = i - sybm;
+        endata[addrs+1] = i - sybm + 1;
 
         
 
     }
 
-    
+    src_len  = strlen(endata);
+    len = &src_len;
     return endata;
 
 
