@@ -13,7 +13,6 @@ void *encode_rlc(void *data,int *len){
         printf("传入的需要编码为空");
         return NULL;
     }
-
     //1==求得堆空间大小
     int src_len = *len;
     char *src_data = data;
@@ -28,7 +27,6 @@ void *encode_rlc(void *data,int *len){
     }
     sybm = 0;//重置标记
     cunt = cunt * 2;//因为每个空间都要有其需要计数的数字,所以要×2
-
     char *endata = (char *)malloc(cunt);//申请空间
     int addrs = 0;
     for(int i = 0;i < src_len; i++){//编码过程
@@ -38,18 +36,13 @@ void *encode_rlc(void *data,int *len){
             sybm = i;
         }
         endata[addrs] = src_data[sybm];
-        endata[addrs+1] = i - sybm + 1;
-
-        
-
+        if((i - sybm +1) <= 255){//判断如果没有超过255大小,继续计算
+            endata[addrs+1] = i - sybm + 1;
+        }
+        else{//如果超过255从新计数
+            endata[addrs+1] = 1;
+        }
     }
-
-    src_len  = strlen(endata);
-    len = &src_len;
+    *len = cunt;
     return endata;
-
-
 }
-
-
-
