@@ -1,0 +1,3 @@
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/Clion_stu_c.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/edit_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/rebuild_cache.dir
