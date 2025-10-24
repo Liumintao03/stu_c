@@ -1,17 +1,17 @@
 // //顺序表
-
+//
 // #include<stdio.h>
 // #include<stdlib.h>
-
+//
 // typedef int ElemType;
 // #define MAXSIZE 100
-
+//
 // //创建顺序表,以结构体形式
 // typedef struct{
 //     ElemType *data;
 //     int length;
 // }SeqList;
-
+//
 // //顺序表初始化
 // SeqList *initList(){
 //     SeqList *L = (SeqList *)malloc(sizeof(SeqList));
@@ -19,7 +19,7 @@
 //     L->length = 0;
 //     return L;
 // }
-
+//
 // //顺序表尾部添加元素
 // int appendElem(SeqList *L,ElemType e){
 //     if(L->length>=MAXSIZE){
@@ -30,7 +30,7 @@
 //     L->length++;
 //     return 0;
 // }
-
+//
 // //顺序表插入元素,在第几个位置插入
 // int insertElem(SeqList *L,ElemType e,int local){
 //     if(L->length >= MAXSIZE){
@@ -40,7 +40,7 @@
 //         printf("插入位置错误");
 //         return -1;
 //     }
-
+//
 //     for(int i = L->length-1;i >= local-1;i--){
 //         L->data[i+1] = L->data[i];
 //     }
@@ -48,7 +48,7 @@
 //     L->length++;
 //     return 0;
 // }
-
+//
 // int deleElem(SeqList *L,int local){
 //     if(L==NULL){
 //         printf("空表\n");
@@ -63,10 +63,10 @@
 //     }
 //     L->length--;
 //     return 0;
-
+//
 // }
-
-
+//
+//
 // //遍历顺序表
 // void listElem(SeqList *L){
 //     for(int i = 0;i < L->length;i++){
@@ -74,9 +74,7 @@
 //     }
 //     printf("\n");
 // }
-
-
-
+//
 // int main(){
 //     SeqList *list = (SeqList *)initList();
 //     ElemType e = 100;
@@ -91,8 +89,9 @@
 //     listElem(list);////遍历顺序表
 //     int delet = deleElem(list,3);//删除第三个元素
 //     listElem(list);////遍历顺序表
-
+//
 //     free(list->data);
 //     free(list);
 //     return  0;
 // }
+//

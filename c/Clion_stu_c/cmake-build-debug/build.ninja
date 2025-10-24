@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/
+cmake_ninja_workdir = D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Clion_stu_c
 
@@ -90,7 +90,7 @@ build Clion_stu_c.exe: C_EXECUTABLE_LINKER__Clion_stu_c_Debug CMakeFiles/Clion_s
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -101,7 +101,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c -BD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c -BD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -119,7 +119,7 @@ build Clion_stu_c: phony Clion_stu_c.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace
+# Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug
 
 build all: phony Clion_stu_c.exe
 
