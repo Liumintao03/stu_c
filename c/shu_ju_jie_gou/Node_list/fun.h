@@ -12,6 +12,9 @@
 
 #define ElemType int
 #define Location int
+
+#define NUM 4
+
 //链表一个节点
 typedef struct node {
     ElemType data;
@@ -36,7 +39,7 @@ int Nodelistlength(Node *L);
 void NodelistInfo(Node *L);
 //释放链表
 int freeNodelist(Node *L);
-
-
+//快慢指针,查找倒数第n个节点的数据
+ElemType fast_or_slow_check(Node *L,int n);
 
 #endif //C_FUN_H

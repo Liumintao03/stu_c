@@ -44,7 +44,9 @@ int main() {
         tail = insertTail(tail,i+1);
     }
     NodelistInfo(list);
-
+    ElemType data = fast_or_slow_check(list,NUM);
+    printf("倒数第%d个节点的值为%d\n",NUM,data);
+    //快慢指针查找倒数第3个元素
 
 
 

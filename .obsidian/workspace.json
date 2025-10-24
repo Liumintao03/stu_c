@@ -180,6 +180,9 @@
   },
   "active": "897b9f46430324db",
   "lastOpenFiles": [
+    "c/shu_ju_jie_gou/Node_list/main.c~",
+    "c/shu_ju_jie_gou/Node_list/fun.h~",
+    "c/shu_ju_jie_gou/Node_list/fast_or_slow_pointer.c~",
     "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/clion-Debug-event-trace-log.txt",
     "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/TargetDirectories.txt",
     "c/Clion_stu_c/cmake-build-debug-event-trace/cmake_install.cmake",
@@ -188,9 +191,6 @@
     "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeCache.txt",
     "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/3.28.6/CMakeDetermineCompilerABI_C.bin",
     "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-xelsma/cmTC_2e91d.exe",
-    "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-xelsma/CMakeFiles/cmTC_2e91d.dir/CMakeCCompilerABI.c.obj",
-    "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-xelsma/build.ninja",
-    "c/Clion_stu_c/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-xelsma/CMakeFiles/rules.ninja",
     "README.en.md",
     "README.md",
     "未命名.md"
