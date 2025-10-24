@@ -27,7 +27,6 @@ void *encode_rlc(void *data,int *len){
         }
 
     }
-    printf("开始编码2\n");
 
     sybm = 0;//重置标记
     cunt = cunt * 2;//因为每个空间都要有其需要计数的数字,所以要×2
@@ -37,7 +36,6 @@ void *encode_rlc(void *data,int *len){
     }
     char *endata = (char *)malloc(cunt);//申请空间
     int addrs = 0;
-    printf("开始编码3\n");
 
     for(int i = 0;i < src_len; i++){//编码过程
         if(src_data[sybm] != src_data[i]){//如果遇到改变的节点
@@ -52,7 +50,6 @@ void *encode_rlc(void *data,int *len){
             endata[addrs+1] = 1;
         }
     }
-    printf("endata[]:%xsn",endata);
 
     *len = cunt;
     return endata;
@@ -73,8 +70,9 @@ void *decode_rlc(void *data,int *len){
     int cunt = 0;
     for(int i = 1;i < src_len;i += 2){
         cunt = cunt + src_data[i];
+
     }
-    char *dedata = (char*)malloc(cunt);//申请内存长度
+    char *dedata = (char*)malloc(cunt+1);//申请内存长度
     int addrs = 0;
     for(int i = 1;i < src_len;i+=2){
         int j = src_data[i];
@@ -82,26 +80,13 @@ void *decode_rlc(void *data,int *len){
             dedata[addrs] = src_data[i-1];
             addrs++;
         }
-
-        // if(src_data[addrs] != 0){
-        //     dedata[i] = src_data[addrs-1];
-        //     src_data[addrs]--;
-        // }
-        // else{
-        //     addrs += 2;
-        //     i--;
-        // }
     }
-
     *len = cunt;
     return dedata;
-
 }
 
-
-
-
-show_rlcinfo(void *data,int *len){//打印
+//打印
+show_rlcinfo(void *data,int *len){
     //判断是否为空
     unsigned char *src_data = (unsigned char*)data;
     int src_len = *len;
@@ -109,17 +94,14 @@ show_rlcinfo(void *data,int *len){//打印
         printf("传入为空\n");
         return NULL;
     }
-
-
     for(int i=0;i < src_len;i ++){
         printf("%x\n",src_data[i]);
     }
 
-
-
+    printf("len:%d\n",src_len);
 }
 
-
+//释放
 void free_rlc(void *data){
     if(data){
         free(data);
@@ -133,15 +115,14 @@ int main(){
     printf("初始化结束\n\n\n");
     //编码
     unsigned char *encode_data = (unsigned char *)encode_rlc(data,&len);
-    show_rlcinfo(data,&len);
+    show_rlcinfo(encode_data,&len);
     int incode_len = len;
     printf("编码结束len:%d\n\n\n",len);
     //解码
-    unsigned char *decode_data = (unsigned char *)decode_rlc(data,&len);
-    show_rlcinfo(data,&len);
+    unsigned char *decode_data = (unsigned char *)decode_rlc(encode_data,&len);
+    show_rlcinfo(decode_data,&len);
     printf("解码结束len:%d\n\n\n",len);
-    
-
+    //释放
     free_rlc(encode_data);
     free_rlc(decode_data);
 
