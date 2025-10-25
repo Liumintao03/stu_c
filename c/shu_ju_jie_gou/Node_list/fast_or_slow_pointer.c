@@ -6,20 +6,18 @@
 
 ElemType fast_or_slow_check(Node *L,int n){
     //定义出快慢指针
-    Node *fast = L;
-    Node *slow = L;
+    Node *fast = L->next;
+    Node *slow = L->next;
     //快指针指向后面n个
-    for(int i=0;i<n;i++){
+    for(int i=1;i<n;i++){
         fast=fast->next;
     }
-    slow = slow->next;
     //遍历直到fast为最后一个指针
-    while(fast->next!=NULL){
+    while(fast->next != NULL){
         fast = fast->next;
         slow = slow->next;
     }
     return slow->data;
-    printf("%d\n",fast->data);
 }
 
 
