@@ -1,7 +1,12 @@
 # ninja log v6
-8	259	7829910388931133	CMakeFiles/Clion_stu_c.dir/main.c.obj	c2903209bd78ed68
-279	513	7829910391638011	Clion_stu_c.exe	63018b1ddac3dd9f
 9	246	7829916083820698	CMakeFiles/Clion_stu_c.dir/main.c.obj	c2903209bd78ed68
-56	285	7829916084292096	CMakeFiles/Clion_stu_c.dir/Rlc/main.c.obj	6836cf4fed8250b1
-32	288	7829916084056643	CMakeFiles/Clion_stu_c.dir/Rlc/Rlc_fun.c.obj	5af9fa65547b1ee4
 288	476	7829916086617024	Clion_stu_c.exe	6cc8cf8dc610494f
+7	395	7832697823208814	day01/CMakeFiles/list.dir/main.c.obj	3d11a7549d0a2061
+8	257	7832698063189271	day01/CMakeFiles/list.dir/list.c.obj	2e8911bdb07b9fad
+270	568	7832698065811515	day01/list.exe	d906ba232422e992
+11	240	7832699094901024	day01/CMakeFiles/list.dir/list.c.obj	2e8911bdb07b9fad
+242	454	7832699097217184	day01/list.exe	d906ba232422e992
+10	229	7832700173496588	day01/CMakeFiles/list.dir/list.c.obj	2e8911bdb07b9fad
+242	422	7832700175822557	day01/list.exe	d906ba232422e992
+13	358	7832701300270837	day01/CMakeFiles/list.dir/list.c.obj	2e8911bdb07b9fad
+383	566	7832701303974597	day01/list.exe	d906ba232422e992

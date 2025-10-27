@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Rlc",
+					"jsonFile" : "directory-Rlc-Debug-5af777b290f0b2c27003.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Rlc",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "day01",
+					"jsonFile" : "directory-day01-Debug-352e49905ac791d0c723.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "day01",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "Clion_stu_c",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Clion_stu_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Clion_stu_c-Debug-e26881d7936a5452745e.json",
+					"name" : "Clion_stu_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "list::@489ea3b32b0bb6074b36",
+					"jsonFile" : "target-list-Debug-be5b2e1a125006694484.json",
+					"name" : "list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rlc::@80cf6a65efe61ea1d754",
+					"jsonFile" : "target-rlc-Debug-3b16e032eb95a6b34dc9.json",
+					"name" : "rlc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace",
+		"source" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

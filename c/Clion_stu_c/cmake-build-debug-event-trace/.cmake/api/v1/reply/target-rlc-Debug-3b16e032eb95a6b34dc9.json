@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Clion_stu_c.exe"
+			"path" : "Rlc/rlc.exe"
 		},
 		{
-			"path" : "Clion_stu_c.pdb"
+			"path" : "Rlc/rlc.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"Rlc/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 1,
 				"parent" : 0
 			}
 		]
@@ -53,12 +53,11 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
-	"id" : "Clion_stu_c::@6890427a1f51a3e7e1df",
+	"id" : "rlc::@80cf6a65efe61ea1d754",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -78,12 +77,12 @@
 		],
 		"language" : "C"
 	},
-	"name" : "Clion_stu_c",
-	"nameOnDisk" : "Clion_stu_c.exe",
+	"name" : "rlc",
+	"nameOnDisk" : "rlc.exe",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "Rlc",
+		"source" : "Rlc"
 	},
 	"sourceGroups" : 
 	[
@@ -92,15 +91,14 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3
+				2
 			]
 		}
 	],
@@ -109,19 +107,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.c",
+			"path" : "Rlc/main.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Rlc/Rlc_fun.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Rlc/main.c",
 			"sourceGroupIndex" : 0
 		},
 		{

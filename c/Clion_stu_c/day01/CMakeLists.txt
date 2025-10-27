@@ -1,0 +1,1 @@
+add_executable(list main.c list.c list.h)
