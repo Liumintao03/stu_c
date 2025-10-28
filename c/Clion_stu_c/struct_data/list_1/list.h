@@ -11,8 +11,8 @@
 #include <time.h>
 
 
-#define Element int
-
+//#define Element int
+typedef int Element;
 
 typedef struct seqTable{
     Element data[200];

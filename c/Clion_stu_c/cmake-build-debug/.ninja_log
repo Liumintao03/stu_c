@@ -1,6 +1,9 @@
 # ninja log v6
-9	246	7829916083820698	CMakeFiles/Clion_stu_c.dir/main.c.obj	c2903209bd78ed68
+3	246	7833396465285206	CMakeFiles/Clion_stu_c.dir/main.c.obj	c2903209bd78ed68
 288	476	7829916086617024	Clion_stu_c.exe	6cc8cf8dc610494f
 9	494	7833148930782600	day01/CMakeFiles/list.dir/main.c.obj	3d11a7549d0a2061
 42	543	7833148931114821	day01/CMakeFiles/list.dir/list.c.obj	2e8911bdb07b9fad
 543	861	7833148936122238	day01/list.exe	d906ba232422e992
+6	463	7833397447057311	struct_data/list_1/CMakeFiles/list.dir/main.c.obj	59be9942b63f514
+520	891	7833397452204192	struct_data/list_1/list.exe	80f66a9b667819d8
+47	518	7833397447462761	struct_data/list_1/CMakeFiles/list.dir/list.c.obj	32534e1204107b3
