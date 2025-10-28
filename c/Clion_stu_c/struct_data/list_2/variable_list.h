@@ -21,7 +21,7 @@ typedef Student  Element;
 
 //保存元素的表
 typedef struct seqTable{
-    Element *data[100];
+    Element **data;
     int capacity;//表中元素最大数量
     int cnt;//元素数量
 }SeqTable;
@@ -30,26 +30,26 @@ typedef struct seqTable{
 SeqTable *creatTableinit();
 //插入元素
 //头插
-int addElementHead(SeqTable *table,Element e);
+int addElementHead(SeqTable *table,Element *e);
 //尾插
-int addElementTail(SeqTable *table,Element e);
+int addElementTail(SeqTable *table,Element *e);
 //选择位置插
-int addElementPose(SeqTable *table,int pos,Element e);
+int addElementPose(SeqTable *table,int pos,Element *e);
 //随机位置插
-int addElementRand(SeqTable *table,Element e);
+int addElementRand(SeqTable *table,Element *e);
 
 //删除元素
 //头删
-int deletElementHead(SeqTable *table,Element e);
+int deletElementHead(SeqTable *table,Element *e);
 
 //尾删
-int deletElementtail(SeqTable *table,Element e);
+int deletElementtail(SeqTable *table,Element *e);
 
 //选择位置删
-int deletElementpos(SeqTable *table,int pos,Element e);
+int deletElementpos(SeqTable *table,int pos,Element *e);
 
 //随机位置删
-int deletElementrand(SeqTable *table,Element e);
+int deletElementrand(SeqTable *table,Element *e);
 //打印
 int showTableinfo(SeqTable *table);
 
