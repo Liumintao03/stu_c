@@ -16,6 +16,48 @@ SeqTable *creatTableinit() {
 }
 
 //插入元素
+
+//插入元素的判断
+int addelement(SeqTable *table){
+    int a = 1;
+    while(a==1){
+        printf("\n请选择增添元素位置:1.开头\t2.结尾\t3.自己选定\t4.取消添加\n");
+        int op = 0;
+        scanf("%d", &op);
+        switch (op) {
+            case 1:
+                printf("请输入元素信息\n学号 名字 年龄");
+                Element *p1 = (Element *) malloc(sizeof(Element));
+                scanf("%d %s %d", &(p1->id), p1->name, &(p1->age));
+                addElementHead(table, p1);
+                break;
+            case 2:
+                printf("请输入元素信息\n学号 名字 年龄");
+                Element *p2 = (Element *) malloc(sizeof(Element));
+                scanf("%d %s %d", &(p2->id), p2->name, &(p2->age));
+                addElementTail(table, p2);
+                break;
+            case 3:
+                printf("请输入元素信息\n学号 名字 年龄 插入位置");
+                Element *p3 = (Element *) malloc(sizeof(Element));
+                int pos = 1;
+                scanf("%d %s %d %d", &(p3->id), p3->name, &(p3->age), &pos);
+                addElementPose(table, pos, p3);
+            case 4:
+                return 0;
+            default:
+                printf("输入错误,请从新输入\n");
+                break;
+        }
+        printf("是否继续添加?输入1继续添加\n");
+        scanf("%d", &a);
+    }
+    return 0;
+}
+
+//输入元素
+
+
 //增加容量
 SeqTable *Expand(SeqTable *table) {
     //得到容量大小
@@ -122,6 +164,17 @@ int addElementRand(SeqTable *table, Element *e) {
 
 
 //删除元素
+//删除元素判断
+int deletelement(Element *table){
+    int a = 1;
+    while(a){
+        printf("\n请选择删除位置");
+
+    }
+
+}
+
+
 //头删
 int deletElementHead(SeqTable *table, Element *e) {
     //验证参数合法性
@@ -236,11 +289,15 @@ int releaseTable(SeqTable *table){
     return 0;
 }
 
+
+
 //操作
-int operation(int op){
-    //主页面,查询,增添,删除,退出
+int operation(SeqTable *table,int op){
+    //"1.查询\t2.增添\t3.删除\t4.退出"
     switch (op) {
-        1  1:
+        case  1:showTableinfo(table);
+            break;
+        case 2:
 
     }
 

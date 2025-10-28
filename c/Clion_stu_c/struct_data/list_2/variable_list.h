@@ -56,7 +56,7 @@ int showTableinfo(SeqTable *table);
 //释放
 int releaseTable(SeqTable *table);
 
-int operation(int op);
+int operation( SeqTable *table,int op);
 
 
 
