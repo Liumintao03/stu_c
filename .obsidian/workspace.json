@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "183f72160e9c634d",
+        "id": "e08a0a8917a905b9",
         "type": "tabs",
         "children": [
           {
-            "id": "6e52c80966b6ac0c",
+            "id": "48a758ab27c2b4e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -140,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -178,21 +173,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "40c019f14b484019",
+  "active": "48a758ab27c2b4e2",
   "lastOpenFiles": [
+    "README.md",
     "c/Clion_stu_c/struct_data/list_2/main.c~",
+    "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj.d",
+    "c/Clion_stu_c/cmake-build-debug/Testing/Temporary/LastTest.log.tmp",
+    "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/main.c.obj.d",
+    "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/program.exe",
+    "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj",
+    "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/main.c.obj",
     "c/Clion_stu_c/struct_data/list_2/variable_list.c~",
     "c/Clion_stu_c/struct_data/list_2/variable_list.h~",
     "c/Clion_stu_c/cmake-build-debug/CMakeFiles/rules.ninja.tmp3c969",
-    "c/Clion_stu_c/cmake-build-debug/build.ninja.tmpb0a4d",
-    "c/Clion_stu_c/cmake-build-debug/struct_data/list_1/list.exe",
-    "c/Clion_stu_c/cmake-build-debug/struct_data/list_1/CMakeFiles/list.dir/list.c.obj",
-    "c/Clion_stu_c/cmake-build-debug/struct_data/list_1/CMakeFiles/list.dir/main.c.obj",
-    "c/Clion_stu_c/cmake-build-debug/struct_data/list_1/CMakeFiles/list.dir/list.c.obj.d",
-    "c/Clion_stu_c/cmake-build-debug/struct_data/list_1/CMakeFiles/list.dir/main.c.obj.d",
-    "c/Clion_stu_c/cmake-build-debug/CMakeFiles/Clion_stu_c.dir/main.c.obj",
     "README.en.md",
-    "README.md",
     "未命名.md"
   ]
 }

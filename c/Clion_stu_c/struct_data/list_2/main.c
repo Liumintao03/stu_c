@@ -5,26 +5,23 @@
 #include "variable_list.h"
 
 int main(){
-
     SeqTable *list = (SeqTable *)creatTableinit();
+    int res = 1;
     printf("======================================\n");
-    printf("===========æ¬¢è¿æ¥åˆ°å­¦ç”Ÿç®¡ç†ç³»ç»Ÿ===========\n");
+    printf("===========»¶Ó­À´µ½Ñ§Éú¹ÜÀíÏµÍ³===========\n");
     printf("======================================\n");
-    while(1){
-        printf("===========è¯·é€‰æ‹©ä½ çš„æ“ä½œ:===========\n");
-        printf("1.æŸ¥è¯¢\t2.å¢æ·»\t3.åˆ é™¤\t4.é€€å‡º");
-
+    while(res){
+        printf("===========ÇëÑ¡ÔñÄãµÄ²Ù×÷:===========\n");
+        printf("1.²éÑ¯\t2.ÔöÌí\t3.É¾³ı\t4.ÍË³ö\n");
         int op = 0;
         scanf("%d",&op);
         if(op == 4){
             break;
         }
-        int res = operation(list,op);
+        res = operation(list,op);
     }
-
-
-
-
+    releaseTable(list);
+    printf("¸ĞĞ»ÄãµÄÊ¹ÓÃ\n");
     return 0;
 }
 

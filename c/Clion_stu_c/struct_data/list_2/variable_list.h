@@ -40,30 +40,18 @@ int addElementRand(SeqTable *table,Element *e);
 
 //删除元素
 //头删
-int deletElementHead(SeqTable *table,Element *e);
-
+int deletElementHead(SeqTable *table);
 //尾删
-int deletElementtail(SeqTable *table,Element *e);
-
+int deletElementtail(SeqTable *table);
 //选择位置删
-int deletElementpos(SeqTable *table,int pos,Element *e);
-
+int deletElementpos(SeqTable *table,int pos);
 //随机位置删
-int deletElementrand(SeqTable *table,Element *e);
+int deletElementrand(SeqTable *table);
 //打印
 int showTableinfo(SeqTable *table);
-
 //释放
 int releaseTable(SeqTable *table);
-
+//操作
 int operation( SeqTable *table,int op);
-
-
-
-
-
-
-
-
 
 #endif //CLION_STU_C_VARIABLE_LIST_H

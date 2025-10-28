@@ -4,41 +4,39 @@
 
 #include "variable_list.h"
 
-
-//é¡ºåºè¡¨åˆ›å»º,åˆå§‹åŒ–
+//Ë³Ğò±í´´½¨,³õÊ¼»¯
 SeqTable *creatTableinit() {
     SeqTable *table = (SeqTable *) malloc(sizeof(SeqTable));
     memset(table, 0, sizeof(SeqTable));
     table->capacity = 10;
     table->data = (Element **) malloc(sizeof(table->capacity) * sizeof(Element *));
-
     return table;
 }
 
-//æ’å…¥å…ƒç´ 
-
-//æ’å…¥å…ƒç´ çš„åˆ¤æ–­
-int addelement(SeqTable *table){
+//²åÈëÔªËØ
+//²åÈëÔªËØµÄÅĞ¶Ï
+static int addelement(SeqTable *table){
     int a = 1;
     while(a==1){
-        printf("\nè¯·é€‰æ‹©å¢æ·»å…ƒç´ ä½ç½®:1.å¼€å¤´\t2.ç»“å°¾\t3.è‡ªå·±é€‰å®š\t4.å–æ¶ˆæ·»åŠ \n");
+        starreadd:
+        printf("\nÇëÑ¡ÔñÔöÌíÔªËØÎ»ÖÃ:1.¿ªÍ·\t2.½áÎ²\t3.×Ô¼ºÑ¡¶¨\t4.È¡ÏûÌí¼Ó\n");
         int op = 0;
         scanf("%d", &op);
         switch (op) {
             case 1:
-                printf("è¯·è¾“å…¥å…ƒç´ ä¿¡æ¯\nå­¦å· åå­— å¹´é¾„");
+                printf("ÇëÊäÈëÔªËØĞÅÏ¢\nÑ§ºÅ Ãû×Ö ÄêÁä\n");
                 Element *p1 = (Element *) malloc(sizeof(Element));
                 scanf("%d %s %d", &(p1->id), p1->name, &(p1->age));
                 addElementHead(table, p1);
                 break;
             case 2:
-                printf("è¯·è¾“å…¥å…ƒç´ ä¿¡æ¯\nå­¦å· åå­— å¹´é¾„");
+                printf("ÇëÊäÈëÔªËØĞÅÏ¢\nÑ§ºÅ Ãû×Ö ÄêÁä\nn");
                 Element *p2 = (Element *) malloc(sizeof(Element));
                 scanf("%d %s %d", &(p2->id), p2->name, &(p2->age));
                 addElementTail(table, p2);
                 break;
             case 3:
-                printf("è¯·è¾“å…¥å…ƒç´ ä¿¡æ¯\nå­¦å· åå­— å¹´é¾„ æ’å…¥ä½ç½®");
+                printf("ÇëÊäÈëÔªËØĞÅÏ¢\nÑ§ºÅ Ãû×Ö ÄêÁä ²åÈëÎ»ÖÃ\n");
                 Element *p3 = (Element *) malloc(sizeof(Element));
                 int pos = 1;
                 scanf("%d %s %d %d", &(p3->id), p3->name, &(p3->age), &pos);
@@ -46,116 +44,118 @@ int addelement(SeqTable *table){
             case 4:
                 return 0;
             default:
-                printf("è¾“å…¥é”™è¯¯,è¯·ä»æ–°è¾“å…¥\n");
+                printf("ÊäÈë´íÎó,Çë´ÓĞÂÊäÈë\n");
+                goto starreadd;
                 break;
         }
-        printf("æ˜¯å¦ç»§ç»­æ·»åŠ ?è¾“å…¥1ç»§ç»­æ·»åŠ \n");
+        printf("ÊÇ·ñ²é¿´ĞÅÏ¢?ÊäÈë1²é¿´\n");
+        int info = 0;
+        if(info == 1){
+            showTableinfo(table);
+        }
+        printf("ÊÇ·ñ¼ÌĞøÌí¼Ó?ÊäÈë1¼ÌĞøÌí¼Ó\n");
         scanf("%d", &a);
     }
     return 0;
 }
 
-//è¾“å…¥å…ƒç´ 
+//ÊäÈëÔªËØ
 
 
-//å¢åŠ å®¹é‡
-SeqTable *Expand(SeqTable *table) {
-    //å¾—åˆ°å®¹é‡å¤§å°
+//Ôö¼ÓÈİÁ¿
+static SeqTable *Expand(SeqTable *table) {
+    //µÃµ½ÈİÁ¿´óĞ¡
     int len = table->capacity * sizeof(Element *);
     Element **tmp = (Element **) malloc(len * 2);
-    //æ•°æ®è½¬ç§»
+    //Êı¾İ×ªÒÆ
     memset(tmp, 0, len);
     for (int i = 0; i < table->capacity; i++) {
         tmp[i] = table->data[i];
     }
-    //é‡Šæ”¾åŸç©ºé—´
+    //ÊÍ·ÅÔ­¿Õ¼ä
     free(table->data);
-    //æŒ‡å‘æ–°ç©ºé—´
+    //Ö¸ÏòĞÂ¿Õ¼ä
     table->data = tmp;
     table->capacity = table->capacity * 2;
-
 }
 
 
-//å¤´æ’
+//Í·²å
 int addElementHead(SeqTable *table, Element *e) {
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¡¨ä¸å­˜åœ¨\n");
+        printf("±í²»´æÔÚ\n");
         return -1;
     }
     if (table->cnt >= table->capacity) {
-        printf("æ»¡äº†\n");
+        printf("ÂúÁË\n");
         Expand(table);
-        printf("æ‰©å®¹æˆåŠŸ\n");
+        printf("À©Èİ³É¹¦\n");
 
     }
-    //æ‰¾åˆ°è¦æ’å…¥çš„åœ°æ–¹
+    //ÕÒµ½Òª²åÈëµÄµØ·½
     for (int i = table->cnt - 1; i >= 0; i--) {
         table->data[i + 1] = table->data[i];
     }
-    //æ’å…¥
+    //²åÈë
     table->data[0] = e;
     table->cnt++;
     return 0;
 }
 
 
-//å°¾æ’
+//Î²²å
 int addElementTail(SeqTable *table, Element *e) {
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¡¨ä¸å­˜åœ¨\n");
+        printf("±í²»´æÔÚ\n");
         return -1;
     }
     if (table->cnt >= table->capacity) {
-        printf("æ»¡äº†\n");
+        printf("ÂúÁË\n");
         Expand(table);
-        printf("æ‰©å®¹æˆåŠŸ\n");
+        printf("À©Èİ³É¹¦\n");
     }
-    //ç›´æ¥æ’å…¥åˆ°æœ€å
+    //Ö±½Ó²åÈëµ½×îºó
     table->data[table->cnt] = e;
     table->cnt++;
+}
 
-};
-
-//é€‰æ‹©ä½ç½®æ’
+//Ñ¡ÔñÎ»ÖÃ²å
 int addElementPose(SeqTable *table, int pos, Element *e) {
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¡¨ä¸å­˜åœ¨\n");
+        printf("±í²»´æÔÚ\n");
         return -1;
     }
     if (table->cnt >= table->capacity) {
-        printf("æ»¡äº†\n");
+        printf("ÂúÁË\n");
         Expand(table);
-        printf("æ‰©å®¹æˆåŠŸ\n");
+        printf("À©Èİ³É¹¦\n");
     }
-    //æ‰¾åˆ°ä½ç½®
+    //ÕÒµ½Î»ÖÃ
     for (int i = table->cnt - 1; i >= pos - 1; i--) {
         table->data[i + 1] = table->data[i];
     }
-    //æ’å…¥
+    //²åÈë
     table->data[pos - 1] = e;
     table->cnt++;
     return 0;
-
-
 }
 
-//éšæœºä½ç½®æ’
+//Ëæ»úÎ»ÖÃ²å
 int addElementRand(SeqTable *table, Element *e) {
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¡¨ä¸å­˜åœ¨\n");
+        printf("±í²»´æÔÚ\n");
         Expand(table);
-        printf("æ‰©å®¹æˆåŠŸ\n");
+        printf("À©Èİ³É¹¦\n");
     }
     if (table->cnt >= table->capacity) {
-        printf("æ»¡äº†\n");
+        printf("ÂúÁË\n");
         return -1;
     }
-    //éšæœºæ•°ç§å­
+    //Ëæ»úÊıÖÖ×Ó
     srand(time(NULL));
     int pos = rand() % table->cnt + 1;
     addElementPose(table, pos, e);
@@ -163,125 +163,121 @@ int addElementRand(SeqTable *table, Element *e) {
 }
 
 
-//åˆ é™¤å…ƒç´ 
-//åˆ é™¤å…ƒç´ åˆ¤æ–­
-int deletelement(Element *table){
+//É¾³ıÔªËØ
+//É¾³ıÔªËØÅĞ¶Ï
+static int deletelement(Element *table){
     int a = 1;
     while(a){
-        printf("\nè¯·é€‰æ‹©åˆ é™¤ä½ç½®");
-
+        printf("\nÇëÑ¡ÔñÉ¾³ıÎ»ÖÃ\n");
+        int pos = 1;
+        scanf("%d",&pos);
+        deletElementpos(table,pos);
+        printf("ÊÇ·ñ²é¿´ĞÅÏ¢?ÊäÈë1²é¿´\n");
+        int info = 0;
+        if(info == 1){
+            showTableinfo(table);
+        }
+        printf("ÊÇ·ñ¼ÌĞøÌí¼Ó?ÊäÈë1¼ÌĞøÌí¼Ó\n");
+        scanf("%d", &a);
     }
-
+    return 0;
 }
 
-
-//å¤´åˆ 
-int deletElementHead(SeqTable *table, Element *e) {
-    //éªŒè¯å‚æ•°åˆæ³•æ€§
+//Í·É¾
+int deletElementHead(SeqTable *table) {
+    //ÑéÖ¤²ÎÊıºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¦åˆ é™¤çš„è¡¨ä¸å­˜åœ¨\n");
+        printf("ÒªÉ¾³ıµÄ±í²»´æÔÚ\n");
         return -1;
-
     }
     if (table->cnt <= 0) {
-        printf("è¡¨æ˜¯ç©ºçš„");
+        printf("±íÊÇ¿ÕµÄ");
         return -1;
     }
-
-    //å¾€å‰ç§»
+    //ÍùÇ°ÒÆ
     for (int i = 0; i < table->cnt - 1; ++i) {
         table->data[i] = table->data[i - 1];
-
     }
-    //æ›´æ–°
+    //¸üĞÂ
     table->cnt--;
     return 0;
 
 }
 
-//å°¾åˆ 
-int deletElementtail(SeqTable *table, Element *e) {
-    //éªŒè¯å‚æ•°åˆæ³•æ€§
+//Î²É¾
+int deletElementtail(SeqTable *table) {
+    //ÑéÖ¤²ÎÊıºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¦åˆ é™¤çš„è¡¨ä¸å­˜åœ¨\n");
+        printf("ÒªÉ¾³ıµÄ±í²»´æÔÚ\n");
         return -1;
-
     }
     if (table->cnt <= 0) {
-        printf("è¡¨æ˜¯ç©ºçš„");
+        printf("±íÊÇ¿ÕµÄ");
         return -1;
     }
-    //åˆ é™¤
+    //É¾³ı
     table->cnt--;
     return 0;
-
 }
 
-//é€‰æ‹©ä½ç½®åˆ 
-int deletElementpos(SeqTable *table, int pos, Element *e) {
-    //éªŒè¯å‚æ•°åˆæ³•æ€§
+//Ñ¡ÔñÎ»ÖÃÉ¾
+int deletElementpos(SeqTable *table, int pos) {
+    //ÑéÖ¤²ÎÊıºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¦åˆ é™¤çš„è¡¨ä¸å­˜åœ¨\n");
+        printf("ÒªÉ¾³ıµÄ±í²»´æÔÚ\n");
         return -1;
-
     }
     if (table->cnt <= 0) {
-        printf("è¡¨æ˜¯ç©ºçš„");
+        printf("±íÊÇ¿ÕµÄ");
         return -1;
     }
-    //è¿™ä¸ªä½ç½®åé¢çš„èŠ‚ç‚¹å…¨éƒ¨å¾€å‰ç§»
+    //Õâ¸öÎ»ÖÃºóÃæµÄ½ÚµãÈ«²¿ÍùÇ°ÒÆ
     for (int i = pos; i < table->cnt-1;i++){
         table->data[i] = table->data[i+1];
-
     }
-    //æ›´æ–°
+    //¸üĞÂ
     table->cnt--;
     return 0;
-
-
 }
 
-//éšæœºä½ç½®åˆ 
-int deletElementrand(SeqTable *table, Element *e){
-    //éªŒè¯å‚æ•°åˆæ³•æ€§
+//Ëæ»úÎ»ÖÃÉ¾
+int deletElementrand(SeqTable *table){
+    //ÑéÖ¤²ÎÊıºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¦åˆ é™¤çš„è¡¨ä¸å­˜åœ¨\n");
+        printf("ÒªÉ¾³ıµÄ±í²»´æÔÚ\n");
         return -1;
-
     }
     if (table->cnt <= 0) {
-        printf("è¡¨æ˜¯ç©ºçš„");
+        printf("±íÊÇ¿ÕµÄ");
         return -1;
     }
     srand(time(NULL));
     int pos = rand() % table->cnt + 1;
-    deletElementpos(table,pos,e);
+    deletElementpos(table,pos);
     return 0;
 }
 
-//æ‰“å°
+//´òÓ¡
 int showTableinfo(SeqTable *table){
-    //éªŒè¯å‚æ•°åˆæ³•æ€§
+    //ÑéÖ¤²ÎÊıºÏ·¨ĞÔ
     if (table == NULL) {
-        printf("è¦æ‰“å°çš„è¡¨ä¸å­˜åœ¨\n");
+        printf("Òª´òÓ¡µÄ±í²»´æÔÚ\n");
         return -1;
-
     }
-
     for (int i = 0;i<table->cnt;i++){
         printf("[%d]:id:%d, name:%s, age:%d\n",i,table->data[i]->id,table->data[i]->name,table->data[i]->age);
     }
     return 0;
 }
 
-//é‡Šæ”¾
+//ÊÍ·Å
 int releaseTable(SeqTable *table){
     if (table == NULL) {
-        printf("è¦é‡Šæ”¾çš„è¡¨ä¸å­˜åœ¨\n");
+        printf("ÒªÊÍ·ÅµÄ±í²»´æÔÚ\n");
         return -1;
     }
     if(table->data == NULL){
-        printf("è¡¨ä¸­çš„æ•°æ®ä¸å­˜åœ¨\n");
+        printf("±íÖĞµÄÊı¾İ²»´æÔÚ\n");
         return -1;
     }
     free(table->data);
@@ -289,23 +285,27 @@ int releaseTable(SeqTable *table){
     return 0;
 }
 
-
-
-//æ“ä½œ
+//²Ù×÷
 int operation(SeqTable *table,int op){
-    //"1.æŸ¥è¯¢\t2.å¢æ·»\t3.åˆ é™¤\t4.é€€å‡º"
+    //"1.²éÑ¯\t2.ÔöÌí\t3.É¾³ı\t4.ÍË³ö"
+
     switch (op) {
-        case  1:showTableinfo(table);
+        case  1:
+            showTableinfo(table);
             break;
         case 2:
-
+            addelement(table);
+            break;
+        case 3:
+            deletelement(table);
+            break;
+        case 4:
+            return 0;
+        default:
+            printf("Çë°´ÕÕÌáÊ¾ÊäÈëÕıÈ·²Ù×÷\n");
+            break;
     }
-
-
-
-
-
-
+    return 1;
 }
 
 
