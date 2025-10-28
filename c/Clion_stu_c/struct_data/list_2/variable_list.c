@@ -236,6 +236,16 @@ int releaseTable(SeqTable *table){
     return 0;
 }
 
+//操作
+int operation(int op){
+    //主页面,查询,增添,删除,退出
 
+
+
+
+
+
+
+}
 
 
