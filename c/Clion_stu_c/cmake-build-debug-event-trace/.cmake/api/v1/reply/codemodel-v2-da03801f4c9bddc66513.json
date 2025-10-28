@@ -35,22 +35,53 @@
 					"source" : "Rlc",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
-					"build" : "day01",
-					"jsonFile" : "directory-day01-Debug-352e49905ac791d0c723.json",
+					"build" : "struct_data",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"jsonFile" : "directory-struct_data-Debug-7fb982e53996d1277069.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "day01",
+					"source" : "struct_data"
+				},
+				{
+					"build" : "struct_data/list_1",
+					"jsonFile" : "directory-struct_data.list_1-Debug-0d7989664351d3438064.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "struct_data/list_1",
 					"targetIndexes" : 
 					[
 						1
+					]
+				},
+				{
+					"build" : "struct_data/list_2",
+					"jsonFile" : "directory-struct_data.list_2-Debug-81ca3dfa7f15029e696f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "struct_data/list_2",
+					"targetIndexes" : 
+					[
+						2
 					]
 				}
 			],
@@ -62,14 +93,17 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					],
 					"name" : "Clion_stu_c",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -83,10 +117,17 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 2,
-					"id" : "list::@489ea3b32b0bb6074b36",
-					"jsonFile" : "target-list-Debug-be5b2e1a125006694484.json",
+					"directoryIndex" : 3,
+					"id" : "list::@ae960f820d78c64a8712",
+					"jsonFile" : "target-list-Debug-e3ea1f14f4b14ee29b14.json",
 					"name" : "list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "program::@6e1d04c4f4530f2e39da",
+					"jsonFile" : "target-program-Debug-1d25232458867b7bc47d.json",
+					"name" : "program",
 					"projectIndex" : 0
 				},
 				{

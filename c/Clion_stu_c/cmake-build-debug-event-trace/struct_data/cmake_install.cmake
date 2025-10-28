@@ -1,4 +1,4 @@
-# Install script for directory: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c
+# Install script for directory: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,21 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/Rlc/cmake_install.cmake")
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/list_1/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data/cmake_install.cmake")
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/list_2/cmake_install.cmake")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

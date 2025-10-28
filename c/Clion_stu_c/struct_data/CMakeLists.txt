@@ -1,0 +1,2 @@
+add_subdirectory(list_1)
+add_subdirectory(list_2)

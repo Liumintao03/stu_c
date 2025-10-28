@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "day01/list.exe"
+			"path" : "struct_data/list_1/list.exe"
 		},
 		{
-			"path" : "day01/list.pdb"
+			"path" : "struct_data/list_1/list.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -17,7 +17,7 @@
 		],
 		"files" : 
 		[
-			"day01/CMakeLists.txt"
+			"struct_data/list_1/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -57,7 +57,7 @@
 			]
 		}
 	],
-	"id" : "list::@489ea3b32b0bb6074b36",
+	"id" : "list::@ae960f820d78c64a8712",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -81,8 +81,8 @@
 	"nameOnDisk" : "list.exe",
 	"paths" : 
 	{
-		"build" : "day01",
-		"source" : "day01"
+		"build" : "struct_data/list_1",
+		"source" : "struct_data/list_1"
 	},
 	"sourceGroups" : 
 	[
@@ -107,18 +107,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day01/main.c",
+			"path" : "struct_data/list_1/main.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day01/list.c",
+			"path" : "struct_data/list_1/list.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "day01/list.h",
+			"path" : "struct_data/list_1/list.h",
 			"sourceGroupIndex" : 1
 		}
 	],

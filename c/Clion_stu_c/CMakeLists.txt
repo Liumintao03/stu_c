@@ -8,5 +8,5 @@ add_executable(Clion_stu_c main.c)
 
 
 add_subdirectory(Rlc)
-add_subdirectory(day01)
+add_subdirectory(struct_data)
 

@@ -1,0 +1,1 @@
+add_executable(program main.c variable_list.c)

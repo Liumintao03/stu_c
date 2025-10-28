@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "day01",
-		"source" : "day01"
+		"build" : "struct_data/list_2",
+		"source" : "struct_data/list_2"
 	}
 }
