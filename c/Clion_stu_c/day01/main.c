@@ -37,6 +37,7 @@ int main(){
     deleteSseqTableElementByPos(list,2);
     showTable(list);
 
+    //释放
     releaseSseqTable(list);
 
     return 0;

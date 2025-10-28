@@ -178,8 +178,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "897b9f46430324db",
+  "active": "40c019f14b484019",
   "lastOpenFiles": [
+    "c/Clion_stu_c/cmake-build-debug/day01/CMakeFiles/list.dir/list.c.obj.d",
+    "c/Clion_stu_c/cmake-build-debug/day01/CMakeFiles/list.dir/main.c.obj.d",
+    "c/Clion_stu_c/day01/main.c~",
     "c/homework/data_struct/day01/day01.c",
     "c/homework/data_struct/day01",
     "c/homework/data_struct/新建文件夹",
@@ -188,9 +191,6 @@
     "c/homework/stu_c/day11/program.exe",
     "c/homework/stu_c/day11/main.c",
     "c/homework/stu_c/day11/func.c",
-    "c/homework/stu_c/day11/fun.h",
-    "c/homework/stu_c/day11/a.exe",
-    "c/homework/stu_c/day11",
     "README.en.md",
     "README.md",
     "未命名.md"

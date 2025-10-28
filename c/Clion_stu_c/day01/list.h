@@ -20,8 +20,6 @@ typedef struct seqTable{
     int count;//存了多少元素
 
 }SseqTable;
-
-
 //创建顺序表,初始化
 SseqTable *createSseqTable();
 // 顺序表的销毁
