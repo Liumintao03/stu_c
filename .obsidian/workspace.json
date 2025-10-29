@@ -175,6 +175,9 @@
   },
   "active": "48a758ab27c2b4e2",
   "lastOpenFiles": [
+    "c/LeetCode/链表/删除链表第n个节点.c",
+    "c/LeetCode/删除链表第n个节点/删除链表第n个节点.c",
+    "c/LeetCode/删除链表第n个节点",
     "README.md",
     "c/Clion_stu_c/struct_data/list_2/main.c~",
     "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj.d",
@@ -184,8 +187,6 @@
     "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj",
     "c/Clion_stu_c/cmake-build-debug/struct_data/list_2/CMakeFiles/program.dir/main.c.obj",
     "c/Clion_stu_c/struct_data/list_2/variable_list.c~",
-    "c/Clion_stu_c/struct_data/list_2/variable_list.h~",
-    "c/Clion_stu_c/cmake-build-debug/CMakeFiles/rules.ninja.tmp3c969",
     "README.en.md",
     "未命名.md"
   ]
