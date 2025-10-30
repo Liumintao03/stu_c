@@ -4,7 +4,7 @@
 
 #include "Heap.h"
 
-//åˆ›å»ºåˆå§‹åŒ–é˜Ÿåˆ—
+//´´½¨³õÊ¼»¯¶ÓÁĞ
 Heap *createInitHeap(){
     Heap *heap = (Heap *)malloc(sizeof (Heap));
     memset(heap,0,sizeof (Heap));
@@ -12,64 +12,67 @@ Heap *createInitHeap(){
     heap->front =0;
     heap->rear = 0;
 }
-//æ’å…¥
+//²åÈë
 int insertHeap(Heap *heap,Element *e){
-    //åˆ¤æ–­åˆæ³•æ€§
+    //ÅĞ¶ÏºÏ·¨ĞÔ
     if(heap == NULL){
-        printf("ä¼ å…¥çš„ä¸ºç©º\n");
+        printf("´«ÈëµÄÎª¿Õ\n");
         return -1;
     }
     if(heap->front==(heap->rear+1)%MAXSIZE){
-        printf("é˜Ÿåˆ—æ»¡äº†,æ— æ³•æ·»åŠ \n");
+        printf("¶ÓÁĞÂúÁË,ÎŞ·¨Ìí¼Ó\n");
         return -1;
     }
-    //æ’å…¥å…ƒç´ ,åé¢é‚£ä½æ›´æ–°
-    heap->data[(heap->rear+1)%MAXSIZE]==*e;
+    //²åÈëÔªËØ,ºóÃæÄÇÎ»¸üĞÂ
+    heap->data[(heap->rear+1)%MAXSIZE]=*e;
     heap->rear=(heap->rear+1%MAXSIZE);
+    printHeapinfo(heap);
     return 0;
 
 }
-//åˆ é™¤
+//É¾³ı
 int deletHeap(Heap *heap){
-    //æ ¡éªŒåˆæ³•æ€§
+    //Ğ£ÑéºÏ·¨ĞÔ
     if(heap == NULL){
-        printf("ä¼ å…¥çš„ä¸ºç©º\n");
+        printf("´«ÈëµÄÎª¿Õ\n");
         return -1;
     }
     if(heap->rear==heap->front){
-        printf("é˜Ÿåˆ—ä¸ºç©º,æ— æ³•åˆ é™¤\n");
+        printf("¶ÓÁĞÎª¿Õ,ÎŞ·¨É¾³ı\n");
         return -1;
     }
-    //åˆ é™¤
+    //É¾³ı
     heap->front = (heap->front+1)%MAXSIZE;
     return 0;
 
 }
-//æ‰“å°
+//´òÓ¡
 int printHeapinfo(Heap *heap){
     if(heap == NULL){
-        printf("ä¼ å…¥çš„ä¸ºç©º\n");
+        printf("´«ÈëµÄÎª¿Õ\n");
         return -1;
     }
     if(heap->rear==heap->front){
-        printf("é˜Ÿåˆ—ä¸ºç©º,æ²¡æœ‰å…ƒç´ æ‰“å°\n");
+        printf("¶ÓÁĞÎª¿Õ,Ã»ÓĞÔªËØ´òÓ¡\n");
         return -1;
     }
-    for(int i = heap->rear;i!=heap->front;i++){
-        printf("%d\t",heap->data[i]);
+    int i = heap->rear;
+    while(i!=heap->front){
+        printf("ÏÂ±êÎª%d,ÔªËØÎª%d\t",i,heap->data[i]);
         i = (i+1)&MAXSIZE;
     }
-    printf("\n");
+
+    printf("´òÓ¡Íê³É\n");
     return 0;
 }
-//é‡Šæ”¾
+//ÊÍ·Å
 int releaseHeap(Heap *heap){
     if(heap == NULL){
-        printf("ä¼ å…¥çš„ä¸ºç©º\n");
+        printf("´«ÈëµÄÎª¿Õ\n");
         return -1;
     }
     free(heap);
-    printf("é‡Šæ”¾å®Œæˆ\n");
+    printf("ÊÍ·ÅÍê³É\n");
     return 0;
 }
 
