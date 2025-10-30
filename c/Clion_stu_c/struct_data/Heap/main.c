@@ -8,7 +8,7 @@ int main(){
     //创建队列
     Heap *heap = createInitHeap();
     //添加
-    for(int i = 0;i<=10;i++){
+    for(int i = 1;i<=1;i++){
         insertHeap(heap,&i);
     }
     //打印

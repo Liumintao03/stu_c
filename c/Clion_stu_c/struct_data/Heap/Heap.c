@@ -26,7 +26,7 @@ int insertHeap(Heap *heap,Element *e){
     //插入元素,后面那位更新
     heap->data[(heap->rear+1)%MAXSIZE]=*e;
     heap->rear=(heap->rear+1%MAXSIZE);
-    printHeapinfo(heap);
+//    printHeapinfo(heap);
     return 0;
 
 }
@@ -56,11 +56,11 @@ int printHeapinfo(Heap *heap){
         printf("队列为空,没有元素打印\n");
         return -1;
     }
-    int i = heap->rear;
-    while(i!=heap->front){
+    int i = heap->front;
+    do{
         printf("下标为%d,元素为%d\t",i,heap->data[i]);
-        i = (i+1)&MAXSIZE;
-    }
+        i = (i+1)%MAXSIZE;
+    }while(i!=heap->rear);
 
     printf("打印完成\n");
     return 0;
