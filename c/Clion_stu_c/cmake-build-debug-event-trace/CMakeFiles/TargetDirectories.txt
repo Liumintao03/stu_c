@@ -12,3 +12,12 @@ D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/s
 D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/list_2/CMakeFiles/program.dir
 D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/list_2/CMakeFiles/edit_cache.dir
 D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/list_2/CMakeFiles/rebuild_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Stack/CMakeFiles/Stack.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Stack/CMakeFiles/edit_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Stack/CMakeFiles/rebuild_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Heap/CMakeFiles/Heap.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Heap/CMakeFiles/edit_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Heap/CMakeFiles/rebuild_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/ListStack/CMakeFiles/ListStack.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/ListStack/CMakeFiles/edit_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/ListStack/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,5 @@
 # ninja log v6
+223	513	7835148592303243	struct_data/list_2/program.exe	c117e2597e50aefd
 3	246	7833396465285206	CMakeFiles/Clion_stu_c.dir/main.c.obj	c2903209bd78ed68
 288	476	7829916086617024	Clion_stu_c.exe	6cc8cf8dc610494f
 9	494	7833148930782600	day01/CMakeFiles/list.dir/main.c.obj	3d11a7549d0a2061
@@ -7,12 +8,22 @@
 6	463	7833397447057311	struct_data/list_1/CMakeFiles/list.dir/main.c.obj	59be9942b63f514
 520	891	7833397452204192	struct_data/list_1/list.exe	80f66a9b667819d8
 47	518	7833397447462761	struct_data/list_1/CMakeFiles/list.dir/list.c.obj	32534e1204107b3
-6	382	7833528048650069	struct_data/list_2/CMakeFiles/program.dir/main.c.obj	91bced8599fd5a67
-36	401	7833528048962137	struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj	d7c81b658fb78e4
-401	668	7833528052609983	struct_data/list_2/program.exe	c117e2597e50aefd
-6	210	7833528269074945	struct_data/list_2/CMakeFiles/program.dir/main.c.obj	91bced8599fd5a67
-277	484	7833528271782535	struct_data/list_2/program.exe	c117e2597e50aefd
-6	212	7833528410797280	struct_data/list_2/CMakeFiles/program.dir/main.c.obj	91bced8599fd5a67
-241	490	7833528413144924	struct_data/list_2/program.exe	c117e2597e50aefd
-8	230	7833533951760417	struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj	d7c81b658fb78e4
-231	450	7833533953990731	struct_data/list_2/program.exe	c117e2597e50aefd
+8	196	7835148590160299	struct_data/list_2/CMakeFiles/program.dir/main.c.obj	91bced8599fd5a67
+31	223	7835148590384308	struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj	d7c81b658fb78e4
+20	167	7835152935711400	struct_data/Stack/CMakeFiles/Stack.dir/main.c.obj	1c8d7f8047f8c06a
+16	202	7835153310673568	struct_data/Stack/CMakeFiles/Stack.dir/Stack-c.c.obj	8ee35e91be7945b1
+205	385	7835153312566683	struct_data/Stack/Stack.exe	f91842f1f003227a
+6	377	7835302109129256	struct_data/ListStack/CMakeFiles/ListStack.dir/main.c.obj	caa9cbc89f919f50
+38	388	7835302109458242	struct_data/ListStack/CMakeFiles/ListStack.dir/ListStack.c.obj	9b93cb9419fbd4d0
+388	669	7835302112961037	struct_data/ListStack/ListStack.exe	275c7bd374928216
+6	192	7835302588562693	struct_data/ListStack/CMakeFiles/ListStack.dir/main.c.obj	caa9cbc89f919f50
+195	368	7835302590452749	struct_data/ListStack/ListStack.exe	275c7bd374928216
+7	153	7835302726587459	struct_data/ListStack/CMakeFiles/ListStack.dir/main.c.obj	caa9cbc89f919f50
+188	369	7835302728397890	struct_data/ListStack/ListStack.exe	275c7bd374928216
+8	207	7835303485296051	struct_data/ListStack/CMakeFiles/ListStack.dir/main.c.obj	caa9cbc89f919f50
+32	224	7835303485538322	struct_data/ListStack/CMakeFiles/ListStack.dir/ListStack.c.obj	9b93cb9419fbd4d0
+224	386	7835303487462099	struct_data/ListStack/ListStack.exe	275c7bd374928216
+10	184	7835304674941109	struct_data/ListStack/CMakeFiles/ListStack.dir/ListStack.c.obj	9b93cb9419fbd4d0
+187	352	7835304676704720	struct_data/ListStack/ListStack.exe	275c7bd374928216
+12	180	7835304996382883	struct_data/ListStack/CMakeFiles/ListStack.dir/ListStack.c.obj	9b93cb9419fbd4d0
+183	416	7835304998094074	struct_data/ListStack/ListStack.exe	275c7bd374928216

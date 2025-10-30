@@ -1,0 +1,1 @@
+add_executable(ListStack main.c ListStack.c)

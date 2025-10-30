@@ -1,2 +1,5 @@
 add_subdirectory(list_1)
 add_subdirectory(list_2)
+add_subdirectory(Stack)
+add_subdirectory(Heap)
+add_subdirectory(ListStack)

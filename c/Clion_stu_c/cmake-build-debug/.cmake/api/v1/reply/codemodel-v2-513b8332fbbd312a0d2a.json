@@ -35,7 +35,7 @@
 					"source" : "Rlc",
 					"targetIndexes" : 
 					[
-						3
+						6
 					]
 				},
 				{
@@ -43,7 +43,10 @@
 					"childIndexes" : 
 					[
 						3,
-						4
+						4,
+						5,
+						6,
+						7
 					],
 					"jsonFile" : "directory-struct_data-Debug-7fb982e53996d1277069.json",
 					"minimumCMakeVersion" : 
@@ -66,7 +69,7 @@
 					"source" : "struct_data/list_1",
 					"targetIndexes" : 
 					[
-						1
+						4
 					]
 				},
 				{
@@ -79,6 +82,51 @@
 					"parentIndex" : 2,
 					"projectIndex" : 0,
 					"source" : "struct_data/list_2",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "struct_data/Stack",
+					"jsonFile" : "directory-struct_data.Stack-Debug-e4dc8a45853d7afee40b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "struct_data/Stack",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "struct_data/Heap",
+					"jsonFile" : "directory-struct_data.Heap-Debug-19a5fcf9af68fedd8313.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "struct_data/Heap",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "struct_data/ListStack",
+					"jsonFile" : "directory-struct_data.ListStack-Debug-c9ddfdf1e1f5ce33cd8e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "struct_data/ListStack",
 					"targetIndexes" : 
 					[
 						2
@@ -95,7 +143,10 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6,
+						7
 					],
 					"name" : "Clion_stu_c",
 					"targetIndexes" : 
@@ -103,7 +154,10 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -114,6 +168,27 @@
 					"id" : "Clion_stu_c::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Clion_stu_c-Debug-e26881d7936a5452745e.json",
 					"name" : "Clion_stu_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "Heap::@26aa6d7f6f9e404f3b01",
+					"jsonFile" : "target-Heap-Debug-036fc4ac88e4521fc29f.json",
+					"name" : "Heap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ListStack::@a55b99032ebab68aa9e0",
+					"jsonFile" : "target-ListStack-Debug-c7ec4771ffd8410326ce.json",
+					"name" : "ListStack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Stack::@9de2f8060a922c1daf34",
+					"jsonFile" : "target-Stack-Debug-26616f079194e3d011af.json",
+					"name" : "Stack",
 					"projectIndex" : 0
 				},
 				{

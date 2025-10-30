@@ -47,3 +47,18 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data/list_2/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data/Stack/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data/Heap/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data/ListStack/cmake_install.cmake")
+endif()
+
