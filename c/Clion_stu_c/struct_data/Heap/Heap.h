@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 typedef int Element;
-#define MAXSIZE 200
+#define MAXSIZE 6
 
 typedef struct Heap{
     Element data[MAXSIZE];
@@ -20,8 +20,13 @@ typedef struct Heap{
 }Heap;
 //创建初始化队列
 Heap *createInitHeap();
-//
-
-
+//插入
+int insertHeap(Heap *heap,Element *e);
+//删除
+int deletHeap(Heap *heap);
+//打印
+int printHeapinfo(Heap *heap);
+//释放
+int releaseHeap(Heap *heap);
 
 #endif //CLION_STU_C_HEAP_H
