@@ -4,6 +4,11 @@
 
 #ifndef CLION_STU_C_LIST_OPPOSITE_H
 #define CLION_STU_C_LIST_OPPOSITE_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
 
 typedef int Element;
 
@@ -13,15 +18,15 @@ typedef struct Listnode{
 }Listnode;
 
 //创建链表
-Listnode *createListnode(Listnode *listnode);
+Listnode *createListnode();
 //插入尾插
 int addelementListnode(Listnode *listnode,Element *e);
 //释放
-int releaseListnode(Listnode *listnode,Element *e);
+int releaseListnode(Listnode *listnode);
 //翻转
 int oppositeListnode(Listnode *listnode);
 //合并
-int 
+int uniteListnode(Listnode *listnode1,Listnode *listnode2);
 
 
 
