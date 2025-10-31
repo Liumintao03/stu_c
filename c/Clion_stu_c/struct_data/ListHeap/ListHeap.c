@@ -56,6 +56,7 @@ int popListHeap(HeapList *heapList){
     }
 
     heapList->count--;
+    printHeapListinfo(heapList);
     return 0;
 }
 
