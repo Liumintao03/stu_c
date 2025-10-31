@@ -34,6 +34,7 @@ int addListHeap(HeapList *heapList,Element *e){
     heapList->rear->next = tmp;
     heapList->rear = tmp;
     heapList->count++;
+    printf("%d\n",heapList->count);
     return 0;
 }
 //Î²³ö¶Ó
