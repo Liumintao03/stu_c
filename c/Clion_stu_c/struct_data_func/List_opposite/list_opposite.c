@@ -97,7 +97,28 @@ Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2){
     }
     Listnode *l1 = listnode1->next;
     Listnode *l2 = listnode2->next;
-    
+    Listnode *newListnode = createListnode();
+    while(l1!=NULL||l2!=NULL){
+        Listnode *tmp = (Listnode *) malloc(sizeof (Listnode));
+        if(l1==NULL){
+            tmp->data = l2->data;
+            tmp->next = l2;
+            l2 = l2->next;
+        } else if(l2 ==NULL){
+            tmp->data = l1->data;
+            tmp->next = l1;
+            l2 = l1->next;
+        } else if(l1&&l2){
+            if(l1->data>=l2->data){
+                tmp->data
+            }
+
+
+        }
+
+
+
+    }
 
 
 
