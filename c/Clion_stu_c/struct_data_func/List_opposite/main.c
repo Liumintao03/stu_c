@@ -42,8 +42,8 @@ int main(){
     releaseListnode(listnode2);
     releaseListnode(newListnode);
 
-    int arr1[10]={1,3,5,7,9};
-    int arr2[10]={2,4,6,8,10};
+    int arr1[]={1,3,5,7,9};
+    int arr2[]={2,4,6,8,10};
     int len1= sizeof (arr1)/sizeof (arr1[0]);
     int len2= sizeof (arr2)/sizeof (arr2[0]);
 

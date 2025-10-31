@@ -15,10 +15,12 @@ int *unitedarr(int *arr1,int len1,int *arr2,int len2){
         arr[i+j]=arr1[i];
         i++;
     }
+    printf("\n");
     while(j<len2){
-        arr[i+j]=arr[2];
+        arr[i+j]=arr2[j];
         j++;
     }
+    printf("\n");
     //排个序从小到大
     for(int n = 0;n<len1+len2;n++){
         int min = arr[n];
@@ -32,8 +34,6 @@ int *unitedarr(int *arr1,int len1,int *arr2,int len2){
             }
         }
     }
-
     return arr;
-
 }
 
