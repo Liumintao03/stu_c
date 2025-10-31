@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.28.6/CMakeSystem.cmake"
+			"path" : "cmake-build-debug-event-trace/CMakeFiles/3.28.6/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -20,7 +20,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.28.6/CMakeCCompiler.cmake"
+			"path" : "cmake-build-debug-event-trace/CMakeFiles/3.28.6/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -84,7 +84,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.28.6/CMakeRCCompiler.cmake"
+			"path" : "cmake-build-debug-event-trace/CMakeFiles/3.28.6/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -126,12 +126,15 @@
 		},
 		{
 			"path" : "struct_data/ListStack/CMakeLists.txt"
+		},
+		{
+			"path" : "struct_data/ListHeap/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug",
+		"build" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace",
 		"source" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c"
 	},
 	"version" : 
