@@ -12,6 +12,8 @@
     <file url="file://$PROJECT_DIR$/struct_data/list_1/list.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/struct_data/list_2/main.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/struct_data/list_2/variable_list.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/struct_data_func/List_opposite/list_opposite.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/struct_data_func/List_opposite/main.c" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

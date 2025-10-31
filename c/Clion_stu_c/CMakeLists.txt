@@ -10,3 +10,4 @@ add_executable(Clion_stu_c main.c)
 add_subdirectory(Rlc)
 add_subdirectory(struct_data)
 
+add_subdirectory(struct_data_func)

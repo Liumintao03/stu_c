@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						9
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -35,7 +36,7 @@
 					"source" : "Rlc",
 					"targetIndexes" : 
 					[
-						7
+						8
 					]
 				},
 				{
@@ -85,7 +86,7 @@
 					"source" : "struct_data/list_2",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -147,6 +148,36 @@
 					[
 						2
 					]
+				},
+				{
+					"build" : "struct_data_func",
+					"childIndexes" : 
+					[
+						10
+					],
+					"jsonFile" : "directory-struct_data_func-Debug-a5108e0966e72d5e169a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "struct_data_func"
+				},
+				{
+					"build" : "struct_data_func/List_opposite",
+					"jsonFile" : "directory-struct_data_func.List_opposite-Debug-340a037fb321ee98bfdf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 0,
+					"source" : "struct_data_func/List_opposite",
+					"targetIndexes" : 
+					[
+						6
+					]
 				}
 			],
 			"name" : "Debug",
@@ -163,7 +194,9 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9,
+						10
 					],
 					"name" : "Clion_stu_c",
 					"targetIndexes" : 
@@ -175,7 +208,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -221,6 +255,13 @@
 					"id" : "list::@ae960f820d78c64a8712",
 					"jsonFile" : "target-list-Debug-e3ea1f14f4b14ee29b14.json",
 					"name" : "list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "list_opposite::@b8cb996329c8989c43bd",
+					"jsonFile" : "target-list_opposite-Debug-209ba3322bfe479269f8.json",
+					"name" : "list_opposite",
 					"projectIndex" : 0
 				},
 				{

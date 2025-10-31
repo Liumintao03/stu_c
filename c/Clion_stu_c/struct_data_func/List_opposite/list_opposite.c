@@ -15,7 +15,7 @@ Listnode *createListnode(){
 int addelementListnode(Listnode *listnode,Element *e){
     //判断合法性
     if(listnode == NULL){
-        printf("要插入的链表不存在");
+        printf("要插入的链表不存在\n");
         return -1;
     }
     Listnode *tmp = (Listnode *) malloc(sizeof (Listnode));
@@ -29,7 +29,7 @@ int addelementListnode(Listnode *listnode,Element *e){
 int printListnode(Listnode *listnode){
     //判断合法性
     if(listnode == NULL||listnode->next==NULL){
-        printf("要打印的链表不存在");
+        printf("要打印的链表不存在\n");
         return -1;
     }
     Listnode *tmp = listnode->next;
@@ -37,14 +37,14 @@ int printListnode(Listnode *listnode){
         printf("%d\t",tmp->data);
         tmp = tmp->next;
     }
-    printf("打印完成");
+    printf("打印完成\n");
     return 0;
 }
 //释放
 int releaseListnode(Listnode *listnode){
     //判断合法性
     if(listnode == NULL||listnode->next==NULL){
-        printf("要释放的链表不存在");
+        printf("要释放的链表不存在\n");
         return -1;
     }
     Listnode *tmp = listnode->next;
@@ -63,7 +63,7 @@ int releaseListnode(Listnode *listnode){
 int oppositeListnode(Listnode *listnode){
     //判断合法性
     if(listnode == NULL||listnode->next==NULL){
-        printf("要翻转的链表不存在");
+        printf("要翻转的链表不存在\n");
         return -1;
     }
 
@@ -76,10 +76,16 @@ int oppositeListnode(Listnode *listnode){
         second = third;
         third = third->next;
     }
+    second->next = first;
     listnode->next = second;
     return 0;
 
 }
 //合并
-int uniteListnode(Listnode *listnode1,Listnode *listnode2);
+int uniteListnode(Listnode *listnode1,Listnode *listnode2){
+
+
+
+    
+}
 

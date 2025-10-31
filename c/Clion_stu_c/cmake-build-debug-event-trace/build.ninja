@@ -54,8 +54,6 @@ build CMakeFiles/Clion_stu_c.dir/main.c.obj: C_COMPILER__Clion_stu_c_unscanned_D
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Clion_stu_c.dir
   OBJECT_FILE_DIR = CMakeFiles\Clion_stu_c.dir
-  TARGET_COMPILE_PDB = CMakeFiles\Clion_stu_c.dir\
-  TARGET_PDB = Clion_stu_c.pdb
 
 
 # =============================================================================
@@ -71,10 +69,9 @@ build Clion_stu_c.exe: C_EXECUTABLE_LINKER__Clion_stu_c_Debug CMakeFiles/Clion_s
   OBJECT_DIR = CMakeFiles\Clion_stu_c.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\Clion_stu_c.dir\
   TARGET_FILE = Clion_stu_c.exe
   TARGET_IMPLIB = libClion_stu_c.dll.a
-  TARGET_PDB = Clion_stu_c.pdb
+  TARGET_PDB = Clion_stu_c.exe.dbg
 
 
 #############################################
@@ -118,16 +115,12 @@ build Rlc/CMakeFiles/rlc.dir/main.c.obj: C_COMPILER__rlc_unscanned_Debug D$:/Git
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = Rlc\CMakeFiles\rlc.dir
   OBJECT_FILE_DIR = Rlc\CMakeFiles\rlc.dir
-  TARGET_COMPILE_PDB = Rlc\CMakeFiles\rlc.dir\
-  TARGET_PDB = Rlc\rlc.pdb
 
 build Rlc/CMakeFiles/rlc.dir/Rlc_fun.c.obj: C_COMPILER__rlc_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/Rlc_fun.c || cmake_object_order_depends_target_rlc
   DEP_FILE = Rlc\CMakeFiles\rlc.dir\Rlc_fun.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = Rlc\CMakeFiles\rlc.dir
   OBJECT_FILE_DIR = Rlc\CMakeFiles\rlc.dir
-  TARGET_COMPILE_PDB = Rlc\CMakeFiles\rlc.dir\
-  TARGET_PDB = Rlc\rlc.pdb
 
 
 # =============================================================================
@@ -143,10 +136,9 @@ build Rlc/rlc.exe: C_EXECUTABLE_LINKER__rlc_Debug Rlc/CMakeFiles/rlc.dir/main.c.
   OBJECT_DIR = Rlc\CMakeFiles\rlc.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = Rlc\CMakeFiles\rlc.dir\
   TARGET_FILE = Rlc\rlc.exe
   TARGET_IMPLIB = Rlc\librlc.dll.a
-  TARGET_PDB = Rlc\rlc.pdb
+  TARGET_PDB = rlc.exe.dbg
 
 
 #############################################
@@ -218,16 +210,12 @@ build struct_data/list_1/CMakeFiles/list.dir/main.c.obj: C_COMPILER__list_unscan
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\list_1\CMakeFiles\list.dir
   OBJECT_FILE_DIR = struct_data\list_1\CMakeFiles\list.dir
-  TARGET_COMPILE_PDB = struct_data\list_1\CMakeFiles\list.dir\
-  TARGET_PDB = struct_data\list_1\list.pdb
 
 build struct_data/list_1/CMakeFiles/list.dir/list.c.obj: C_COMPILER__list_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/list.c || cmake_object_order_depends_target_list
   DEP_FILE = struct_data\list_1\CMakeFiles\list.dir\list.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\list_1\CMakeFiles\list.dir
   OBJECT_FILE_DIR = struct_data\list_1\CMakeFiles\list.dir
-  TARGET_COMPILE_PDB = struct_data\list_1\CMakeFiles\list.dir\
-  TARGET_PDB = struct_data\list_1\list.pdb
 
 
 # =============================================================================
@@ -243,10 +231,9 @@ build struct_data/list_1/list.exe: C_EXECUTABLE_LINKER__list_Debug struct_data/l
   OBJECT_DIR = struct_data\list_1\CMakeFiles\list.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = struct_data\list_1\CMakeFiles\list.dir\
   TARGET_FILE = struct_data\list_1\list.exe
   TARGET_IMPLIB = struct_data\list_1\liblist.dll.a
-  TARGET_PDB = struct_data\list_1\list.pdb
+  TARGET_PDB = list.exe.dbg
 
 
 #############################################
@@ -290,16 +277,12 @@ build struct_data/list_2/CMakeFiles/program.dir/main.c.obj: C_COMPILER__program_
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\list_2\CMakeFiles\program.dir
   OBJECT_FILE_DIR = struct_data\list_2\CMakeFiles\program.dir
-  TARGET_COMPILE_PDB = struct_data\list_2\CMakeFiles\program.dir\
-  TARGET_PDB = struct_data\list_2\program.pdb
 
 build struct_data/list_2/CMakeFiles/program.dir/variable_list.c.obj: C_COMPILER__program_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/variable_list.c || cmake_object_order_depends_target_program
   DEP_FILE = struct_data\list_2\CMakeFiles\program.dir\variable_list.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\list_2\CMakeFiles\program.dir
   OBJECT_FILE_DIR = struct_data\list_2\CMakeFiles\program.dir
-  TARGET_COMPILE_PDB = struct_data\list_2\CMakeFiles\program.dir\
-  TARGET_PDB = struct_data\list_2\program.pdb
 
 
 # =============================================================================
@@ -315,10 +298,9 @@ build struct_data/list_2/program.exe: C_EXECUTABLE_LINKER__program_Debug struct_
   OBJECT_DIR = struct_data\list_2\CMakeFiles\program.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = struct_data\list_2\CMakeFiles\program.dir\
   TARGET_FILE = struct_data\list_2\program.exe
   TARGET_IMPLIB = struct_data\list_2\libprogram.dll.a
-  TARGET_PDB = struct_data\list_2\program.pdb
+  TARGET_PDB = program.exe.dbg
 
 
 #############################################
@@ -362,16 +344,12 @@ build struct_data/Stack/CMakeFiles/Stack.dir/main.c.obj: C_COMPILER__Stack_unsca
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\Stack\CMakeFiles\Stack.dir
   OBJECT_FILE_DIR = struct_data\Stack\CMakeFiles\Stack.dir
-  TARGET_COMPILE_PDB = struct_data\Stack\CMakeFiles\Stack.dir\
-  TARGET_PDB = struct_data\Stack\Stack.pdb
 
 build struct_data/Stack/CMakeFiles/Stack.dir/Stack-c.c.obj: C_COMPILER__Stack_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/Stack-c.c || cmake_object_order_depends_target_Stack
   DEP_FILE = struct_data\Stack\CMakeFiles\Stack.dir\Stack-c.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\Stack\CMakeFiles\Stack.dir
   OBJECT_FILE_DIR = struct_data\Stack\CMakeFiles\Stack.dir
-  TARGET_COMPILE_PDB = struct_data\Stack\CMakeFiles\Stack.dir\
-  TARGET_PDB = struct_data\Stack\Stack.pdb
 
 
 # =============================================================================
@@ -387,10 +365,9 @@ build struct_data/Stack/Stack.exe: C_EXECUTABLE_LINKER__Stack_Debug struct_data/
   OBJECT_DIR = struct_data\Stack\CMakeFiles\Stack.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = struct_data\Stack\CMakeFiles\Stack.dir\
   TARGET_FILE = struct_data\Stack\Stack.exe
   TARGET_IMPLIB = struct_data\Stack\libStack.dll.a
-  TARGET_PDB = struct_data\Stack\Stack.pdb
+  TARGET_PDB = Stack.exe.dbg
 
 
 #############################################
@@ -434,16 +411,12 @@ build struct_data/Heap/CMakeFiles/Heap.dir/main.c.obj: C_COMPILER__Heap_unscanne
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\Heap\CMakeFiles\Heap.dir
   OBJECT_FILE_DIR = struct_data\Heap\CMakeFiles\Heap.dir
-  TARGET_COMPILE_PDB = struct_data\Heap\CMakeFiles\Heap.dir\
-  TARGET_PDB = struct_data\Heap\Heap.pdb
 
 build struct_data/Heap/CMakeFiles/Heap.dir/Heap.c.obj: C_COMPILER__Heap_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/Heap.c || cmake_object_order_depends_target_Heap
   DEP_FILE = struct_data\Heap\CMakeFiles\Heap.dir\Heap.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\Heap\CMakeFiles\Heap.dir
   OBJECT_FILE_DIR = struct_data\Heap\CMakeFiles\Heap.dir
-  TARGET_COMPILE_PDB = struct_data\Heap\CMakeFiles\Heap.dir\
-  TARGET_PDB = struct_data\Heap\Heap.pdb
 
 
 # =============================================================================
@@ -459,10 +432,9 @@ build struct_data/Heap/Heap.exe: C_EXECUTABLE_LINKER__Heap_Debug struct_data/Hea
   OBJECT_DIR = struct_data\Heap\CMakeFiles\Heap.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = struct_data\Heap\CMakeFiles\Heap.dir\
   TARGET_FILE = struct_data\Heap\Heap.exe
   TARGET_IMPLIB = struct_data\Heap\libHeap.dll.a
-  TARGET_PDB = struct_data\Heap\Heap.pdb
+  TARGET_PDB = Heap.exe.dbg
 
 
 #############################################
@@ -506,16 +478,12 @@ build struct_data/ListStack/CMakeFiles/ListStack.dir/main.c.obj: C_COMPILER__Lis
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\ListStack\CMakeFiles\ListStack.dir
   OBJECT_FILE_DIR = struct_data\ListStack\CMakeFiles\ListStack.dir
-  TARGET_COMPILE_PDB = struct_data\ListStack\CMakeFiles\ListStack.dir\
-  TARGET_PDB = struct_data\ListStack\ListStack.pdb
 
 build struct_data/ListStack/CMakeFiles/ListStack.dir/ListStack.c.obj: C_COMPILER__ListStack_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/ListStack.c || cmake_object_order_depends_target_ListStack
   DEP_FILE = struct_data\ListStack\CMakeFiles\ListStack.dir\ListStack.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\ListStack\CMakeFiles\ListStack.dir
   OBJECT_FILE_DIR = struct_data\ListStack\CMakeFiles\ListStack.dir
-  TARGET_COMPILE_PDB = struct_data\ListStack\CMakeFiles\ListStack.dir\
-  TARGET_PDB = struct_data\ListStack\ListStack.pdb
 
 
 # =============================================================================
@@ -531,10 +499,9 @@ build struct_data/ListStack/ListStack.exe: C_EXECUTABLE_LINKER__ListStack_Debug 
   OBJECT_DIR = struct_data\ListStack\CMakeFiles\ListStack.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = struct_data\ListStack\CMakeFiles\ListStack.dir\
   TARGET_FILE = struct_data\ListStack\ListStack.exe
   TARGET_IMPLIB = struct_data\ListStack\libListStack.dll.a
-  TARGET_PDB = struct_data\ListStack\ListStack.pdb
+  TARGET_PDB = ListStack.exe.dbg
 
 
 #############################################
@@ -578,16 +545,12 @@ build struct_data/ListHeap/CMakeFiles/ListHeap.dir/main.c.obj: C_COMPILER__ListH
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\ListHeap\CMakeFiles\ListHeap.dir
   OBJECT_FILE_DIR = struct_data\ListHeap\CMakeFiles\ListHeap.dir
-  TARGET_COMPILE_PDB = struct_data\ListHeap\CMakeFiles\ListHeap.dir\
-  TARGET_PDB = struct_data\ListHeap\ListHeap.pdb
 
 build struct_data/ListHeap/CMakeFiles/ListHeap.dir/ListHeap.c.obj: C_COMPILER__ListHeap_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/ListHeap.c || cmake_object_order_depends_target_ListHeap
   DEP_FILE = struct_data\ListHeap\CMakeFiles\ListHeap.dir\ListHeap.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = struct_data\ListHeap\CMakeFiles\ListHeap.dir
   OBJECT_FILE_DIR = struct_data\ListHeap\CMakeFiles\ListHeap.dir
-  TARGET_COMPILE_PDB = struct_data\ListHeap\CMakeFiles\ListHeap.dir\
-  TARGET_PDB = struct_data\ListHeap\ListHeap.pdb
 
 
 # =============================================================================
@@ -603,10 +566,9 @@ build struct_data/ListHeap/ListHeap.exe: C_EXECUTABLE_LINKER__ListHeap_Debug str
   OBJECT_DIR = struct_data\ListHeap\CMakeFiles\ListHeap.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = struct_data\ListHeap\CMakeFiles\ListHeap.dir\
   TARGET_FILE = struct_data\ListHeap\ListHeap.exe
   TARGET_IMPLIB = struct_data\ListHeap\libListHeap.dll.a
-  TARGET_PDB = struct_data\ListHeap\ListHeap.pdb
+  TARGET_PDB = ListHeap.exe.dbg
 
 
 #############################################
@@ -630,6 +592,101 @@ build struct_data/ListHeap/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build struct_data/ListHeap/rebuild_cache: phony struct_data/ListHeap/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build struct_data_func/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\struct_data_func && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build struct_data_func/edit_cache: phony struct_data_func/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build struct_data_func/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\struct_data_func && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c -BD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build struct_data_func/rebuild_cache: phony struct_data_func/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target list_opposite
+
+
+#############################################
+# Order-only phony target for list_opposite
+
+build cmake_object_order_depends_target_list_opposite: phony || struct_data_func/List_opposite/CMakeFiles/list_opposite.dir
+
+build struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/main.c.obj: C_COMPILER__list_opposite_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/main.c || cmake_object_order_depends_target_list_opposite
+  DEP_FILE = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir\main.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+  OBJECT_FILE_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+
+build struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/list_opposite.c.obj: C_COMPILER__list_opposite_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/list_opposite.c || cmake_object_order_depends_target_list_opposite
+  DEP_FILE = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir\list_opposite.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+  OBJECT_FILE_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target list_opposite
+
+
+#############################################
+# Link the executable struct_data_func\List_opposite\list_opposite.exe
+
+build struct_data_func/List_opposite/list_opposite.exe: C_EXECUTABLE_LINKER__list_opposite_Debug struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/main.c.obj struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/list_opposite.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = struct_data_func\List_opposite\list_opposite.exe
+  TARGET_IMPLIB = struct_data_func\List_opposite\liblist_opposite.dll.a
+  TARGET_PDB = list_opposite.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build struct_data_func/List_opposite/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\struct_data_func\List_opposite && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build struct_data_func/List_opposite/edit_cache: phony struct_data_func/List_opposite/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build struct_data_func/List_opposite/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\struct_data_func\List_opposite && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c -BD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build struct_data_func/List_opposite/rebuild_cache: phony struct_data_func/List_opposite/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
@@ -656,6 +713,10 @@ build list: phony struct_data/list_1/list.exe
 
 build list.exe: phony struct_data/list_1/list.exe
 
+build list_opposite: phony struct_data_func/List_opposite/list_opposite.exe
+
+build list_opposite.exe: phony struct_data_func/List_opposite/list_opposite.exe
+
 build program: phony struct_data/list_2/program.exe
 
 build program.exe: phony struct_data/list_2/program.exe
@@ -672,7 +733,7 @@ build rlc.exe: phony Rlc/rlc.exe
 #############################################
 # Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace
 
-build all: phony Clion_stu_c.exe Rlc/all struct_data/all
+build all: phony Clion_stu_c.exe Rlc/all struct_data/all struct_data_func/all
 
 # =============================================================================
 
@@ -731,20 +792,34 @@ build struct_data/list_1/all: phony struct_data/list_1/list.exe
 build struct_data/list_2/all: phony struct_data/list_2/program.exe
 
 # =============================================================================
+
+#############################################
+# Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data_func
+
+build struct_data_func/all: phony struct_data_func/List_opposite/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data_func/List_opposite
+
+build struct_data_func/List_opposite/all: phony struct_data_func/List_opposite/list_opposite.exe
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake: phony
+build CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################
