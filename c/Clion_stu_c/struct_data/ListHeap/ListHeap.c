@@ -46,7 +46,7 @@ int popListHeap(HeapList *heapList){
         return -1;
     }
 
-    if(heapList->font==NULL||heapList->rear== NULL){
+    if(heapList->font==NULL&&heapList->rear== NULL){
         printf("и╬ЁЩ╤сапн╙©у\n");
         return -1;
     }
