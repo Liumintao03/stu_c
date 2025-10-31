@@ -1,0 +1,8 @@
+//
+// Created by 35376 on 2025/10/31.
+//
+
+#ifndef CLION_STU_C_LIST_OPPOSITE_H
+#define CLION_STU_C_LIST_OPPOSITE_H
+
+#endif //CLION_STU_C_LIST_OPPOSITE_H
