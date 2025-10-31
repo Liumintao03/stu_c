@@ -28,7 +28,7 @@ int releaseListnode(Listnode *listnode);
 //翻转
 int oppositeListnode(Listnode *listnode);
 //合并
-int uniteListnode(Listnode *listnode1,Listnode *listnode2);
+Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2);
 
 
 

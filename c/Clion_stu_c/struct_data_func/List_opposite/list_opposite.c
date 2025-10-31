@@ -82,8 +82,23 @@ int oppositeListnode(Listnode *listnode){
 
 }
 //合并
-int uniteListnode(Listnode *listnode1,Listnode *listnode2){
-    if(listnode1&&listnode2)
+Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2){
+    if(listnode1==NULL||listnode1->next==NULL){
+        if(listnode2&&listnode2->next){
+            printf("链表1为空,返回链表2");
+            return listnode2;
+        }
+    }
+    if(listnode2==NULL||listnode2->next==NULL){
+        if(listnode1&&listnode1->next){
+            printf("链表2为空,返回链表1");
+            return listnode1;
+        }
+    }
+    Listnode *l1 = listnode1->next;
+    Listnode *l2 = listnode2->next;
+    
+
 
 
 
