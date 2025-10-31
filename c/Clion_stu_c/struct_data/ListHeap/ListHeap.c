@@ -73,10 +73,11 @@ int printHeapListinfo(HeapList *heapList){
         return -1;
     }
     Heap *tmp = heapList->font;
-    for(int i = heapList->count;i>=1;i++){
+    while(tmp!=NULL){
         printf("%d\t",tmp->data);
         tmp = tmp->next;
     }
+    
     printf("´òÓ¡Íê³É\n");
     return 0;
 
