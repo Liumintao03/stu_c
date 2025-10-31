@@ -20,7 +20,13 @@ int main(){
     printListnode(listnode);
     //释放
     releaseListnode(listnode);
-
+    //创建两条链表
+    Listnode *listnode1 = createListnode();
+    Listnode *listnode2 = createListnode();
+    //插入
+    for(int i = 1;i<=10;i+=2){
+        
+    }
 
 
 
