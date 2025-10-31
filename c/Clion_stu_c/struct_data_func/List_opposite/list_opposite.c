@@ -4,18 +4,18 @@
 
 #include "list_opposite.h"
 
-//åˆ›å»ºé“¾è¡¨
+//´´½¨Á´±í
 Listnode *createListnode(){
     Listnode *head = (Listnode *)malloc(sizeof(Listnode));
     memset(head,0,sizeof (Listnode));
     head ->next = NULL;
     return head;
 }
-//æ’å…¥å¤´æ’
+//²åÈëÍ·²å
 int addelementListnode(Listnode *listnode,Element *e){
-    //åˆ¤æ–­åˆæ³•æ€§
+    //ÅĞ¶ÏºÏ·¨ĞÔ
     if(listnode == NULL){
-        printf("è¦æ’å…¥çš„é“¾è¡¨ä¸å­˜åœ¨");
+        printf("Òª²åÈëµÄÁ´±í²»´æÔÚ");
         return -1;
     }
     Listnode *tmp = (Listnode *) malloc(sizeof (Listnode));
@@ -25,11 +25,26 @@ int addelementListnode(Listnode *listnode,Element *e){
     return 0;
 
 }
-//é‡Šæ”¾
-int releaseListnode(Listnode *listnode){
-    //åˆ¤æ–­åˆæ³•æ€§
+//´òÓ¡
+int printListnode(Listnode *listnode){
+    //ÅĞ¶ÏºÏ·¨ĞÔ
     if(listnode == NULL||listnode->next==NULL){
-        printf("è¦é‡Šæ”¾çš„é“¾è¡¨ä¸å­˜åœ¨");
+        printf("Òª´òÓ¡µÄÁ´±í²»´æÔÚ");
+        return -1;
+    }
+    Listnode *tmp = listnode->next;
+    while(tmp!=NULL){
+        printf("%d\t",tmp->data);
+        tmp = tmp->next;
+    }
+    printf("´òÓ¡Íê³É");
+    return 0;
+}
+//ÊÍ·Å
+int releaseListnode(Listnode *listnode){
+    //ÅĞ¶ÏºÏ·¨ĞÔ
+    if(listnode == NULL||listnode->next==NULL){
+        printf("ÒªÊÍ·ÅµÄÁ´±í²»´æÔÚ");
         return -1;
     }
     Listnode *tmp = listnode->next;
@@ -38,25 +53,33 @@ int releaseListnode(Listnode *listnode){
         listnode->next = tmp->next;
         free(tmp);
     }
-    printf("é‡Šæ”¾å®Œæˆ\n");
+    printf("ÊÍ·ÅÍê³É\n");
     return 0;
 
 
 
 }
-//ç¿»è½¬
+//·­×ª
 int oppositeListnode(Listnode *listnode){
-    //åˆ¤æ–­åˆæ³•æ€§
+    //ÅĞ¶ÏºÏ·¨ĞÔ
     if(listnode == NULL||listnode->next==NULL){
-        printf("è¦ç¿»è½¬çš„é“¾è¡¨ä¸å­˜åœ¨");
+        printf("Òª·­×ªµÄÁ´±í²»´æÔÚ");
         return -1;
     }
-    Listnode *first = listnode;
+
+    Listnode *first = NULL;
     Listnode *second = listnode->next;
     Listnode *third = second->next;
-    second->next = first;
+    while(third!=NULL){
+        second->next = first;
+        first = second;
+        second = third;
+        third = third->next;
+    }
+    listnode->next = second;
+    return 0;
 
 }
-//åˆå¹¶
+//ºÏ²¢
 int uniteListnode(Listnode *listnode1,Listnode *listnode2);
 

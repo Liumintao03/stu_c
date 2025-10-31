@@ -1,0 +1,1 @@
+add_executable(list_opposite main.c list_opposite.c)

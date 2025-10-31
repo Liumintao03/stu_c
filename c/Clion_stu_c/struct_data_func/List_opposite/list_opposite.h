@@ -21,6 +21,8 @@ typedef struct Listnode{
 Listnode *createListnode();
 //插入尾插
 int addelementListnode(Listnode *listnode,Element *e);
+//打印
+int printListnode(Listnode *listnode);
 //释放
 int releaseListnode(Listnode *listnode);
 //翻转
