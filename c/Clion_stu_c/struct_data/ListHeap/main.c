@@ -4,10 +4,23 @@
 #include "ListHeap.h"
 
 int main(){
-    //鍒涘缓
+    //创建
     HeapList *heapList = createListHeapInit();
-    
+    //插入
+    for(int i = 1;i<=10;i++){
+        addListHeap(heapList,&i);
+    }
+    //打印
+    printHeapListinfo(heapList);
+    //出队
+    for(int i = 1;i<=heapList->count;i++){
+        popListHeap(heapList);
+    }
 
+    //打印
+    printHeapListinfo(heapList);
+    //释放
+    releaseHeapList(heapList);
 
 
 

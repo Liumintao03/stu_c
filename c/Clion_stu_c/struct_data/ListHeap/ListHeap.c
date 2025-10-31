@@ -4,7 +4,7 @@
 
 #include "ListHeap.h"
 
-//åˆ›å»ºåˆå§‹åŒ–
+//´´½¨³õÊ¼»¯
 HeapList *createListHeapInit(){
     Heap *heap = (Heap *)malloc(sizeof (Heap));
     memset(heap,0,sizeof (Heap));
@@ -17,17 +17,17 @@ HeapList *createListHeapInit(){
     heap->next = NULL;
     return heapList;
 }
-//å¤´æ·»åŠ 
+//Í·Ìí¼Ó
 int addListHeap(HeapList *heapList,Element *e){
-    //åˆ¤æ–­åˆæ³•æ€§
+    //ÅĞ¶ÏºÏ·¨ĞÔ
     if(heapList==NULL){
-        printf("æ·»åŠ é˜Ÿåˆ—ä¸å­˜åœ¨\n");
+        printf("Ìí¼Ó¶ÓÁĞ²»´æÔÚ\n");
         return -1;
     }
     Heap *tmp = (Heap *) malloc(sizeof (Heap));
     tmp->data = *e;
     tmp->next = NULL;
-    if(heapList->font==NULL &&heapList->rear==NULL){//å¼€å§‹æ—¶å€™åˆ›å»º
+    if(heapList->font==NULL &&heapList->rear==NULL){//¿ªÊ¼Ê±ºò´´½¨
         heapList->font = tmp;
         heapList->rear = tmp;
         return 0;
@@ -38,15 +38,15 @@ int addListHeap(HeapList *heapList,Element *e){
     heapList->count++;
     return 0;
 }
-//å°¾å‡ºé˜Ÿ
+//Î²³ö¶Ó
 int popListHeap(HeapList *heapList){
     if(heapList==NULL){
-        printf("åˆ é™¤é˜Ÿåˆ—ä¸å­˜åœ¨\n");
+        printf("É¾³ı¶ÓÁĞ²»´æÔÚ\n");
         return -1;
     }
 
     if(heapList->font==NULL||heapList->rear== NULL){
-        printf("åˆ é™¤é˜Ÿåˆ—ä¸ºç©º\n");
+        printf("É¾³ı¶ÓÁĞÎª¿Õ\n");
         return -1;
     }
     Heap *tmp = heapList->font;
@@ -59,15 +59,15 @@ int popListHeap(HeapList *heapList){
     return 0;
 }
 
-//æ‰“å°
+//´òÓ¡
 int printHeapListinfo(HeapList *heapList){
     if(heapList==NULL){
-        printf("æ‰“å°é˜Ÿåˆ—ä¸å­˜åœ¨\n");
+        printf("´òÓ¡¶ÓÁĞ²»´æÔÚ\n");
         return -1;
     }
 
     if(heapList->font==NULL||heapList->rear== NULL){
-        printf("æ‰“å°é˜Ÿåˆ—ä¸ºç©º\n");
+        printf("´òÓ¡¶ÓÁĞÎª¿Õ\n");
         return -1;
     }
     Heap *tmp = heapList->font;
@@ -75,20 +75,20 @@ int printHeapListinfo(HeapList *heapList){
         printf("%d\t",tmp->data);
         tmp = tmp->next;
     }
-    printf("æ‰“å°å®Œæˆ\n");
+    printf("´òÓ¡Íê³É\n");
     return 0;
 
 
 }
-//é‡Šæ”¾
+//ÊÍ·Å
 int releaseHeapList(HeapList *heapList){
     if(heapList==NULL){
-        printf("é‡Šæ”¾é˜Ÿåˆ—ä¸å­˜åœ¨\n");
+        printf("ÊÍ·Å¶ÓÁĞ²»´æÔÚ\n");
         return -1;
     }
 
     if(heapList->font==NULL||heapList->rear== NULL){
-        printf("é‡Šæ”¾é˜Ÿåˆ—ä¸ºç©º\n");
+        printf("ÊÍ·Å¶ÓÁĞÎª¿Õ\n");
         return -1;
     }
     Heap *tmp = heapList->font;
@@ -96,7 +96,7 @@ int releaseHeapList(HeapList *heapList){
         free(tmp);
         tmp = tmp->next;
     }
-    printf("é‡Šæ”¾å®Œæˆ\n");
+    printf("ÊÍ·ÅÍê³É\n");
     return 0;
 
 
