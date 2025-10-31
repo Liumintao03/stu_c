@@ -12,15 +12,28 @@ int *unitedarr(int *arr1,int len1,int *arr2,int len2){
     int *arr = (int *) malloc(size1+size2);
     int i = 0,j=0,k=0;
     while(i<len1){
-        arr[i+j]==arr1[i];
+        arr[i+j]=arr1[i];
         i++;
     }
     while(j<len2){
-        arr[i+j]==arr[2];
+        arr[i+j]=arr[2];
+        j++;
     }
-    
+    //排个序从小到大
+    for(int n = 0;n<len1+len2;n++){
+        int min = arr[n];
+        int max = arr[n];
+        for(int m = n;m<len1+len2;m++){
+            if(arr[m]<arr[n]){
+                min = arr[m];
+                max = arr[n];
+                arr[m] = max;
+                arr[n] = min;
+            }
+        }
+    }
 
-
+    return arr;
 
 }
 
