@@ -15,6 +15,8 @@ int main(){
     //³ö¶Ó
     for(int i = 1;i<=heapList->count;i++){
         popListHeap(heapList);
+        printHeapListinfo(heapList);
+
     }
 
     //´òÓ¡
