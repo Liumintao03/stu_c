@@ -28,13 +28,14 @@ int addListHeap(HeapList *heapList,Element *e){
     if(heapList->font==NULL &&heapList->rear==NULL){//开始时候创建
         heapList->font = tmp;
         heapList->rear = tmp;
+        heapList->count++;
+
         return 0;
     }
 
     heapList->rear->next = tmp;
     heapList->rear = tmp;
     heapList->count++;
-    printf("%d\n",heapList->count);
     return 0;
 }
 //尾出队
@@ -57,7 +58,6 @@ int popListHeap(HeapList *heapList){
     }
 
     heapList->count--;
-    printHeapListinfo(heapList);
     return 0;
 }
 

@@ -14,7 +14,6 @@ int main(){
     printHeapListinfo(heapList);
     //³ö¶Ó
     int n = heapList->count;
-    printf("%d\n",n);
     for(int i = 1;i<=n;i++){
         popListHeap(heapList);
 
