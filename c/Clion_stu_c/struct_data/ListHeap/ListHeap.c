@@ -6,15 +6,13 @@
 
 //创建初始化
 HeapList *createListHeapInit(){
-    Heap *heap = (Heap *)malloc(sizeof (Heap));
-    memset(heap,0,sizeof (Heap));
+
     HeapList *heapList = (HeapList *)malloc(sizeof(HeapList));
     memset(heapList,0,sizeof (HeapList));
     heapList->count==0;
-    heapList->font = heap;
-    heapList->rear= heap;
-    heap->data = 0;
-    heap->next = NULL;
+    heapList->font = NULL;
+    heapList->rear= NULL;
+
     return heapList;
 }
 //头添加
