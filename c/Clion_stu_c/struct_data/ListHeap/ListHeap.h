@@ -30,7 +30,7 @@ int popListHeap(HeapList *heapList);
 //打印
 int printHeapListinfo(HeapList *heapList);
 //释放
-int releaseHeapList(HeapList *heapList)
+int releaseHeapList(HeapList *heapList);
 
 
 
