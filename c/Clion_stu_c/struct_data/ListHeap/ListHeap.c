@@ -40,7 +40,6 @@ int addListHeap(HeapList *heapList,Element *e){
 }
 //尾出队
 int popListHeap(HeapList *heapList){
-    printHeapListinfo(heapList);
 
     if(heapList==NULL){
         printf("删除队列不存在\n");
@@ -57,6 +56,7 @@ int popListHeap(HeapList *heapList){
     if(heapList->font == NULL){
         heapList->rear == NULL;
     }
+
     heapList->count--;
     return 0;
 }
@@ -77,7 +77,7 @@ int printHeapListinfo(HeapList *heapList){
         printf("%d\t",tmp->data);
         tmp = tmp->next;
     }
-    
+
     printf("打印完成\n");
     return 0;
 
