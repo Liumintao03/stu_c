@@ -83,9 +83,9 @@ int oppositeListnode(Listnode *listnode){
 }
 //ºÏ²¢
 int uniteListnode(Listnode *listnode1,Listnode *listnode2){
+    if(listnode1&&listnode2)
 
 
 
-    
 }
 
