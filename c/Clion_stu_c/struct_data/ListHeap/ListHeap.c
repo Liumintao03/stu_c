@@ -91,8 +91,13 @@ int releaseHeapList(HeapList *heapList){
         printf("释放队列为空\n");
         return -1;
     }
-    
-
+    Heap *tmp = heapList->font;
+    for(int i = 1;i<=heapList->count;i++){
+        free(tmp);
+        tmp = tmp->next;
+    }
+    printf("释放完成\n");
+    return 0;
 
 
 }
