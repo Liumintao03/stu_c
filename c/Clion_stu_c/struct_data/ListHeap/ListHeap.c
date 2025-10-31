@@ -54,7 +54,7 @@ int popListHeap(HeapList *heapList){
     heapList->font==heapList->font->next;
     free(tmp);
     if(heapList->font == NULL){
-        heapList->rear == NULL; 
+        heapList->rear == NULL;
     }
 
     heapList->count--;
