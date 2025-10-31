@@ -24,7 +24,7 @@ typedef struct HeapList{
 //创建初始化
 HeapList *createListHeapInit();
 //头添加
-int addListHeap(HeapList *heapList);
+int addListHeap(HeapList *heapList,Element *e);
 //尾出队
 int popListHeap(HeapList *heapList);
 //打印
