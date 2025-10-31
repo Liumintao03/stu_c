@@ -11,10 +11,14 @@ int *unitedarr(int *arr1,int len1,int *arr2,int len2){
     int size2 = sizeof(arr2[0])*len2;
     int *arr = (int *) malloc(size1+size2);
     int i = 0,j=0,k=0;
-    while(i<((len1>len2)?len1:len2)){
-        arr[i+j==]arr1
+    while(i<len1){
+        arr[i+j]==arr1[i];
+        i++;
     }
-
+    while(j<len2){
+        arr[i+j]==arr[2];
+    }
+    
 
 
 
