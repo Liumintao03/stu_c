@@ -123,7 +123,7 @@ Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2){
                 tmp1->next = tmp2;
                 tmp2->next=NULL;
                 p->next = tmp1;
-                p = p->next;
+                p = p->next->next;
                 l1 = l1->next;
                 l2 = l2->next;
             }
@@ -133,7 +133,7 @@ Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2){
                 tmp1->next = tmp2;
                 tmp2->next=NULL;
                 p->next = tmp1;
-                p = p->next;
+                p = p->next->next;
                 l1 = l1->next;
                 l2 = l2->next;
             }

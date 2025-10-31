@@ -647,6 +647,12 @@ build struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/list_opposite.
   OBJECT_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
   OBJECT_FILE_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
 
+build struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/arr.c.obj: C_COMPILER__list_opposite_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/arr.c || cmake_object_order_depends_target_list_opposite
+  DEP_FILE = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir\arr.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+  OBJECT_FILE_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target list_opposite
@@ -655,7 +661,7 @@ build struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/list_opposite.
 #############################################
 # Link the executable struct_data_func\List_opposite\list_opposite.exe
 
-build struct_data_func/List_opposite/list_opposite.exe: C_EXECUTABLE_LINKER__list_opposite_Debug struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/main.c.obj struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/list_opposite.c.obj
+build struct_data_func/List_opposite/list_opposite.exe: C_EXECUTABLE_LINKER__list_opposite_Debug struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/main.c.obj struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/list_opposite.c.obj struct_data_func/List_opposite/CMakeFiles/list_opposite.dir/arr.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = struct_data_func\List_opposite\CMakeFiles\list_opposite.dir

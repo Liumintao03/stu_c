@@ -27,9 +27,10 @@ int printListnode(Listnode *listnode);
 int releaseListnode(Listnode *listnode);
 //翻转
 int oppositeListnode(Listnode *listnode);
-//合并
+//有序链表合并
 Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2);
-
+//有序数组合并
+int *unitedarr(int *arr1,int *arr2);
 
 
 #endif //CLION_STU_C_LIST_OPPOSITE_H

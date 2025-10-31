@@ -1,1 +1,1 @@
-add_executable(list_opposite main.c list_opposite.c)
+add_executable(list_opposite main.c list_opposite.c arr.c)

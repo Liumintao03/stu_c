@@ -37,6 +37,10 @@ int main(){
     Listnode *newListnode =  uniteListnode(listnode1,listnode2);
     //¥Ú”°
     printListnode(newListnode);
+    // Õ∑≈
+    releaseListnode(listnode1);
+    releaseListnode(listnode2);
+    releaseListnode(newListnode);
 
 
 
