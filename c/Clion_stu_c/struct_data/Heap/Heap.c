@@ -57,10 +57,10 @@ int printHeapinfo(Heap *heap){
         return -1;
     }
     int i = heap->front;
-    do{
-        printf("下标为%d,元素为%d\t",i,heap->data[i]);
+    while(i!=heap->rear){
+        printf("%d\t",heap->data[i+1]);
         i = (i+1)%MAXSIZE;
-    }while(i!=heap->rear);
+    }
 
     printf("打印完成\n");
     return 0;
