@@ -30,7 +30,7 @@ int oppositeListnode(Listnode *listnode);
 //有序链表合并
 Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2);
 //有序数组合并
-int *unitedarr(int *arr1,int *arr2);
+int *unitedarr(int *arr1,int len1,int *arr2,int len2);
 
 
 #endif //CLION_STU_C_LIST_OPPOSITE_H
