@@ -100,33 +100,39 @@ Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2){
     Listnode *newListnode = createListnode();
     Listnode *p = newListnode;
     while(l1!=NULL||l2!=NULL){
-        Listnode *tmp = (Listnode *) malloc(sizeof (Listnode));
+        Listnode *tmp1 = (Listnode *) malloc(sizeof (Listnode));
+
         if(l1==NULL){
-            tmp->data = l2->data;
-            tmp->next = NULL;
-            p->next = tmp->next;
+            tmp1->data = l2->data;
+            tmp1->next = NULL;
+            p->next = tmp1;
             p = p->next;
             l2 = l2->next;
         } else if(l2 ==NULL){
-            tmp->data = l1->data;
-            tmp->next = l1;
-            p->next = tmp->next;
+            tmp1->data = l1->data;
+            tmp1->next = l1;
+            p->next = tmp1;
             p = p->next;
             l2 = l1->next;
         }
         else if(l1&&l2){
+            Listnode *tmp2 = (Listnode *) malloc(sizeof (Listnode));
             if(l1->data>=l2->data){
-                tmp->data = l1->data;
-                tmp->next = NULL;
-                p->next = tmp->next;
+                tmp1->data = l1->data;
+                tmp2->data = l2->data;
+                tmp1->next = tmp2;
+                tmp2->next=NULL;
+                p->next = tmp1;
                 p = p->next;
                 l1 = l1->next;
                 l2 = l2->next;
             }
             else if(l2->data>=l1->data){
-                tmp->data = l2->data;
-                tmp->next = NULL;
-                p->next = tmp->next;
+                tmp1->data = l2->data;
+                tmp2->data = l1->data;
+                tmp1->next = tmp2;
+                tmp2->next=NULL;
+                p->next = tmp1;
                 p = p->next;
                 l1 = l1->next;
                 l2 = l2->next;
@@ -139,6 +145,6 @@ Listnode *uniteListnode(Listnode *listnode1,Listnode *listnode2){
 
 
 
-
+    return newListnode;
 }
 

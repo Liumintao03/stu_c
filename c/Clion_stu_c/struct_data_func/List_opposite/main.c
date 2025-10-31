@@ -24,9 +24,20 @@ int main(){
     Listnode *listnode1 = createListnode();
     Listnode *listnode2 = createListnode();
     //插入
-    for(int i = 1;i<=10;i+=2){
-        
+    for(int i = 0;i<=13;i+=3){
+        addelementListnode(listnode1,&i);
     }
+    for(int i = 1;i<=14;i+=3){
+        addelementListnode(listnode2,&i);
+    }
+    //打印
+    printListnode(listnode1);
+    printListnode(listnode2);
+    //联合
+    Listnode *newListnode =  uniteListnode(listnode1,listnode2);
+    //打印
+    printListnode(newListnode);
+
 
 
 
