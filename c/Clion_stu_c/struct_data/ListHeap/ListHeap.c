@@ -49,10 +49,10 @@ int popListHeap(HeapList *heapList){
         return -1;
     }
     Heap *tmp = heapList->font;
-    heapList->font==heapList->font->next;
+    heapList->font=heapList->font->next;
     free(tmp);
     if(heapList->font == NULL){
-        heapList->rear == NULL;
+        heapList->rear = NULL;
     }
 
     heapList->count--;
