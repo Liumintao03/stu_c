@@ -26,8 +26,30 @@ typedef struct HashTable{
     int size;
     //表的指针数组,头指针就是hashtable
     struct HashTable **hashtable;
-
 }HashTable;
+
+//1.初始化表,返回表地址
+ HashTable *createinithasbtable(int size);
+
+ //2.插入元素,传入表,插入元素的键值,元素的值
+ int insertHashElement(HashTable *hashTable,int key,Element e);
+
+ //3.删除元素
+ int deletHashElement(HashTable *hashTable,int key);
+
+ //4.查找
+ int searchHash(HashTable *hashTable,int key);
+
+ //5.释放
+ int releaseHash(HashTable *hashTable);
+
+
+
+
+
+
+
+
 
 
 
