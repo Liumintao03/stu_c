@@ -152,16 +152,28 @@ int printHashinfo(HashTable *hashTable){
     }
     //进行哈希表的循环
     for(int i = 0;i<hashTable->size;i++){
-        
+        HashNode *tmp  = hashTable->table[i];
+        int i = 0;
+        int count = 0;
+        printf("table[%d]:",i);
+        while(tmp!=NULL){
+            printf("key:%d->value->%d\t",tmp->value,tmp->value);
+        }
+        printf("这个表节点的元素有%d个\n",count);
     }
-
-
-
-
+    return 0;
 }
 
 //6.释放
-int releaseHash(HashTable *hashTable);
+int releaseHash(HashTable *hashTable){
+    //判断元素合法性
+    if(hashTable==NULL){
+        printf("要释放的哈希表不存在\n");
+        return -1;
+    }
+    //每个节点都要释放
+    
+}
 
 
 
