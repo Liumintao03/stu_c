@@ -40,7 +40,10 @@ typedef struct HashTable{
  //4.查找
  int searchHash(HashTable *hashTable,int key);
 
- //5.释放
+ //5.遍历
+ int printHashinfo(HashTable *hashTable);
+
+ //6.释放
  int releaseHash(HashTable *hashTable);
 
 

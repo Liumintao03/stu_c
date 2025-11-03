@@ -84,16 +84,85 @@ int deletHashElement(HashTable *hashTable,int key){
     int index = funcHash(key,hashTable->size);
     //定下链表头的节点,用来进行对链表的操作
     HashNode *tmp = hashTable->table[index];
+    //判断要删除的是否是头结点
+    if(tmp->key==key){
+        hashTable->table[index]==NULL;
+        return 0;
+    }
     //进行这个哈希表的对应行的链表遍历,直到找到要删除的节点
     while(tmp!=NULL){
-        if()
+        if(tmp->key==key){
+            HashNode *freenode = tmp->next;
+            tmp->next = freenode->next;
+            free(freenode);
+            return 0;
+
+        }
+        if(tmp->next==NULL){
+            printf("找不到要删除的节点\n");
+            return -1;
+        }
+        tmp = tmp->next;
     }
+    return -1;
 }
 
 //4.查找
-int searchHash(HashTable *hashTable,int key);
+int searchHash(HashTable *hashTable,int key){
+    //判断元素合法性
+    if(hashTable==NULL){
+        printf("要查找元素的哈希表不存在\n");
+        return -1;
+    }
+    //记录是在表的第几行的链表
+    int index = funcHash(key,hashTable->size);
+    //定下链表头的节点,用来进行对链表的操作
+    HashNode *tmp = hashTable->table[index];
+    //判断是否是头结点
+    if(tmp->key==key){
+        printf("键值为%d的元素值为%d\n",key,tmp->value);
+        return 0;
+    }
+    //进行这个哈希表的对应行的链表遍历,直到找到目标节点
+    while(tmp!=NULL){
+        if(tmp->key==key){
+            printf("键值为%d的元素值为%d\n",key,tmp->value);
+            return 0;
 
-//5.释放
+        }
+        if(tmp->next==NULL){
+            printf("找不到要查找的节点\n");
+            return -1;
+        }
+        tmp = tmp->next;
+    }
+    return -1;
+
+
+
+}
+
+
+//5.遍历
+int printHashinfo(HashTable *hashTable){
+    //判断元素合法性
+    if(hashTable==NULL){
+        printf("要查找元素的哈希表不存在\n");
+        return -1;
+    }
+    //进行哈希表的循环
+    for(int i = 0;i<hashTable->size;i++){
+        
+    }
+
+
+
+
+}
+
+//6.释放
 int releaseHash(HashTable *hashTable);
+
+
 
 
