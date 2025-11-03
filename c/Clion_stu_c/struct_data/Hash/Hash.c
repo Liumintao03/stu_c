@@ -43,6 +43,8 @@ int insertHashElement(HashTable *hashTable,int key,Element e){
     newNode->key = key;
     newNode->value = e;
     newNode->next = NULL;
+    //判断是否有相同key节点,有的话直接改变值并且释放新建节点
+    
 
 
 
