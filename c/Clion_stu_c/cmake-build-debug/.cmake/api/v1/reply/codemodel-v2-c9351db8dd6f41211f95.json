@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						10
+						10,
+						12
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -36,7 +37,7 @@
 					"source" : "Rlc",
 					"targetIndexes" : 
 					[
-						9
+						10
 					]
 				},
 				{
@@ -72,7 +73,7 @@
 					"source" : "struct_data/list_1",
 					"targetIndexes" : 
 					[
-						6
+						7
 					]
 				},
 				{
@@ -87,7 +88,7 @@
 					"source" : "struct_data/list_2",
 					"targetIndexes" : 
 					[
-						8
+						9
 					]
 				},
 				{
@@ -192,7 +193,37 @@
 					"source" : "struct_data_func/List_opposite",
 					"targetIndexes" : 
 					[
-						7
+						8
+					]
+				},
+				{
+					"build" : "C_homework",
+					"childIndexes" : 
+					[
+						13
+					],
+					"jsonFile" : "directory-C_homework-Debug-a4e510ab7db42b1ca5c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C_homework"
+				},
+				{
+					"build" : "C_homework/feiponaqi",
+					"jsonFile" : "directory-C_homework.feiponaqi-Debug-3e32081e89b468e65715.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "C_homework/feiponaqi",
+					"targetIndexes" : 
+					[
+						6
 					]
 				}
 			],
@@ -213,7 +244,9 @@
 						8,
 						9,
 						10,
-						11
+						11,
+						12,
+						13
 					],
 					"name" : "Clion_stu_c",
 					"targetIndexes" : 
@@ -227,7 +260,8 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					]
 				}
 			],
@@ -276,6 +310,13 @@
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 13,
+					"id" : "fb::@d7333aa7e6163c0ea305",
+					"jsonFile" : "target-fb-Debug-25a4ad3ec7ae22005e1d.json",
+					"name" : "fb",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 3,
 					"id" : "list::@ae960f820d78c64a8712",
 					"jsonFile" : "target-list-Debug-e3ea1f14f4b14ee29b14.json",
@@ -309,7 +350,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace",
+		"build" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug",
 		"source" : "D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c"
 	},
 	"version" : 

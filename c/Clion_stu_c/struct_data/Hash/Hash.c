@@ -175,13 +175,10 @@ int releaseHash(HashTable *hashTable) {
         HashNode *tmp = hashTable->table[i];
         //遍历每个节点
         while (tmp != NULL) {
-            //定下tmp的下一个节点
-            HashNode *freeNode = tmp->next;
-            tmp = freeNode->next;
-            if(freeNode!=NULL){
-                free(freeNode);
-            }
-
+            //定下要释放的节点
+            HashNode *freeNode = tmp;
+            tmp = tmp->next;
+            free(freeNode);
         }
     }
     //此时tmp指向了NULL

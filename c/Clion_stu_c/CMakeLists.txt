@@ -11,3 +11,6 @@ add_subdirectory(Rlc)
 add_subdirectory(struct_data)
 
 add_subdirectory(struct_data_func)
+
+
+add_subdirectory(C_homework)

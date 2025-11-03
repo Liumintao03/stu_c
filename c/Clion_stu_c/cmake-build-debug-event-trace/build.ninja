@@ -762,6 +762,95 @@ build struct_data_func/List_opposite/CMakeFiles/rebuild_cache.util: CUSTOM_COMMA
 build struct_data_func/List_opposite/rebuild_cache: phony struct_data_func/List_opposite/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build C_homework/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\C_homework && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build C_homework/edit_cache: phony C_homework/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build C_homework/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\C_homework && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c -BD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build C_homework/rebuild_cache: phony C_homework/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/C_homework/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target fb
+
+
+#############################################
+# Order-only phony target for fb
+
+build cmake_object_order_depends_target_fb: phony || C_homework/feiponaqi/CMakeFiles/fb.dir
+
+build C_homework/feiponaqi/CMakeFiles/fb.dir/feibonaqi.c.obj: C_COMPILER__fb_unscanned_Debug D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/C_homework/feiponaqi/feibonaqi.c || cmake_object_order_depends_target_fb
+  DEP_FILE = C_homework\feiponaqi\CMakeFiles\fb.dir\feibonaqi.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = C_homework\feiponaqi\CMakeFiles\fb.dir
+  OBJECT_FILE_DIR = C_homework\feiponaqi\CMakeFiles\fb.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target fb
+
+
+#############################################
+# Link the executable C_homework\feiponaqi\fb.exe
+
+build C_homework/feiponaqi/fb.exe: C_EXECUTABLE_LINKER__fb_Debug C_homework/feiponaqi/CMakeFiles/fb.dir/feibonaqi.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = C_homework\feiponaqi\CMakeFiles\fb.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C_homework\feiponaqi\fb.exe
+  TARGET_IMPLIB = C_homework\feiponaqi\libfb.dll.a
+  TARGET_PDB = fb.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build C_homework/feiponaqi/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\C_homework\feiponaqi && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build C_homework/feiponaqi/edit_cache: phony C_homework/feiponaqi/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build C_homework/feiponaqi/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace\C_homework\feiponaqi && "D:\Tools\CLion 2024.1.6\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c -BD:\Git\liumintao_stu\liumintao_stu\c\Clion_stu_c\cmake-build-debug-event-trace"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build C_homework/feiponaqi/rebuild_cache: phony C_homework/feiponaqi/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Clion_stu_c: phony Clion_stu_c.exe
@@ -785,6 +874,10 @@ build ListStack.exe: phony struct_data/ListStack/ListStack.exe
 build Stack: phony struct_data/Stack/Stack.exe
 
 build Stack.exe: phony struct_data/Stack/Stack.exe
+
+build fb: phony C_homework/feiponaqi/fb.exe
+
+build fb.exe: phony C_homework/feiponaqi/fb.exe
 
 build list: phony struct_data/list_1/list.exe
 
@@ -810,7 +903,21 @@ build rlc.exe: phony Rlc/rlc.exe
 #############################################
 # Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace
 
-build all: phony Clion_stu_c.exe Rlc/all struct_data/all struct_data_func/all
+build all: phony Clion_stu_c.exe Rlc/all struct_data/all struct_data_func/all C_homework/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/C_homework
+
+build C_homework/all: phony C_homework/feiponaqi/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/C_homework/feiponaqi
+
+build C_homework/feiponaqi/all: phony C_homework/feiponaqi/fb.exe
 
 # =============================================================================
 
@@ -896,14 +1003,14 @@ build struct_data_func/List_opposite/all: phony struct_data_func/List_opposite/l
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Hash/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/C_homework/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/C_homework/feiponaqi/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Hash/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Hash/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake: phony
+build CMakeCache.txt CMakeFiles/3.28.6/CMakeCCompiler.cmake CMakeFiles/3.28.6/CMakeRCCompiler.cmake CMakeFiles/3.28.6/CMakeSystem.cmake D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/C_homework/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/C_homework/feiponaqi/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/Rlc/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Hash/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Heap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListHeap/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/ListStack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/Stack/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_1/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data/list_2/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/CMakeLists.txt D$:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/struct_data_func/List_opposite/CMakeLists.txt D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Tools/CLion$ 2024.1.6/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################

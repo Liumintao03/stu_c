@@ -32,3 +32,8 @@ D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data_f
 D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data_func/List_opposite/CMakeFiles/list_opposite.dir
 D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data_func/List_opposite/CMakeFiles/edit_cache.dir
 D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/struct_data_func/List_opposite/CMakeFiles/rebuild_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/C_homework/CMakeFiles/edit_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/C_homework/CMakeFiles/rebuild_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/C_homework/feiponaqi/CMakeFiles/fb.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/C_homework/feiponaqi/CMakeFiles/edit_cache.dir
+D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug/C_homework/feiponaqi/CMakeFiles/rebuild_cache.dir

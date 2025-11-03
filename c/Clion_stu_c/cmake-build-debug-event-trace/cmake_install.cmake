@@ -52,6 +52,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data_func/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/C_homework/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
