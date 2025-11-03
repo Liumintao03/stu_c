@@ -43,8 +43,13 @@ int insertHashElement(HashTable *hashTable,int key,Element e){
     newNode->key = key;
     newNode->value = e;
     newNode->next = NULL;
+    //如果这个地方没有节点,直接插入
+    if(hashTable->table[index]==NULL){
+        hashTable->table[index]
+    }
+
     //判断是否有相同key节点,有的话直接改变值并且释放新建节点
-    
+
 
 
 
