@@ -20,7 +20,7 @@ int fbnq1(int n){
 
 }
 
-//数组
+//思路为数组+临长变量
 int fbnq2(int n){
     if(n==1||n==2){
         return 1;
@@ -28,7 +28,7 @@ int fbnq2(int n){
 
     int arr[n+1];
     arr[1] = 1;
-    arr[2] = 2;
+    arr[2] = 1;
     for(int i = 3;i<=n;i++){
         int res = arr[i-1]+arr[i-2];
         arr[i] = res;
