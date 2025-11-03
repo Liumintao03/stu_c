@@ -46,7 +46,6 @@ int insertHashElement(HashTable *hashTable, int key, Element e) {
     if (hashTable->table[index] == NULL) {
         //这个指针数组的这一个元素存放新的节点
         hashTable->table[index] = newNode;
-        searchHash(hashTable,key);
         return 0;
     } else {//说明这个指针存放了,如果要插入得插在这个后面,或者改变后面相同key的值
         //开始时标记头结点,随后使用这个tmp指针来进行操作
@@ -56,14 +55,12 @@ int insertHashElement(HashTable *hashTable, int key, Element e) {
             //判断是否有相同key节点,有的话直接改变值并且释放新建节点
             if (tmp->key == key) {
                 tmp->value = e;
-                searchHash(hashTable,key);
 
                 return 0;
             }
             //在里面判断tmp是否走到最后一个有效节点,在外面判断的话,无法找到前一个节点,导致无法插入
             if (tmp->next == NULL) {
                 break;
-                searchHash(hashTable,key);
 
             }
             //刷新节点
@@ -152,12 +149,13 @@ int printHashinfo(HashTable *hashTable) {
     //进行哈希表的循环
     for (int i = 0; i < hashTable->size; i++) {
         HashNode *tmp = hashTable->table[i];
-        int i = 0;
+
         int count = 0;
         printf("table[%d]:", i);
         while (tmp != NULL) {
             printf("key:%d->value->%d\t", tmp->value, tmp->value);
             tmp=tmp->next;
+            count++;
         }
         printf("\n这个表节点的元素有%d个\n", count);
     }
