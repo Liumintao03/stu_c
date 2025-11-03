@@ -15,12 +15,17 @@ HashTable *createinithasbtable(int size){
         printf("申请哈希表失败");
         return NULL;
     }
-     //确认表大小
-     
+    //确认表大小
+    hashTable->size = size;
+    //申请哈希表空间大小
+    hashTable->table = (HashNode**) malloc(sizeof (HashNode)*size);
+    memset(hashTable->table,0,sizeof (HashNode)*size);
+    return hashTable;
+}
 
-
-
-
+//计算位置函数
+static int funcHash(int key,int size){
+    
 }
 
 //2.插入元素,传入表,插入元素的键值,元素的值

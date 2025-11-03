@@ -25,7 +25,7 @@ typedef struct HashTable{
     //大小
     int size;
     //表的指针数组,头指针就是hashtable
-    struct HashTable **hashtable;
+    struct HashTable **table;
 }HashTable;
 
 //1.初始化表,返回表地址
