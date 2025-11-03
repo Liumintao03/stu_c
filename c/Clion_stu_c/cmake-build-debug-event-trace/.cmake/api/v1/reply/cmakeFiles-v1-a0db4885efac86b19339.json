@@ -131,6 +131,9 @@
 			"path" : "struct_data/ListHeap/CMakeLists.txt"
 		},
 		{
+			"path" : "struct_data/Hash/CMakeLists.txt"
+		},
+		{
 			"path" : "struct_data_func/CMakeLists.txt"
 		},
 		{

@@ -67,3 +67,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/ListHeap/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Git/liumintao_stu/liumintao_stu/c/Clion_stu_c/cmake-build-debug-event-trace/struct_data/Hash/cmake_install.cmake")
+endif()
+

@@ -1,0 +1,1 @@
+add_executable(Hash main.c Hash.c)
