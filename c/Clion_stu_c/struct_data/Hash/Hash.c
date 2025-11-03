@@ -5,101 +5,104 @@
 #include "Hash.h"
 
 
-
-//1.åˆå§‹åŒ–è¡¨,è¿”å›è¡¨åœ°å€
-HashTable *createinithasbtable(int size){
-    //ç”³è¯·å“ˆå¸Œè¡¨
-    HashTable *hashTable = (HashTable *) malloc(sizeof (HashTable));
-    //åˆ¤æ–­æ˜¯å¦ç”³è¯·æˆåŠŸ
-    if(hashTable==NULL){
-        printf("ç”³è¯·å“ˆå¸Œè¡¨å¤±è´¥\n");
+//1.³õÊ¼»¯±í,·µ»Ø±íµØÖ·
+HashTable *createinithasbtable(int size) {
+    //ÉêÇë¹şÏ£±í
+    HashTable *hashTable = (HashTable *) malloc(sizeof(HashTable));
+    //ÅĞ¶ÏÊÇ·ñÉêÇë³É¹¦
+    if (hashTable == NULL) {
+        printf("ÉêÇë¹şÏ£±íÊ§°Ü\n");
         return NULL;
     }
-    //ç¡®è®¤è¡¨å¤§å°
+    //È·ÈÏ±í´óĞ¡
     hashTable->size = size;
-    //ç”³è¯·å“ˆå¸Œè¡¨ç©ºé—´å¤§å°
-    hashTable->table = (HashNode**) malloc(sizeof (HashNode)*size);
-    memset(hashTable->table,0,sizeof (HashNode)*size);
+    //ÉêÇë¹şÏ£±í¿Õ¼ä´óĞ¡
+    hashTable->table = (HashNode **) malloc(sizeof(HashNode) * size);
+    memset(hashTable->table, 0, sizeof(HashNode) * size);
     return hashTable;
 }
 
-//è®¡ç®—ä½ç½®å‡½æ•°
-static int funcHash(int key,int size){
-    return key%size;
+//¼ÆËãÎ»ÖÃº¯Êı
+static int funcHash(int key, int size) {
+    return key % size;
 }
 
-//2.æ’å…¥å…ƒç´ ,ä¼ å…¥è¡¨,æ’å…¥å…ƒç´ çš„é”®å€¼,å…ƒç´ çš„å€¼
-int insertHashElement(HashTable *hashTable,int key,Element e){
-    //éªŒè¯å…ƒç´ åˆæ³•æ€§
-    if(hashTable == NULL){
-        printf("è¦æ’å…¥å…ƒç´ çš„å“ˆå¸Œè¡¨ä¸ºç©º\n");
+//2.²åÈëÔªËØ,´«Èë±í,²åÈëÔªËØµÄ¼üÖµ,ÔªËØµÄÖµ
+int insertHashElement(HashTable *hashTable, int key, Element e) {
+    //ÑéÖ¤ÔªËØºÏ·¨ĞÔ
+    if (hashTable == NULL) {
+        printf("Òª²åÈëÔªËØµÄ¹şÏ£±íÎª¿Õ\n");
         return -1;
     }
-    //æ’å…¥
-    //æ‰¾åˆ°æ’å…¥èŠ‚ç‚¹
-    int index = funcHash(key,hashTable->size);
-    //åˆ›å»ºæ–°èŠ‚ç‚¹
-    HashNode *newNode = (HashNode *)malloc(sizeof (HashNode));
+    //²åÈë
+    //ÕÒµ½²åÈë½Úµã
+    int index = funcHash(key, hashTable->size);
+    //´´½¨ĞÂ½Úµã
+    HashNode *newNode = (HashNode *) malloc(sizeof(HashNode));
     newNode->key = key;
     newNode->value = e;
     newNode->next = NULL;
-    //å¦‚æœè¿™ä¸ªåœ°æ–¹æ²¡æœ‰èŠ‚ç‚¹,ç›´æ¥æ’å…¥
-    if(hashTable->table[index]==NULL){
-        //è¿™ä¸ªæŒ‡é’ˆæ•°ç»„çš„è¿™ä¸€ä¸ªå…ƒç´ å­˜æ”¾æ–°çš„èŠ‚ç‚¹
+    //Èç¹ûÕâ¸öµØ·½Ã»ÓĞ½Úµã,Ö±½Ó²åÈë
+    if (hashTable->table[index] == NULL) {
+        //Õâ¸öÖ¸ÕëÊı×éµÄÕâÒ»¸öÔªËØ´æ·ÅĞÂµÄ½Úµã
         hashTable->table[index] = newNode;
+        searchHash(hashTable,key);
         return 0;
-    }
-    else{//è¯´æ˜è¿™ä¸ªæŒ‡é’ˆå­˜æ”¾äº†,å¦‚æœè¦æ’å…¥å¾—æ’åœ¨è¿™ä¸ªåé¢,æˆ–è€…æ”¹å˜åé¢ç›¸åŒkeyçš„å€¼
-        //å¼€å§‹æ—¶æ ‡è®°å¤´ç»“ç‚¹,éšåä½¿ç”¨è¿™ä¸ªtmpæŒ‡é’ˆæ¥è¿›è¡Œæ“ä½œ
+    } else {//ËµÃ÷Õâ¸öÖ¸Õë´æ·ÅÁË,Èç¹ûÒª²åÈëµÃ²åÔÚÕâ¸öºóÃæ,»òÕß¸Ä±äºóÃæÏàÍ¬keyµÄÖµ
+        //¿ªÊ¼Ê±±ê¼ÇÍ·½áµã,ËæºóÊ¹ÓÃÕâ¸ötmpÖ¸ÕëÀ´½øĞĞ²Ù×÷
         HashNode *tmp = hashTable->table[index];
-        while(tmp!=NULL)//ä»¥è¿™ä¸ªèŠ‚ç‚¹æ¥åˆ¤æ–­é“¾è¡¨æ˜¯å¦è¿˜å­˜åœ¨èŠ‚ç‚¹
+        while (tmp != NULL)//ÒÔÕâ¸ö½ÚµãÀ´ÅĞ¶ÏÁ´±íÊÇ·ñ»¹´æÔÚ½Úµã
         {
-            //åˆ¤æ–­æ˜¯å¦æœ‰ç›¸åŒkeyèŠ‚ç‚¹,æœ‰çš„è¯ç›´æ¥æ”¹å˜å€¼å¹¶ä¸”é‡Šæ”¾æ–°å»ºèŠ‚ç‚¹
-            if(tmp->key == key){
+            //ÅĞ¶ÏÊÇ·ñÓĞÏàÍ¬key½Úµã,ÓĞµÄ»°Ö±½Ó¸Ä±äÖµ²¢ÇÒÊÍ·ÅĞÂ½¨½Úµã
+            if (tmp->key == key) {
                 tmp->value = e;
+                searchHash(hashTable,key);
+
                 return 0;
             }
-            //åœ¨é‡Œé¢åˆ¤æ–­tmpæ˜¯å¦èµ°åˆ°æœ€åä¸€ä¸ªæœ‰æ•ˆèŠ‚ç‚¹,åœ¨å¤–é¢åˆ¤æ–­çš„è¯,æ— æ³•æ‰¾åˆ°å‰ä¸€ä¸ªèŠ‚ç‚¹,å¯¼è‡´æ— æ³•æ’å…¥
-            if(tmp->next == NULL){
+            //ÔÚÀïÃæÅĞ¶ÏtmpÊÇ·ñ×ßµ½×îºóÒ»¸öÓĞĞ§½Úµã,ÔÚÍâÃæÅĞ¶ÏµÄ»°,ÎŞ·¨ÕÒµ½Ç°Ò»¸ö½Úµã,µ¼ÖÂÎŞ·¨²åÈë
+            if (tmp->next == NULL) {
                 break;
+                searchHash(hashTable,key);
+
             }
-            //åˆ·æ–°èŠ‚ç‚¹
+            //Ë¢ĞÂ½Úµã
             tmp = tmp->next;
         }
-        //æ­¤æ—¶tmpæŒ‡å‘çš„å°±æ˜¯æœ€åä¸€ä¸ªæœ‰æ•ˆèŠ‚ç‚¹,ç›´æ¥å¯ä»¥æ’å…¥åˆ°tmpåé¢
+        //´ËÊ±tmpÖ¸ÏòµÄ¾ÍÊÇ×îºóÒ»¸öÓĞĞ§½Úµã,Ö±½Ó¿ÉÒÔ²åÈëµ½tmpºóÃæ
         tmp->next = newNode;
         return 0;
     }
 
 }
 
-//3.åˆ é™¤å…ƒç´ 
-int deletHashElement(HashTable *hashTable,int key){
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
-    if(hashTable==NULL){
-        printf("è¦åˆ é™¤å…ƒç´ çš„å“ˆå¸Œè¡¨ä¸å­˜åœ¨\n");
+//3.É¾³ıÔªËØ
+int deletHashElement(HashTable *hashTable, int key) {
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
+    if (hashTable == NULL) {
+        printf("ÒªÉ¾³ıÔªËØµÄ¹şÏ£±í²»´æÔÚ\n");
         return -1;
     }
-    //è®°å½•æ˜¯åœ¨è¡¨çš„ç¬¬å‡ è¡Œçš„é“¾è¡¨
-    int index = funcHash(key,hashTable->size);
-    //å®šä¸‹é“¾è¡¨å¤´çš„èŠ‚ç‚¹,ç”¨æ¥è¿›è¡Œå¯¹é“¾è¡¨çš„æ“ä½œ
+    //¼ÇÂ¼ÊÇÔÚ±íµÄµÚ¼¸ĞĞµÄÁ´±í
+    int index = funcHash(key, hashTable->size);
+    //¶¨ÏÂÁ´±íÍ·µÄ½Úµã,ÓÃÀ´½øĞĞ¶ÔÁ´±íµÄ²Ù×÷
     HashNode *tmp = hashTable->table[index];
-    //åˆ¤æ–­è¦åˆ é™¤çš„æ˜¯å¦æ˜¯å¤´ç»“ç‚¹
-    if(tmp->key==key){
-        hashTable->table[index]==NULL;
+    //ÅĞ¶ÏÒªÉ¾³ıµÄÊÇ·ñÊÇÍ·½áµã
+    if (tmp->key == key) {
+        hashTable->table[index] == NULL;
         return 0;
     }
-    //è¿›è¡Œè¿™ä¸ªå“ˆå¸Œè¡¨çš„å¯¹åº”è¡Œçš„é“¾è¡¨éå†,ç›´åˆ°æ‰¾åˆ°è¦åˆ é™¤çš„èŠ‚ç‚¹
-    while(tmp!=NULL){
-        if(tmp->key==key){
+    //½øĞĞÕâ¸ö¹şÏ£±íµÄ¶ÔÓ¦ĞĞµÄÁ´±í±éÀú,Ö±µ½ÕÒµ½ÒªÉ¾³ıµÄ½Úµã
+    while (tmp != NULL) {
+        if (tmp->key == key) {
             HashNode *freenode = tmp->next;
             tmp->next = freenode->next;
             free(freenode);
             return 0;
 
         }
-        if(tmp->next==NULL){
-            printf("æ‰¾ä¸åˆ°è¦åˆ é™¤çš„èŠ‚ç‚¹\n");
+        if (tmp->next == NULL) {
+            printf("ÕÒ²»µ½ÒªÉ¾³ıµÄ½Úµã\n");
             return -1;
         }
         tmp = tmp->next;
@@ -107,83 +110,88 @@ int deletHashElement(HashTable *hashTable,int key){
     return -1;
 }
 
-//4.æŸ¥æ‰¾
-int searchHash(HashTable *hashTable,int key){
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
-    if(hashTable==NULL){
-        printf("è¦æŸ¥æ‰¾å…ƒç´ çš„å“ˆå¸Œè¡¨ä¸å­˜åœ¨\n");
+//4.²éÕÒ
+int searchHash(HashTable *hashTable, int key) {
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
+    if (hashTable == NULL) {
+        printf("Òª²éÕÒÔªËØµÄ¹şÏ£±í²»´æÔÚ\n");
         return -1;
     }
-    //è®°å½•æ˜¯åœ¨è¡¨çš„ç¬¬å‡ è¡Œçš„é“¾è¡¨
-    int index = funcHash(key,hashTable->size);
-    //å®šä¸‹é“¾è¡¨å¤´çš„èŠ‚ç‚¹,ç”¨æ¥è¿›è¡Œå¯¹é“¾è¡¨çš„æ“ä½œ
+    //¼ÇÂ¼ÊÇÔÚ±íµÄµÚ¼¸ĞĞµÄÁ´±í
+    int index = funcHash(key, hashTable->size);
+    //¶¨ÏÂÁ´±íÍ·µÄ½Úµã,ÓÃÀ´½øĞĞ¶ÔÁ´±íµÄ²Ù×÷
     HashNode *tmp = hashTable->table[index];
-    //åˆ¤æ–­æ˜¯å¦æ˜¯å¤´ç»“ç‚¹
-    if(tmp->key==key){
-        printf("é”®å€¼ä¸º%dçš„å…ƒç´ å€¼ä¸º%d\n",key,tmp->value);
+    //ÅĞ¶ÏÊÇ·ñÊÇÍ·½áµã
+    if (tmp->key == key) {
+        printf("¼üÖµÎª%dµÄÔªËØÖµÎª%d\n", key, tmp->value);
         return 0;
     }
-    //è¿›è¡Œè¿™ä¸ªå“ˆå¸Œè¡¨çš„å¯¹åº”è¡Œçš„é“¾è¡¨éå†,ç›´åˆ°æ‰¾åˆ°ç›®æ ‡èŠ‚ç‚¹
-    while(tmp!=NULL){
-        if(tmp->key==key){
-            printf("é”®å€¼ä¸º%dçš„å…ƒç´ å€¼ä¸º%d\n",key,tmp->value);
+    //½øĞĞÕâ¸ö¹şÏ£±íµÄ¶ÔÓ¦ĞĞµÄÁ´±í±éÀú,Ö±µ½ÕÒµ½Ä¿±ê½Úµã
+    while (tmp != NULL) {
+        if (tmp->key == key) {
+            printf("¼üÖµÎª%dµÄÔªËØÖµÎª%d\n", key, tmp->value);
             return 0;
 
         }
-        if(tmp->next==NULL){
-            printf("æ‰¾ä¸åˆ°è¦æŸ¥æ‰¾çš„èŠ‚ç‚¹\n");
+        if (tmp->next == NULL) {
+            printf("ÕÒ²»µ½Òª²éÕÒµÄ½Úµã\n");
             return -1;
         }
         tmp = tmp->next;
     }
     return -1;
-
-
-
 }
 
-
-//5.éå†
-int printHashinfo(HashTable *hashTable){
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
-    if(hashTable==NULL){
-        printf("è¦æŸ¥æ‰¾å…ƒç´ çš„å“ˆå¸Œè¡¨ä¸å­˜åœ¨\n");
+//5.±éÀú
+int printHashinfo(HashTable *hashTable) {
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
+    if (hashTable == NULL) {
+        printf("Òª²éÕÒÔªËØµÄ¹şÏ£±í²»´æÔÚ\n");
         return -1;
     }
-    //è¿›è¡Œå“ˆå¸Œè¡¨çš„å¾ªç¯
-    for(int i = 0;i<hashTable->size;i++){
-        HashNode *tmp  = hashTable->table[i];
+    //½øĞĞ¹şÏ£±íµÄÑ­»·
+    for (int i = 0; i < hashTable->size; i++) {
+        HashNode *tmp = hashTable->table[i];
         int i = 0;
         int count = 0;
-        printf("table[%d]:",i);
-        while(tmp!=NULL){
-            printf("key:%d->value->%d\t",tmp->value,tmp->value);
+        printf("table[%d]:", i);
+        while (tmp != NULL) {
+            printf("key:%d->value->%d\t", tmp->value, tmp->value);
+            tmp=tmp->next;
         }
-        printf("è¿™ä¸ªè¡¨èŠ‚ç‚¹çš„å…ƒç´ æœ‰%dä¸ª\n",count);
+        printf("\nÕâ¸ö±í½ÚµãµÄÔªËØÓĞ%d¸ö\n", count);
     }
     return 0;
 }
 
-//6.é‡Šæ”¾
-int releaseHash(HashTable *hashTable){
-    //åˆ¤æ–­å…ƒç´ åˆæ³•æ€§
-    if(hashTable==NULL){
-        printf("è¦é‡Šæ”¾çš„å“ˆå¸Œè¡¨ä¸å­˜åœ¨\n");
+//6.ÊÍ·Å
+int releaseHash(HashTable *hashTable) {
+    //ÅĞ¶ÏÔªËØºÏ·¨ĞÔ
+    if (hashTable == NULL) {
+        printf("ÒªÊÍ·ÅµÄ¹şÏ£±í²»´æÔÚ\n");
         return -1;
     }
-    //æ¯ä¸ªèŠ‚ç‚¹éƒ½è¦é‡Šæ”¾é“¾è¡¨é‡Šæ”¾å¯ä»¥é‡‡ç”¨å¤´åˆ æ³•é‡Šæ”¾
-    //éå†å“ˆå¸Œè¡¨
-    for(int i = 0;i<hashTable->size;i++){
+    //Ã¿¸ö½Úµã¶¼ÒªÊÍ·ÅÁ´±íÊÍ·Å¿ÉÒÔ²ÉÓÃÍ·É¾·¨ÊÍ·Å
+    //±éÀú¹şÏ£±í
+    for (int i = 0; i < hashTable->size; i++) {
         HashNode *tmp = hashTable->table[i];
-        //éå†æ¯ä¸ªèŠ‚ç‚¹
-        while(tmp!=NULL){
-            //å®šä¸‹tmpçš„ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
-            HashNode *free = tmp->next;
-            
+        //±éÀúÃ¿¸ö½Úµã
+        while (tmp != NULL) {
+            //¶¨ÏÂtmpµÄÏÂÒ»¸ö½Úµã
+            HashNode *freeNode = tmp->next;
+            tmp = freeNode->next;
+            free(freeNode);
         }
     }
-
+    //´ËÊ±tmpÖ¸ÏòÁËNULL
+    //ÊÍ·Å¹şÏ£±íµÄ±í
+    free(hashTable->table);
+    //ÊÍ·Å²Ù×÷¹şÏ£±íµÄÍ·Ö¸Õë
+    free(hashTable);
+    return 0;
 }
+
+
 
 
 
