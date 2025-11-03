@@ -11,14 +11,10 @@
             "id": "48a758ab27c2b4e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "新标签页"
             }
           }
         ]
@@ -178,7 +174,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "48a758ab27c2b4e2",
+  "active": "897b9f46430324db",
   "lastOpenFiles": [
     "未命名.md",
     "c/Clion_stu_c/C_homework/arr_half_select/arr_half_select.c~",
