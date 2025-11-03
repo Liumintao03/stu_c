@@ -171,8 +171,18 @@ int releaseHash(HashTable *hashTable){
         printf("要释放的哈希表不存在\n");
         return -1;
     }
-    //每个节点都要释放
-    
+    //每个节点都要释放链表释放可以采用头删法释放
+    //遍历哈希表
+    for(int i = 0;i<hashTable->size;i++){
+        HashNode *tmp = hashTable->table[i];
+        //遍历每个节点
+        while(tmp!=NULL){
+            //定下tmp的下一个节点
+            HashNode *free = tmp->next;
+            
+        }
+    }
+
 }
 
 
