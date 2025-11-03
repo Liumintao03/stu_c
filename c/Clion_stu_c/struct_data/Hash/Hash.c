@@ -86,7 +86,7 @@ int deletHashElement(HashTable *hashTable, int key) {
     HashNode *tmp = hashTable->table[index];
     //判断要删除的是否是头结点
     if (tmp->key == key) {
-        hashTable->table[index] == NULL;
+        hashTable->table[index] = NULL;
         return 0;
     }
     //进行这个哈希表的对应行的链表遍历,直到找到要删除的节点
@@ -153,7 +153,7 @@ int printHashinfo(HashTable *hashTable) {
         int count = 0;
         printf("table[%d]:", i);
         while (tmp != NULL) {
-            printf("key:%d->value->%d\t", tmp->value, tmp->value);
+            printf("key:%d->value->%d\t", tmp->key, tmp->value);
             tmp=tmp->next;
             count++;
         }
@@ -178,7 +178,10 @@ int releaseHash(HashTable *hashTable) {
             //定下tmp的下一个节点
             HashNode *freeNode = tmp->next;
             tmp = freeNode->next;
-            free(freeNode);
+            if(freeNode!=NULL){
+                free(freeNode);
+            }
+
         }
     }
     //此时tmp指向了NULL
