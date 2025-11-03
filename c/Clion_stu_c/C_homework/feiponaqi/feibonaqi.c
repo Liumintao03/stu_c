@@ -12,10 +12,7 @@
 //传入的是多少位数
 //递归
 int fbnq1(int n){
-    if(n ==1){
-        return 0;
-    }
-    if(n ==2){
+    if(n==1||n==2){
         return 1;
     }
     //返回前两个数相加的和
@@ -29,13 +26,21 @@ int fbnq2(int n){
         return 1;
     }
 
+    int arr[n+1];
+    arr[1] = 1;
+    arr[2] = 2;
+    for(int i = 3;i<=n;i++){
+        int res = arr[i-1]+arr[i-2];
+        arr[i] = res;
+    }
+    return arr[n];
 }
 
 
 int main(){
 
     clock_t start = clock();
-    printf("fib = %d\n", fbnq1(45));
+    printf("fib = %d\n", fbnq2(45));
     clock_t end = clock();
     printf("cost time: %f\n", ((double )(end - start))/CLOCKS_PER_SEC);
 
