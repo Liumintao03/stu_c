@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Ubuntu_home.dir/main.c.o  -o Ubuntu_home 
