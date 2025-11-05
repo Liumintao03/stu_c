@@ -12,10 +12,11 @@
       <paths name="mobile_linux (f5a8cc29-cefd-440b-afb2-9941c7fb4926)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.X603JscJo2" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/lmt/project/C_lion/stu_linux_c" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mobile_linux" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build_dir" />
           </excludedPaths>
         </serverdata>
       </paths>

@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /tmp/tmp.X603JscJo2 -B /tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/lmt/project/C_lion/stu_linux_c -B /home/lmt/project/C_lion/stu_linux_c/build_dir
 -- The C compiler identification is GNU 9.4.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -8,4 +8,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux
+-- Build files have been written to: /home/lmt/project/C_lion/stu_linux_c/build_dir

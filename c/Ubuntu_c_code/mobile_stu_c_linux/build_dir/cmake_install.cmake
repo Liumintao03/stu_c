@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.X603JscJo2
+# Install script for directory: /home/lmt/project/C_lion/stu_linux_c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lmt/project/C_lion/stu_linux_c/build_dir/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

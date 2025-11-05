@@ -1,3 +1,0 @@
-/tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux/CMakeFiles/rebuild_cache.dir
-/tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux/CMakeFiles/edit_cache.dir
-/tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux/CMakeFiles/mobile_stu_c_linux.dir

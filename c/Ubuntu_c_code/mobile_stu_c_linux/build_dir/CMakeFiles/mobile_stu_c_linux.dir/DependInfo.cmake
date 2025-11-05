@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/tmp/tmp.X603JscJo2/main.c" "/tmp/tmp.X603JscJo2/cmake-build-debug-mobile_linux/CMakeFiles/mobile_stu_c_linux.dir/main.c.o"
+  "/home/lmt/project/C_lion/stu_linux_c/main.c" "/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles/mobile_stu_c_linux.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
