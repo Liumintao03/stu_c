@@ -2,12 +2,26 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="home_linux (2893a153-179c-46d9-ae05-25d178f19c2e)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.lcVUgsdX8K" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-home_linux" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-default" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mobile_linux" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
       <paths name="mobile_linux (f5a8cc29-cefd-440b-afb2-9941c7fb4926)">
         <serverdata>
           <mappings>
             <mapping deploy="/tmp/tmp.4JcqHel0Fq" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-home_linux" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-default" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mobile_linux" />
           </excludedPaths>
         </serverdata>
