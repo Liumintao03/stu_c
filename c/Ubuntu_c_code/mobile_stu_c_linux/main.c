@@ -22,6 +22,7 @@ int main(void) {
     //ssize_t write(int fd, const void *buf, size_t count);
     //指针偏移
     //off_t lseek(int fd, off_t offset, int whence);
+    lseek(fd, 0, SEEK_END);
     int ret = write(fd,"abc",3);
     if(ret<0){
         perror("write:");
