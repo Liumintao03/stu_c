@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/05cp.dir/05open_cpfile.c.o  -o 05cp 

@@ -5,6 +5,7 @@
 /home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/CMakeFiles/edit_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/rebuild_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/MyCp.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/04file.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/03open.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/02open.dir

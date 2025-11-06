@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/MyCp.dir/05open_cpfile.c.o  -o MyCp 

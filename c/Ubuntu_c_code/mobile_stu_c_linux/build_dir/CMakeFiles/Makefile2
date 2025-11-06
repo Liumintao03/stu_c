@@ -91,6 +91,7 @@ clean: 01fileIO/clean
 # Directory level rules for directory 01fileIO/01sysio
 
 # Recursive "all" directory target.
+01fileIO/01sysio/all: 01fileIO/01sysio/CMakeFiles/MyCp.dir/all
 01fileIO/01sysio/all: 01fileIO/01sysio/CMakeFiles/04file.dir/all
 01fileIO/01sysio/all: 01fileIO/01sysio/CMakeFiles/03open.dir/all
 01fileIO/01sysio/all: 01fileIO/01sysio/CMakeFiles/02open.dir/all
@@ -104,6 +105,7 @@ clean: 01fileIO/clean
 .PHONY : 01fileIO/01sysio/preinstall
 
 # Recursive "clean" directory target.
+01fileIO/01sysio/clean: 01fileIO/01sysio/CMakeFiles/MyCp.dir/clean
 01fileIO/01sysio/clean: 01fileIO/01sysio/CMakeFiles/04file.dir/clean
 01fileIO/01sysio/clean: 01fileIO/01sysio/CMakeFiles/03open.dir/clean
 01fileIO/01sysio/clean: 01fileIO/01sysio/CMakeFiles/02open.dir/clean
@@ -118,7 +120,7 @@ clean: 01fileIO/clean
 CMakeFiles/mobile_stu_c_linux.dir/all:
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/depend
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=9,10 "Built target mobile_stu_c_linux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=11,12 "Built target mobile_stu_c_linux"
 .PHONY : CMakeFiles/mobile_stu_c_linux.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,6 +139,33 @@ mobile_stu_c_linux: CMakeFiles/mobile_stu_c_linux.dir/rule
 CMakeFiles/mobile_stu_c_linux.dir/clean:
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/clean
 .PHONY : CMakeFiles/mobile_stu_c_linux.dir/clean
+
+#=============================================================================
+# Target rules for target 01fileIO/01sysio/CMakeFiles/MyCp.dir
+
+# All Build rule for target.
+01fileIO/01sysio/CMakeFiles/MyCp.dir/all:
+	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/depend
+	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=9,10 "Built target MyCp"
+.PHONY : 01fileIO/01sysio/CMakeFiles/MyCp.dir/all
+
+# Build rule for subdir invocation for target.
+01fileIO/01sysio/CMakeFiles/MyCp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 01fileIO/01sysio/CMakeFiles/MyCp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
+
+# Convenience name for target.
+MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
+
+.PHONY : MyCp
+
+# clean rule for target.
+01fileIO/01sysio/CMakeFiles/MyCp.dir/clean:
+	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/clean
+.PHONY : 01fileIO/01sysio/CMakeFiles/MyCp.dir/clean
 
 #=============================================================================
 # Target rules for target 01fileIO/01sysio/CMakeFiles/04file.dir
