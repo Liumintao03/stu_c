@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lmt/project/C_lion/stu_linux_c/01fileIO/01sysio/02open_excl.c
+stdio.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+unistd.h
+-
+

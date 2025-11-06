@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/03open.dir/03open_trunc.c.o  -o 03open 

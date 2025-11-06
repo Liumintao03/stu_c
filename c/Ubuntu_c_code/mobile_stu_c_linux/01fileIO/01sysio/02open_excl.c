@@ -10,7 +10,7 @@
 #include <unistd.h>
 
 
-int mian(){
+int main(){
 
     //excl
     //文件不存在新建,存在忽略
@@ -24,8 +24,11 @@ int mian(){
 
     int fb = open("abc.ini",O_CREAT|O_EXCL|O_RDWR,0644);
 
-
-
+    if(fb<0){
+        perror("open:");
+        return -1;
+    }
+    close(fb);
     return 0;
 }
 

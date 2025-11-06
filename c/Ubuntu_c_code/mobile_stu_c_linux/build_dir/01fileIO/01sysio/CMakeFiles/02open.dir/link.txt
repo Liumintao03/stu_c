@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/02open.dir/02open_excl.c.o  -o 02open 
