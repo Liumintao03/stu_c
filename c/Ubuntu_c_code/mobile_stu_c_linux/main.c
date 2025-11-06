@@ -5,5 +5,9 @@
 
 int main(void) {
     printf("Hello, World!\n");
+
+    
+    int fd = open("a.txt",int flags);
+
     return 0;
 }
