@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/04file.dir/04file.c.o  -o 04file 

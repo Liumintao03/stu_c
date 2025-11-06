@@ -103,6 +103,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mobile_stu_c_linux.dir/DependInfo.cmake"
+  "01fileIO/01sysio/CMakeFiles/04file.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/03open.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/02open.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/01open.dir/DependInfo.cmake"
