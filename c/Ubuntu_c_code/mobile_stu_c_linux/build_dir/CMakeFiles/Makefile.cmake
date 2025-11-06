@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../01fileIO/01sysio/CMakeLists.txt"
+  "../01fileIO/CMakeLists.txt"
   "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -94,9 +96,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01fileIO/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01fileIO/01sysio/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mobile_stu_c_linux.dir/DependInfo.cmake"
+  "01fileIO/01sysio/CMakeFiles/01open.dir/DependInfo.cmake"
   )

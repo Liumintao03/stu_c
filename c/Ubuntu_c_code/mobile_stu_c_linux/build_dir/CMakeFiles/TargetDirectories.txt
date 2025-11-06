@@ -1,3 +1,8 @@
 /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles/rebuild_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles/edit_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles/mobile_stu_c_linux.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/CMakeFiles/rebuild_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/rebuild_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/01sysio/CMakeFiles/01open.dir
