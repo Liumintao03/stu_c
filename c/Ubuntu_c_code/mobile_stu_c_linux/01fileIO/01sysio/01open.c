@@ -21,7 +21,14 @@ int main(){
     int ret = write(fb,"hello\n",6);
     printf("ret:%d\n",ret);
 
-    
+
+    char buf[200] = {0};
+    //read
+    //ssize_t read(int fd, void *buf, size_t count);
+    //读取什么,存到哪里，存多少个数据
+    int red_ret = read(fb,buf,ret);
+    printf("red_ret:%d\n",red_ret);
+    //red_ret==0;到达文件末尾就是0
 
 
     close(fb);
