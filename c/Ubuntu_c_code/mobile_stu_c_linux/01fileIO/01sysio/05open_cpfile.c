@@ -27,10 +27,8 @@ int main(int argc, char *argv[]) {
 
     //参数判断      3
     if (argc != 3) {
-        fprintf(stderr,)
-        dprintf(STDOUT_FILENO,"using error:MyCp src_file new_file")
-
-
+        fprintf(stderr,"using error:MyCp src_file new_file");
+        dprintf(STDOUT_FILENO,"using error:MyCp src_file new_file");
         return -1;
     }
 
@@ -40,11 +38,21 @@ int main(int argc, char *argv[]) {
     //不存在
     //存在
     //只读
+    int src_fd = open(argv[1],O_RDONLY);
+    if(src_fd<0){
+        perror("open:");
+        return -1;
+    }
+    printf("open success\n");
 
 
     //new_fd
     //存在？清空？不清空？
     //不存在，新建
+    open(argv[2],O_CREAT|O_EXCL|O_RDONLY,644);
+    
+
+
 
 
     //拷贝代码
