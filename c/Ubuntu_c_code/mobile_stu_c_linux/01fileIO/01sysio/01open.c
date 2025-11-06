@@ -24,7 +24,7 @@ int main(){
     //lseek指针偏移，返回偏移位数
     //off_t lseek(int fd, off_t offset, int whence);
     int ret_num = lseek(fb,0,SEEK_END);
-    printf("file_size%d\n",ret_num);
+    printf("file_size: %d\n",ret_num);
 
     //使指针回到最开头
     lseek(fb,0,SEEK_SET);
