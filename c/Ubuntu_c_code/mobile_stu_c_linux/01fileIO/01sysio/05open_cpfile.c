@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <error.h>
 #include <errno.h>
+#include <string.h>
 //MyCp 1.src_file 2.new_file
 //      要拷贝     拷贝到
 
@@ -58,6 +59,29 @@ int main(int argc, char *argv[]) {
             close(new_fd);
             return -1;
         }
+
+
+        //如果存在
+        printf("文件存在，是否删除\n");
+        printf("yes  or  no  \n");
+
+        //按行读
+        char buf[300];
+        fgets(buf,sizeof (buf),stdin);
+        //yes+\n+\0
+
+        if(strncasecmp(buf,"yes",3)){
+            //删除文件内容
+            
+
+        }else if(strncasecmp(buf,"no",2)){
+
+        }else{
+            printf("exit");
+            return -1;
+        }
+
+
     }
 
 
