@@ -25,42 +25,40 @@ int main(int argc, char *argv[]) {
 //argv[1] = 第一个参数
 //argv[2] = 第二个参数
 
-
     //参数判断      3
     if (argc != 3) {
-        fprintf(stderr,"using error:MyCp src_file new_file");
-        dprintf(STDOUT_FILENO,"using error:MyCp src_file new_file");
+        //两种用法
+        //将错误信息输出到标准错误流
+        fprintf(stderr, "using error:MyCp src_file new_file");
+        //将错误信息输出到标准文件描述符
+        dprintf(STDOUT_FILENO, "using error:MyCp src_file new_file");
         return -1;
     }
-
-
 
     //sec_fd
     //不存在
     //存在
     //只读
-    int src_fd = open(argv[1],O_RDONLY);
-    if(src_fd<0){
+    int src_fd = open(argv[1], O_RDONLY);
+    if (src_fd < 0) {
         perror("open:");
         return -1;
     }
     printf("open success\n");
 
-
     //new_fd
     //存在？清空？不清空？
-    //不存在，新建
-    int new_fd = open(argv[2],O_CREAT|O_EXCL|O_RDONLY,0644);
-    if(new_fd<0){
-        //进入就说明有
+    //不存在，新建                                //这个和creat一起使用，用来判断文件是否存在，如果存在就报错
+    int new_fd = open(argv[2], O_CREAT | O_EXCL | O_RDONLY, 0644);
+    if (new_fd < 0) {
+        //进入就说明已经有文件了，接下来进行判断
         //如果打开错误
-        if(error != EEXIST){
+        if (errno != EEXIST) {
             perror("open:");
             close(src_fd);
             close(new_fd);
             return -1;
         }
-
 
         //如果存在
         printf("文件存在，是否删除\n");
@@ -68,39 +66,58 @@ int main(int argc, char *argv[]) {
 
         //按行读
         char buf[300];
-        fgets(buf,sizeof (buf),stdin);
+        //接收是否删除的指令
+        fgets(buf, sizeof(buf), stdin);
         //yes+\n+\0
-
-        if(strncasecmp(buf,"yes",3)){
+        //比较两个字符串的前几个字符，忽略大小写。
+        if (strncasecmp(buf, "yes", 3) == 0) {
             //删除文件内容
-            new_fd = open(argv[2],O_TRUNC|O_EXCL|O_RDONLY);
-            if(new_fd<0){
+            new_fd = open(argv[2], O_TRUNC | O_EXCL | O_RDONLY);
+            if (new_fd < 0) {
                 perror("open");
                 close(new_fd);
                 return -1;
             }
-
-        }else {
+        } else {
             //不删除
             printf("dosn't delet ");
             close(src_fd);
             close(new_fd);
-
         }
-
+    }else{
+        new_fd = open(argv[2], O_CREAT | O_RDWR, 0644);
 
     }
     //没进入就说明没有文件，新建
-
-
-
+    printf("create sucess\n");
+    //拷贝代码
+    //创建临时存储空间
+    char buf[200];
+    //创建read操作符
+    int ret = 200;
+    //总个数
+    int cnt = 0;
 
     //拷贝代码
-
-
+    //一直读取和写入，直到ret<0;
+    while (ret) {
+        //读取要复制的文件内容，读取到buf，读取buf个字节的数据（sizeof）
+        //read的返回值是成功读取到的字节数
+        //read的返回值为0代表文件的末尾
+        ret = read(src_fd, buf, sizeof(buf));
+        //如果ret<0即读取失败,读取完毕
+        if (ret < 0) {
+            perror("open");
+            break;
+        }
+        cnt = cnt + ret;
+        //将buf里面的内容写入到new_buf,写入ret个字节
+        write(new_fd, buf, ret);
+    }
 
     //cnt
-
-
+    printf("cnt:%d\n", cnt);
+    close(src_fd);
+    close(new_fd);
     return 0;
 }

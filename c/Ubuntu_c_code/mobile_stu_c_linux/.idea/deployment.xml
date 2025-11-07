@@ -15,9 +15,10 @@
             <mapping deploy="/home/lmt/project/C_lion/stu_linux_c" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mobile_linux" />
             <excludedPath local="true" path="$PROJECT_DIR$/build_dir" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mobile_linux" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mobile_linux-event-trace" />
+            <excludedPath local="true" path="$PROJECT_DIR$/build_dir" />
           </excludedPaths>
         </serverdata>
       </paths>
