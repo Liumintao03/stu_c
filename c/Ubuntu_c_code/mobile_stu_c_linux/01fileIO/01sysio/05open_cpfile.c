@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
     //存在？清空？不清空？
     //不存在，新建
     open(argv[2],O_CREAT|O_EXCL|O_RDONLY,644);
-    
+
 
 
 
