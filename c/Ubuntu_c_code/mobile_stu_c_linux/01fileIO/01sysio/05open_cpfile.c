@@ -2,12 +2,12 @@
 // Created by 35376 on 2025/11/6.
 //
 #include <stdio.h>
-#include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-
+#include <error.h>
+#include <errno.h>
 //MyCp 1.src_file 2.new_file
 //      要拷贝     拷贝到
 
@@ -49,8 +49,16 @@ int main(int argc, char *argv[]) {
     //new_fd
     //存在？清空？不清空？
     //不存在，新建
-    open(argv[2],O_CREAT|O_EXCL|O_RDONLY,644);
-
+    int new_fd = open(argv[2],O_CREAT|O_EXCL|O_RDONLY,0644);
+    if(new_fd<0){
+        //如果打开错误
+        if(error != EEXIST){
+            perror("open:");
+            close(src_fd);
+            close(new_fd);
+            return -1;
+        }
+    }
 
 
 
