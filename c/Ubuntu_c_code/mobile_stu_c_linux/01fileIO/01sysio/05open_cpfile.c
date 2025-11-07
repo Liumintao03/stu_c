@@ -52,6 +52,7 @@ int main(int argc, char *argv[]) {
     //不存在，新建
     int new_fd = open(argv[2],O_CREAT|O_EXCL|O_RDONLY,0644);
     if(new_fd<0){
+        //进入就说明有
         //如果打开错误
         if(error != EEXIST){
             perror("open:");
@@ -72,17 +73,24 @@ int main(int argc, char *argv[]) {
 
         if(strncasecmp(buf,"yes",3)){
             //删除文件内容
-            
+            new_fd = open(argv[2],O_TRUNC|O_EXCL|O_RDONLY);
+            if(new_fd<0){
+                perror("open");
+                close(new_fd);
+                return -1;
+            }
 
-        }else if(strncasecmp(buf,"no",2)){
+        }else {
+            //不删除
+            printf("dosn't delet ");
+            close(src_fd);
+            close(new_fd);
 
-        }else{
-            printf("exit");
-            return -1;
         }
 
 
     }
+    //没进入就说明没有文件，新建
 
 
 
