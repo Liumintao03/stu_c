@@ -10,6 +10,7 @@ int fun_read(int *argc,char *argv,FILE *fp);
 int main(int argc,char *argv[]){
 
     char *old_file = "/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/src_file";
+
     //1.选择是按fgetc/fputc 还是 按fread/ fwrite【块的⼤⼩按1B】的程序
     // 定下操作指针
     FILE *fp = fopen(old_file,"r");
@@ -42,7 +43,10 @@ int main(int argc,char *argv[]){
 
 //实现fgetc
 int fun_fgetc(int *argc,char *argv,FILE *fp){
-    //此时fp是只读，现需要支持读写
+    //此时fp是只读，现需要写入的部分，支持写
+    FILE *newfp = fopen("new_file","w+");
+    //存下
+    int ret = fgetc(fp);
 
 }
 
