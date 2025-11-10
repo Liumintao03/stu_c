@@ -6,16 +6,19 @@
 #include <unistd.h>
 #include <string.h>
 
-int fun_fgetc(int *argc,char *argv,FILE *fp);
-int fun_read(int *argc,char *argv,FILE *fp);
+int fun_fgetc(int *argc,char *argv,FILE *fp,FILE *newfp);
+int fun_read(int *argc,char *argv,FILE *fp,FILE *newfp);
 
 int main(int argc,char *argv[]){
 
-    char *old_file = "/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/src_file";
-
+    //char *old_file = "/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/src_file";
+    char *old_file = argv[2];
+    char *new_file = argv[3];
     //1.选择是按fgetc/fputc 还是 按fread/ fwrite【块的⼤⼩按1B】的程序
     // 定下操作指针
     FILE *fp = fopen(old_file,"r");
+    FILE *newfp = fopen(new_file,"w+");
+
     int ret;
 
 
@@ -24,15 +27,19 @@ int main(int argc,char *argv[]){
         perror("open_r:\n");
         return -1;
     }
+    if(newfp==NULL){
+        perror("open_newfp:\n");
+        return -1;
+    }
     //打开成功，判断fgetc还是fread
     if(argv[1]=="char"||argv[1]=="block"){
         //进入fgetc操作
         if(argv[1]=="char"){
-            ret = fun_fgetc(&argc,argv,fp);
+            ret = fun_fgetc(&argc,argv,fp,new_file);
         }
         //进入fread操作
         else if(argv[1]=="block"){
-            ret = fun_read(&argc,argv,fp);
+            ret = fun_read(&argc,argv,fp,new_file);
         }
     }else{
         printf("操作错误");
@@ -44,13 +51,8 @@ int main(int argc,char *argv[]){
 }
 
 //实现fgetc
-int fun_fgetc(int *argc,char *argv,FILE *fp){
-    //此时fp是只读，现需要打开需要写入的部分，支持写
-    FILE *newfp = fopen("new_file","w+");
-    if(newfp==NULL){
-        perror("open_newfp:\n");
-        return -1;
-    }
+int fun_fgetc(int *argc,char *argv,FILE *fp,FILE *newfp){
+
     //存下
     int ret = fgetc(fp);
     int cnt = 0;
@@ -69,16 +71,13 @@ int fun_fgetc(int *argc,char *argv,FILE *fp){
 }
 
 //实现fead
-int fun_read(int *argc,char *argv,FILE *fp){
-    //此时fp是只读，现需要打开写入的部分，支持写
-    FILE *newfp = fopen("new_file","w+");
-    if(newfp==NULL){
-        perror("open_newfp:\n");
-        return -1;
-    }
+int fun_read(int *argc,char *argv,FILE *fp,FILE *newfp){
+
+
     //存下
     char buf[1024];
     memset(buf,0,sizeof (buf));
-    fread()
+    fread(buf,buf[0],1024,fp);
+    fwrite()
 
 }
