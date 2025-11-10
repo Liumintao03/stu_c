@@ -3,6 +3,8 @@
 //
 
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
 int fun_fgetc(int *argc,char *argv,FILE *fp);
 int fun_read(int *argc,char *argv,FILE *fp);
@@ -43,14 +45,40 @@ int main(int argc,char *argv[]){
 
 //实现fgetc
 int fun_fgetc(int *argc,char *argv,FILE *fp){
-    //此时fp是只读，现需要写入的部分，支持写
+    //此时fp是只读，现需要打开需要写入的部分，支持写
     FILE *newfp = fopen("new_file","w+");
+    if(newfp==NULL){
+        perror("open_newfp:\n");
+        return -1;
+    }
     //存下
     int ret = fgetc(fp);
+    int cnt = 0;
+    //进行读取与写入
+    while(ret!=EOF){
+        fputc(cnt,newfp);
+        sleep(1);
+        putchar(ret);
+        fflush(stdout );
+        ret = fgetc(fp);
+        cnt++;
+    }
+    fclose(newfp);
+    return 0;
 
 }
 
-//实现fgetc
+//实现fead
 int fun_read(int *argc,char *argv,FILE *fp){
+    //此时fp是只读，现需要打开写入的部分，支持写
+    FILE *newfp = fopen("new_file","w+");
+    if(newfp==NULL){
+        perror("open_newfp:\n");
+        return -1;
+    }
+    //存下
+    char buf[1024];
+    memset(buf,0,sizeof (buf));
+    fread()
 
 }
