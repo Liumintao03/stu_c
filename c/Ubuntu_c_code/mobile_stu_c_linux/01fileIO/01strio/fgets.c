@@ -14,16 +14,22 @@ int main(){
     //定下缓冲区
     char buf[1024];
     char *p;
-    memset(fp,0,sizeof (buf));
-    puts("请输入\n");
+    memset(buf,0,sizeof (buf));
+    puts("请输入");
     while(1){
+        //stream是流
         //输入到哪里,使用标准输入流
         p = fgets(buf,sizeof (buf),stdin);
         if(p == NULL){
             break;
         }
+        //把buf里面的内容写到fp里面
         fputs(buf,fp);
     }
+
+    puts("输入完成");
+    fclose(fp);
+
 
 
 
