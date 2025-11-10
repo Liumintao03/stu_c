@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/01fgetc.dir/fgetc_putchar.c.o  -o 01fgetc 

@@ -94,7 +94,8 @@ clean: 01fileIO/clean
 # Directory level rules for directory 01fileIO/01strio
 
 # Recursive "all" directory target.
-01fileIO/01strio/all: 01fileIO/01strio/CMakeFiles/01getc.dir/all
+01fileIO/01strio/all: 01fileIO/01strio/CMakeFiles/01fgets.dir/all
+01fileIO/01strio/all: 01fileIO/01strio/CMakeFiles/01fgetc.dir/all
 
 .PHONY : 01fileIO/01strio/all
 
@@ -104,7 +105,8 @@ clean: 01fileIO/clean
 .PHONY : 01fileIO/01strio/preinstall
 
 # Recursive "clean" directory target.
-01fileIO/01strio/clean: 01fileIO/01strio/CMakeFiles/01getc.dir/clean
+01fileIO/01strio/clean: 01fileIO/01strio/CMakeFiles/01fgets.dir/clean
+01fileIO/01strio/clean: 01fileIO/01strio/CMakeFiles/01fgetc.dir/clean
 
 .PHONY : 01fileIO/01strio/clean
 
@@ -141,7 +143,7 @@ clean: 01fileIO/clean
 CMakeFiles/mobile_stu_c_linux.dir/all:
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/depend
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=13,14 "Built target mobile_stu_c_linux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=15,16 "Built target mobile_stu_c_linux"
 .PHONY : CMakeFiles/mobile_stu_c_linux.dir/all
 
 # Build rule for subdir invocation for target.
@@ -168,7 +170,7 @@ CMakeFiles/mobile_stu_c_linux.dir/clean:
 01fileIO/01sysio/CMakeFiles/MyCp.dir/all:
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/depend
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=11,12 "Built target MyCp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=13,14 "Built target MyCp"
 .PHONY : 01fileIO/01sysio/CMakeFiles/MyCp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -195,7 +197,7 @@ MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
 01fileIO/01sysio/CMakeFiles/04file.dir/all:
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/04file.dir/build.make 01fileIO/01sysio/CMakeFiles/04file.dir/depend
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/04file.dir/build.make 01fileIO/01sysio/CMakeFiles/04file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=9,10 "Built target 04file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=11,12 "Built target 04file"
 .PHONY : 01fileIO/01sysio/CMakeFiles/04file.dir/all
 
 # Build rule for subdir invocation for target.
@@ -222,7 +224,7 @@ MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
 01fileIO/01sysio/CMakeFiles/03open.dir/all:
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/03open.dir/build.make 01fileIO/01sysio/CMakeFiles/03open.dir/depend
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/03open.dir/build.make 01fileIO/01sysio/CMakeFiles/03open.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=7,8 "Built target 03open"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=9,10 "Built target 03open"
 .PHONY : 01fileIO/01sysio/CMakeFiles/03open.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +251,7 @@ MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
 01fileIO/01sysio/CMakeFiles/02open.dir/all:
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/02open.dir/build.make 01fileIO/01sysio/CMakeFiles/02open.dir/depend
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/02open.dir/build.make 01fileIO/01sysio/CMakeFiles/02open.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=5,6 "Built target 02open"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=7,8 "Built target 02open"
 .PHONY : 01fileIO/01sysio/CMakeFiles/02open.dir/all
 
 # Build rule for subdir invocation for target.
@@ -276,7 +278,7 @@ MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
 01fileIO/01sysio/CMakeFiles/01open.dir/all:
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/01open.dir/build.make 01fileIO/01sysio/CMakeFiles/01open.dir/depend
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/01open.dir/build.make 01fileIO/01sysio/CMakeFiles/01open.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=3,4 "Built target 01open"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=5,6 "Built target 01open"
 .PHONY : 01fileIO/01sysio/CMakeFiles/01open.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,31 +299,58 @@ MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
 .PHONY : 01fileIO/01sysio/CMakeFiles/01open.dir/clean
 
 #=============================================================================
-# Target rules for target 01fileIO/01strio/CMakeFiles/01getc.dir
+# Target rules for target 01fileIO/01strio/CMakeFiles/01fgets.dir
 
 # All Build rule for target.
-01fileIO/01strio/CMakeFiles/01getc.dir/all:
-	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01getc.dir/build.make 01fileIO/01strio/CMakeFiles/01getc.dir/depend
-	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01getc.dir/build.make 01fileIO/01strio/CMakeFiles/01getc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=1,2 "Built target 01getc"
-.PHONY : 01fileIO/01strio/CMakeFiles/01getc.dir/all
+01fileIO/01strio/CMakeFiles/01fgets.dir/all:
+	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01fgets.dir/build.make 01fileIO/01strio/CMakeFiles/01fgets.dir/depend
+	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01fgets.dir/build.make 01fileIO/01strio/CMakeFiles/01fgets.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=3,4 "Built target 01fgets"
+.PHONY : 01fileIO/01strio/CMakeFiles/01fgets.dir/all
 
 # Build rule for subdir invocation for target.
-01fileIO/01strio/CMakeFiles/01getc.dir/rule: cmake_check_build_system
+01fileIO/01strio/CMakeFiles/01fgets.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 01fileIO/01strio/CMakeFiles/01getc.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 01fileIO/01strio/CMakeFiles/01fgets.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
-.PHONY : 01fileIO/01strio/CMakeFiles/01getc.dir/rule
+.PHONY : 01fileIO/01strio/CMakeFiles/01fgets.dir/rule
 
 # Convenience name for target.
-01getc: 01fileIO/01strio/CMakeFiles/01getc.dir/rule
+01fgets: 01fileIO/01strio/CMakeFiles/01fgets.dir/rule
 
-.PHONY : 01getc
+.PHONY : 01fgets
 
 # clean rule for target.
-01fileIO/01strio/CMakeFiles/01getc.dir/clean:
-	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01getc.dir/build.make 01fileIO/01strio/CMakeFiles/01getc.dir/clean
-.PHONY : 01fileIO/01strio/CMakeFiles/01getc.dir/clean
+01fileIO/01strio/CMakeFiles/01fgets.dir/clean:
+	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01fgets.dir/build.make 01fileIO/01strio/CMakeFiles/01fgets.dir/clean
+.PHONY : 01fileIO/01strio/CMakeFiles/01fgets.dir/clean
+
+#=============================================================================
+# Target rules for target 01fileIO/01strio/CMakeFiles/01fgetc.dir
+
+# All Build rule for target.
+01fileIO/01strio/CMakeFiles/01fgetc.dir/all:
+	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01fgetc.dir/build.make 01fileIO/01strio/CMakeFiles/01fgetc.dir/depend
+	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01fgetc.dir/build.make 01fileIO/01strio/CMakeFiles/01fgetc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=1,2 "Built target 01fgetc"
+.PHONY : 01fileIO/01strio/CMakeFiles/01fgetc.dir/all
+
+# Build rule for subdir invocation for target.
+01fileIO/01strio/CMakeFiles/01fgetc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 01fileIO/01strio/CMakeFiles/01fgetc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 01fileIO/01strio/CMakeFiles/01fgetc.dir/rule
+
+# Convenience name for target.
+01fgetc: 01fileIO/01strio/CMakeFiles/01fgetc.dir/rule
+
+.PHONY : 01fgetc
+
+# clean rule for target.
+01fileIO/01strio/CMakeFiles/01fgetc.dir/clean:
+	$(MAKE) -f 01fileIO/01strio/CMakeFiles/01fgetc.dir/build.make 01fileIO/01strio/CMakeFiles/01fgetc.dir/clean
+.PHONY : 01fileIO/01strio/CMakeFiles/01fgetc.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
