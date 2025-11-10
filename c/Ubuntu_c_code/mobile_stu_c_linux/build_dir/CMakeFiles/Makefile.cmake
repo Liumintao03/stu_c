@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../01fileIO/01strio/CMakeLists.txt"
   "../01fileIO/01sysio/CMakeLists.txt"
   "../01fileIO/CMakeLists.txt"
   "../CMakeLists.txt"
@@ -98,6 +99,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "01fileIO/CMakeFiles/CMakeDirectoryInformation.cmake"
   "01fileIO/01sysio/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01fileIO/01strio/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -108,4 +110,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "01fileIO/01sysio/CMakeFiles/03open.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/02open.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/01open.dir/DependInfo.cmake"
+  "01fileIO/01strio/CMakeFiles/01getc.dir/DependInfo.cmake"
   )
