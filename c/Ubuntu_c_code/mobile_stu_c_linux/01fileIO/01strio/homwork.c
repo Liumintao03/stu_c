@@ -6,8 +6,8 @@
 #include <unistd.h>
 #include <string.h>
 
-int fun_fgetc(int *argc,char *argv,FILE *fp,FILE *newfp);
-int fun_read(int *argc,char *argv,FILE *fp,FILE *newfp);
+int fun_fgetc(FILE *fp,FILE *newfp);
+int fun_read(FILE *fp,FILE *newfp);
 
 int main(int argc,char *argv[]){
 
@@ -32,33 +32,35 @@ int main(int argc,char *argv[]){
         return -1;
     }
     //打开成功，判断fgetc还是fread
-    if(argv[1]=="char"||argv[1]=="block"){
+    if(strcmp(argv[1],"char")==0||strcmp(argv[1],"block")==0){
         //进入fgetc操作
         if(argv[1]=="char"){
-            ret = fun_fgetc(&argc,argv,fp,new_file);
+            ret = fun_fgetc(fp,newfp);
         }
         //进入fread操作
         else if(argv[1]=="block"){
-            ret = fun_read(&argc,argv,fp,new_file);
+            ret = fun_read(fp,newfp);
         }
     }else{
         printf("操作错误");
         return -1;
     }
 
+    fclose(fp);
+    fclose(newfp);
 
     return 0;
 }
 
 //实现fgetc
-int fun_fgetc(int *argc,char *argv,FILE *fp,FILE *newfp){
+int fun_fgetc(FILE *fp,FILE *newfp){
 
     //存下
     int ret = fgetc(fp);
     int cnt = 0;
     //进行读取与写入
     while(ret!=EOF){
-        fputc(cnt,newfp);
+        fputc(ret,newfp);
         sleep(1);
         putchar(ret);
         fflush(stdout );
@@ -71,13 +73,14 @@ int fun_fgetc(int *argc,char *argv,FILE *fp,FILE *newfp){
 }
 
 //实现fead
-int fun_read(int *argc,char *argv,FILE *fp,FILE *newfp){
+int fun_read(FILE *fp,FILE *newfp){
 
 
     //存下
     char buf[1024];
     memset(buf,0,sizeof (buf));
     fread(buf,buf[0],1024,fp);
-    fwrite()
+    fwrite(buf,buf[0],1024,newfp);
+    return 0;
 
 }
