@@ -25,7 +25,7 @@ int main(){
         sleep(1);
         putchar(ret);
 
-        fflush(stdout);
+        fflush(stdout );
         ret = fgetc(fp);
         cnt++;
     }
