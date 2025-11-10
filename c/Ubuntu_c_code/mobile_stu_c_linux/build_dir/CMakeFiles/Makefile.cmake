@@ -110,6 +110,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "01fileIO/01sysio/CMakeFiles/03open.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/02open.dir/DependInfo.cmake"
   "01fileIO/01sysio/CMakeFiles/01open.dir/DependInfo.cmake"
+  "01fileIO/01strio/CMakeFiles/homework.dir/DependInfo.cmake"
   "01fileIO/01strio/CMakeFiles/01fwrite.dir/DependInfo.cmake"
   "01fileIO/01strio/CMakeFiles/01fgets.dir/DependInfo.cmake"
   "01fileIO/01strio/CMakeFiles/01fgetc.dir/DependInfo.cmake"
