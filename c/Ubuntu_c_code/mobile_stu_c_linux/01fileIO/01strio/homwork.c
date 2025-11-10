@@ -34,11 +34,11 @@ int main(int argc,char *argv[]){
     //打开成功，判断fgetc还是fread
     if(strcmp(argv[1],"char")==0||strcmp(argv[1],"block")==0){
         //进入fgetc操作
-        if(argv[1]=="char"){
+        if(strcmp(argv[1],"char")==0){
             ret = fun_fgetc(fp,newfp);
         }
         //进入fread操作
-        else if(argv[1]=="block"){
+        else if(strcmp(argv[1],"block")==0){
             ret = fun_read(fp,newfp);
         }
     }else{
@@ -67,7 +67,6 @@ int fun_fgetc(FILE *fp,FILE *newfp){
         ret = fgetc(fp);
         cnt++;
     }
-    fclose(newfp);
     return 0;
 
 }
@@ -79,8 +78,8 @@ int fun_read(FILE *fp,FILE *newfp){
     //存下
     char buf[1024];
     memset(buf,0,sizeof (buf));
-    fread(buf,buf[0],1024,fp);
-    fwrite(buf,buf[0],1024,newfp);
+    fread(buf,sizeof(buf[0]),1024,fp);
+    fwrite(buf,sizeof(buf[0]),1024,newfp);
     return 0;
 
 }
