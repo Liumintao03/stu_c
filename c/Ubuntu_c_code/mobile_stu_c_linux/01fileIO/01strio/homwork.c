@@ -42,7 +42,7 @@ int main(int argc,char *argv[]){
 
 //实现fgetc
 int fun_fgetc(int *argc,char *argv,FILE *fp){
-    
+    //此时fp是只读，现需要支持读写
 
 }
 
