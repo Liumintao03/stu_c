@@ -11,7 +11,7 @@ int fun_read(FILE *fp,FILE *newfp);
 
 int main(int argc,char *argv[]){
 
-    //char *old_file = "/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/src_file";
+    //char *old_file = "/home/lmt/project/C_lion/stu_linux_c/build_dir/01fileIO/src.file";
     char *old_file = argv[2];
     char *new_file = argv[3];
     //1.选择是按fgetc/fputc 还是 按fread/ fwrite【块的⼤⼩按1B】的程序
