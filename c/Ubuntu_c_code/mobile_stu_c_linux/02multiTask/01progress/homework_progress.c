@@ -12,29 +12,31 @@
 
 int main(){
     srand(time(NULL));
-    int ret;
-    ret = fork();
-    int num = rand()%10+2;
-    int cnt = 0;
+    int child_id;
+    child_id = fork();
+    int num = rand()%8+2;
+    int cnt = 1;
     int status;
-    if(ret ==0){
+    int ret;
+    if(child_id ==0){
         //子进程
-        while(cnt<num){
-            printf("=\n");
+        while(cnt<=num){
+            sleep(1);
+            printf("子进程%d\n",cnt);
             cnt++;
         }
         return cnt;
     }else{
         //父进程
-        ret = waitpid(ret,&status, WNOHANG);
+        ret = waitpid(child_id,&status, WNOHANG);
         if(ret==-1){
             perror("wait:\n");
             return -1;
         }
         while(ret==0){
             sleep(1);
-            printf("wait......\n");
-            ret = wait(&status);
+            printf("父进程wait......\n");
+            ret= waitpid(child_id,&status, WNOHANG);
             if(ret>0){
                 break;
             }
