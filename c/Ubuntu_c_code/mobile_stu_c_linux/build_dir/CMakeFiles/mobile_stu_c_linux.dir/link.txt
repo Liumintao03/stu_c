@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/mobile_stu_c_linux.dir/main.c.o  -o mobile_stu_c_linux 

@@ -175,6 +175,8 @@
   },
   "active": "897b9f46430324db",
   "lastOpenFiles": [
+    "c/Ubuntu_c_code/mobile_stu_c_linux/02multiTask/01progress/CMakeLists.txt~",
+    "c/Ubuntu_c_code/mobile_stu_c_linux/02multiTask/01progress/homework_progress.c",
     "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/CMakeFiles/clion-Debug-mobile_linux-log.txt",
     "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/05wait.dir/progress.make",
     "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/05wait.dir/link.txt",
@@ -184,8 +186,6 @@
     "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/05wait.dir/cmake_clean.cmake",
     "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/05wait.dir/build.make",
     "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/05wait.dir",
-    "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/04system.dir/depend.internal",
-    "c/Ubuntu_c_code/mobile_stu_c_linux/build_dir/02multiTask/01progress/CMakeFiles/04system.dir/C.includecache",
     "未命名.md",
     "README.md",
     "README.en.md"
