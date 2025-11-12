@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/05wait.dir/05wait.c.o  -o 05wait 

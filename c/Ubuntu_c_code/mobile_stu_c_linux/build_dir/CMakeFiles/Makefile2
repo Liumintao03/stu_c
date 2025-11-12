@@ -188,6 +188,7 @@ clean: 02multiTask/clean
 # Directory level rules for directory 02multiTask/01progress
 
 # Recursive "all" directory target.
+02multiTask/01progress/all: 02multiTask/01progress/CMakeFiles/05wait.dir/all
 02multiTask/01progress/all: 02multiTask/01progress/CMakeFiles/03execl.dir/all
 02multiTask/01progress/all: 02multiTask/01progress/CMakeFiles/02fork.dir/all
 02multiTask/01progress/all: 02multiTask/01progress/CMakeFiles/04system.dir/all
@@ -201,6 +202,7 @@ clean: 02multiTask/clean
 .PHONY : 02multiTask/01progress/preinstall
 
 # Recursive "clean" directory target.
+02multiTask/01progress/clean: 02multiTask/01progress/CMakeFiles/05wait.dir/clean
 02multiTask/01progress/clean: 02multiTask/01progress/CMakeFiles/03execl.dir/clean
 02multiTask/01progress/clean: 02multiTask/01progress/CMakeFiles/02fork.dir/clean
 02multiTask/01progress/clean: 02multiTask/01progress/CMakeFiles/04system.dir/clean
@@ -215,7 +217,7 @@ clean: 02multiTask/clean
 CMakeFiles/mobile_stu_c_linux.dir/all:
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/depend
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=31,32 "Built target mobile_stu_c_linux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=33,34 "Built target mobile_stu_c_linux"
 .PHONY : CMakeFiles/mobile_stu_c_linux.dir/all
 
 # Build rule for subdir invocation for target.
@@ -242,7 +244,7 @@ CMakeFiles/mobile_stu_c_linux.dir/clean:
 01fileIO/01sysio/CMakeFiles/MyCp.dir/all:
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/depend
 	$(MAKE) -f 01fileIO/01sysio/CMakeFiles/MyCp.dir/build.make 01fileIO/01sysio/CMakeFiles/MyCp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=27,28 "Built target MyCp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=29,30 "Built target MyCp"
 .PHONY : 01fileIO/01sysio/CMakeFiles/MyCp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -377,7 +379,7 @@ MyCp: 01fileIO/01sysio/CMakeFiles/MyCp.dir/rule
 01fileIO/01strio/CMakeFiles/homework.dir/all:
 	$(MAKE) -f 01fileIO/01strio/CMakeFiles/homework.dir/build.make 01fileIO/01strio/CMakeFiles/homework.dir/depend
 	$(MAKE) -f 01fileIO/01strio/CMakeFiles/homework.dir/build.make 01fileIO/01strio/CMakeFiles/homework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=29,30 "Built target homework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=31,32 "Built target homework"
 .PHONY : 01fileIO/01strio/CMakeFiles/homework.dir/all
 
 # Build rule for subdir invocation for target.
@@ -531,6 +533,33 @@ homework: 01fileIO/01strio/CMakeFiles/homework.dir/rule
 01fileIO/01direio/CMakeFiles/01reeaddir.dir/clean:
 	$(MAKE) -f 01fileIO/01direio/CMakeFiles/01reeaddir.dir/build.make 01fileIO/01direio/CMakeFiles/01reeaddir.dir/clean
 .PHONY : 01fileIO/01direio/CMakeFiles/01reeaddir.dir/clean
+
+#=============================================================================
+# Target rules for target 02multiTask/01progress/CMakeFiles/05wait.dir
+
+# All Build rule for target.
+02multiTask/01progress/CMakeFiles/05wait.dir/all:
+	$(MAKE) -f 02multiTask/01progress/CMakeFiles/05wait.dir/build.make 02multiTask/01progress/CMakeFiles/05wait.dir/depend
+	$(MAKE) -f 02multiTask/01progress/CMakeFiles/05wait.dir/build.make 02multiTask/01progress/CMakeFiles/05wait.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=27,28 "Built target 05wait"
+.PHONY : 02multiTask/01progress/CMakeFiles/05wait.dir/all
+
+# Build rule for subdir invocation for target.
+02multiTask/01progress/CMakeFiles/05wait.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 02multiTask/01progress/CMakeFiles/05wait.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 02multiTask/01progress/CMakeFiles/05wait.dir/rule
+
+# Convenience name for target.
+05wait: 02multiTask/01progress/CMakeFiles/05wait.dir/rule
+
+.PHONY : 05wait
+
+# clean rule for target.
+02multiTask/01progress/CMakeFiles/05wait.dir/clean:
+	$(MAKE) -f 02multiTask/01progress/CMakeFiles/05wait.dir/build.make 02multiTask/01progress/CMakeFiles/05wait.dir/clean
+.PHONY : 02multiTask/01progress/CMakeFiles/05wait.dir/clean
 
 #=============================================================================
 # Target rules for target 02multiTask/01progress/CMakeFiles/03execl.dir
