@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lmt/project/C_lion/stu_linux_c/01fileIO/01direio/02getcwd.c
+stdio.h
+-
+sys/types.h
+-
+pwd.h
+-
+unistd.h
+-
+string.h
+-
+string.h
+-
+

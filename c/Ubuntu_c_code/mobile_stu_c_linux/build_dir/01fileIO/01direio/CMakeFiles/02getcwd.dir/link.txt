@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/02getcwd.dir/02getcwd.c.o  -o 02getcwd 

@@ -7,9 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../01fileIO/01direio/CMakeLists.txt"
   "../01fileIO/01strio/CMakeLists.txt"
   "../01fileIO/01sysio/CMakeLists.txt"
   "../01fileIO/CMakeLists.txt"
+  "../02multiTask/01progress/CMakeLists.txt"
+  "../02multiTask/CMakeLists.txt"
   "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -100,6 +103,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "01fileIO/CMakeFiles/CMakeDirectoryInformation.cmake"
   "01fileIO/01sysio/CMakeFiles/CMakeDirectoryInformation.cmake"
   "01fileIO/01strio/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01fileIO/01direio/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "02multiTask/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "02multiTask/01progress/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -114,4 +120,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "01fileIO/01strio/CMakeFiles/01fwrite.dir/DependInfo.cmake"
   "01fileIO/01strio/CMakeFiles/01fgets.dir/DependInfo.cmake"
   "01fileIO/01strio/CMakeFiles/01fgetc.dir/DependInfo.cmake"
+  "01fileIO/01direio/CMakeFiles/02getcwd.dir/DependInfo.cmake"
+  "01fileIO/01direio/CMakeFiles/01reeaddir.dir/DependInfo.cmake"
+  "02multiTask/01progress/CMakeFiles/01prgres.dir/DependInfo.cmake"
   )

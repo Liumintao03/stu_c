@@ -6,3 +6,4 @@ set(CMAKE_C_STANDARD 11)
 add_executable(mobile_stu_c_linux main.c)
 add_subdirectory(01fileIO)
 
+add_subdirectory(02multiTask)

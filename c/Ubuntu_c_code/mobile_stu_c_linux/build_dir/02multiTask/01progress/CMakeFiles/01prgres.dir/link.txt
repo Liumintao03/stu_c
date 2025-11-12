@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/01prgres.dir/01progress.c.o  -o 01prgres 
