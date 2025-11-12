@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/03execl.dir/03execl.c.o  -o 03execl 

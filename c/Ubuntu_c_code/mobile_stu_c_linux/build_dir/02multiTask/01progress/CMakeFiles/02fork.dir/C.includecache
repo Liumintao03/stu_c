@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lmt/project/C_lion/stu_linux_c/02multiTask/01progress/02fork.c
+sys/types.h
+-
+unistd.h
+-
+stdio.h
+-
+
