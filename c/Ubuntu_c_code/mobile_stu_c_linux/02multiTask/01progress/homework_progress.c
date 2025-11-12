@@ -19,19 +19,27 @@ int main(){
     int status;
     if(ret ==0){
         //子进程
-        while(ret==0){
+        while(cnt<num){
             printf("=\n");
             cnt++;
         }
         return cnt;
     }else{
         //父进程
-        ret = wait(&status);
+        ret = waitpid(ret,&status, WNOHANG);
         if(ret==-1){
             perror("wait:\n");
             return -1;
         }
-        while(ret!=)
+        while(ret==0){
+            sleep(1);
+            printf("wait......\n");
+            ret = wait(&status);
+            if(ret>0){
+                break;
+            }
+        }
+        printf("child:num:%d\n",ret);
 
     }
 
