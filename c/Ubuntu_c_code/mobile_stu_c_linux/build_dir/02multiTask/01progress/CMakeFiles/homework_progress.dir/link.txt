@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/homework_progress.dir/homework_progress.c.o  -o homework_progress 
