@@ -25,7 +25,7 @@ int main(){
             printf("子进程%d\n",cnt);
             cnt++;
         }
-        return cnt;
+        exit(cnt-1);
     }else{
         //父进程
         ret = waitpid(child_id,&status, WNOHANG);
@@ -41,7 +41,8 @@ int main(){
                 break;
             }
         }
-        printf("child:num:%d\n",ret);
+        int child_exit = WEXITSTATUS(status);
+        printf("child:num:%d\n",child_exit);
 
     }
 
