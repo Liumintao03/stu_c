@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/03input.dir/03input.c.o  -o 03input  -lpthread 
