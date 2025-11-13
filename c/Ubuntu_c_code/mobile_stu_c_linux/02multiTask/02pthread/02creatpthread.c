@@ -4,6 +4,7 @@
 
 #include <pthread.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int thread_fun(){
     printf("new thread\n");
@@ -14,7 +15,11 @@ int thread_fun(){
 int main(){
     pthread_t tid;
     int ret = pthread_create(&tid,NULL,(void*(*)(void *))thread_fun,NULL);
-    printf("ret:%d\n",ret);
-
+    if(ret!=0){
+        fprintf(stderr,"pthread created faild\n");
+        return -1;
+    }
+    printf("pthread created success\n");
+    sleep(1);
     return 0;
 }
