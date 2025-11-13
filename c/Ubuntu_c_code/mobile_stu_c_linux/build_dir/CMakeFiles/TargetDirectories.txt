@@ -30,3 +30,6 @@
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/01progress/CMakeFiles/02fork.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/01progress/CMakeFiles/04system.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/01progress/CMakeFiles/01prgres.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/02pthread/CMakeFiles/rebuild_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/02pthread/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/02pthread/CMakeFiles/01pthread.dir

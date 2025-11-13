@@ -1,0 +1,1 @@
+add_executable(01pthread 01pthread_self.c)

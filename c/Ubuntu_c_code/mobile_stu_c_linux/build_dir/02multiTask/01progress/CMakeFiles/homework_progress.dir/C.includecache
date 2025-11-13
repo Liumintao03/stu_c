@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lmt/project/C_lion/stu_linux_c/02multiTask/01progress/homework_progress.c
+sys/types.h
+-
+unistd.h
+-
+stdio.h
+-
+sys/wait.h
+-
+stdlib.h
+-
+time.h
+-
+
