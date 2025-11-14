@@ -11,7 +11,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
-int arr1[3]={0};
+int arr[3]={0};
 
 int fun(int *num){
 
@@ -30,7 +30,9 @@ int main(){
     pthread_t ptr1;
     pthread_t ptr2;
     pthread_t ptr3;
-
+    pthread_create(&ptr1,NULL,(void*(*)(void*))fun,&arr[1]);
+    pthread_create(&ptr2,NULL,(void*(*)(void*))fun,&arr[2]);
+    pthread_create(&ptr3,NULL,(void*(*)(void*))fun,&arr[3]);
 
 
 }
