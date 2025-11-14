@@ -37,7 +37,7 @@ int main(int argc,char *argv[]){
 
     //创建线程
     pthread_t tid;
-    pthread_create(&tid,NULL,(void *)fun,argv[1]);
+    pthread_create(&tid,NULL,(void*(*)(void*))fun,argv[1]);
     printf("create pthread success\n");
 
     int retval;
