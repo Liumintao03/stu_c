@@ -14,7 +14,14 @@
 int arr1[3]={0};
 
 int fun(int *num){
-    while()
+
+    while(*num<=100){
+        *num = *num+rand()/3+2;
+        if (*num>100){
+            *num = 100;
+        }
+    }
+    return *num;
 }
 
 int main(){
