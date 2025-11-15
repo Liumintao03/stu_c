@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 int arr[5]={0};
-int firstprint = 0;
+int firstprint = 1;
 
 
 int fun(int *num){
@@ -42,6 +42,8 @@ void show_display_progress(){
         printf("\r");
     }
 
+    //
+    firstprint = 0;
     //显示进度
     for(int i = 0;i<5;i++){
         //是哪个盒子
