@@ -14,6 +14,7 @@
 #include <unistd.h>
 
 int arr[5]={0};
+int display_count = 0;
 
 int fun(int *num){
     //下载线程
@@ -33,17 +34,8 @@ int fun(int *num){
 void show_display_progress(){
 //    printf("\033[0;0H");  // 移动到第0行第0列（左上角）
 //    printf("\033[2J\033[0;0H");  // 清屏并移动到左上角
-    if(display_count == 0) {
-        for(int i = 0; i < 10; i++) {
-            printf("\n");
-        }
-    }
 
-    // 回到显示区域的开始位置
-    if(display_count > 0) {
-        printf("\033[%dA", 7);  // 上移7行（5个进度条+1个状态+1个空行）
-    }
-    //printf("\r");
+    printf("\r");
     //显示进度
     for(int i = 0;i<5;i++){
         //是哪个盒子
@@ -72,7 +64,7 @@ void show_display_progress(){
     }
 
     if(res){
-        printf("全部完成\n");
+        printf("全部完成");
     }
     fflush(stdout);
 
