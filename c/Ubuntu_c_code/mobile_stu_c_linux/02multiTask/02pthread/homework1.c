@@ -31,6 +31,8 @@ int fun(int *num){
 
 //显示函数
 void show_display_progress(){
+    printf("\033[0;0H");  // 移动到第0行第0列（左上角）
+    printf("\033[2J\033[0;0H");  // 清屏并移动到左上角
     printf("\r");
     //显示进度
     for(int i = 0;i<5;i++){
@@ -38,7 +40,7 @@ void show_display_progress(){
         printf("盒子%d:[",i);
         //进度条显示
         //100个进度.一个进度1%
-        int width = 100;
+        int width = 50;
         int pos = width*arr[i]/100;
         //循环打印
         for(int j = 0;j<width;j++){
@@ -46,7 +48,7 @@ void show_display_progress(){
             else if(j==pos)printf("->");//完成到的部分
             else printf("=");//未完成的部分
         }
-        printf("]%3d%%",arr[i]);
+        printf("]%3d%%\n",arr[i]);
 
     }
 
@@ -98,7 +100,6 @@ int main(){
         }
         usleep(100000);
     }
-
     pthread_join(ptr1,NULL);
     pthread_join(ptr2,NULL);
     pthread_join(ptr3,NULL);
