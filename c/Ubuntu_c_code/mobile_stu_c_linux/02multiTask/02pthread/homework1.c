@@ -33,6 +33,21 @@ int fun(int *num){
 void show_display_progress(){
     printf("\r");
     //显示进度
+    for(int i = 0;i<5;i++){
+        //是哪个盒子
+        printf("盒子%d:[",i);
+        //进度条显示
+        //100个进度.一个进度1%
+        int width = 100;
+        int pos = width*arr[i]/100;
+        //循环打印
+        for(int j = 0;i<width;j++){
+            if(j<pos)printf("*");
+            else if(j==pos)printf("->");
+            else printf("=");
+        }
+        printf()
+    }
 
 }
 
