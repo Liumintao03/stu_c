@@ -25,10 +25,21 @@ int fun(char *ch){
     while(pos!=3000){
         buf[pos] = *ch;
         pos ++;
+        usleep(rand() % 1000);//添加随机延迟，不如全是A线程
     }
 
 }
 
+int order(){
+    char tmp1;//头
+    char tmp2;//往后走的
+    char tmp3;//暂存的
+    for(int i = 0;i<3000;i++){
+        
+    }
+
+
+}
 
 
 
@@ -36,10 +47,13 @@ int main(){
     pthread_t ptr1;
     pthread_t ptr2;
     pthread_t ptr3;
-
     char ch1 = 'A';
     char ch2 = 'B';
     char ch3 = 'C';
+
+    srand(time(NULL));
+
+
     pthread_create(&ptr1,NULL,(void*(*)(void *))fun,&ch1);
     pthread_create(&ptr2,NULL,(void*(*)(void *))fun,&ch2);
     pthread_create(&ptr3,NULL,(void*(*)(void *))fun,&ch3);
