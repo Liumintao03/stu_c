@@ -11,10 +11,10 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
-int arr[3]={0};
+int arr[5]={0};
 
 int fun(int *num){
-
+    //下载线程
     while(*num<=100){
         *num = *num+rand()/3+2;
         if (*num>100){
@@ -28,6 +28,7 @@ int fun(int *num){
 int main(){
     srand(time(NULL));
 
+    //创建5个线程
     pthread_t ptr1;
     pthread_t ptr2;
     pthread_t ptr3;
@@ -37,8 +38,8 @@ int main(){
     pthread_create(&ptr1,NULL,(void*(*)(void*))fun,&arr[1]);
     pthread_create(&ptr2,NULL,(void*(*)(void*))fun,&arr[2]);
     pthread_create(&ptr3,NULL,(void*(*)(void*))fun,&arr[3]);
-    pthread_create(&ptr4,NULL,(void*(*)(void*))fun,&arr[3]);
-    pthread_create(&ptr5,NULL,(void*(*)(void*))fun,&arr[3]);
+    pthread_create(&ptr4,NULL,(void*(*)(void*))fun,&arr[4]);
+    pthread_create(&ptr5,NULL,(void*(*)(void*))fun,&arr[5]);
 
     return 0;
 
