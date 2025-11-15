@@ -17,7 +17,7 @@ int arr[5]={0};
 
 int fun(int *num){
     //下载线程
-    while(*num<=100){
+    while(*num<100){
         *num = *num+rand()%4+2;
         if (*num>100){
             *num = 100;
@@ -31,8 +31,8 @@ int fun(int *num){
 
 //显示函数
 void show_display_progress(){
-    printf("\033[0;0H");  // 移动到第0行第0列（左上角）
-    printf("\033[2J\033[0;0H");  // 清屏并移动到左上角
+//    printf("\033[0;0H");  // 移动到第0行第0列（左上角）
+//    printf("\033[2J\033[0;0H");  // 清屏并移动到左上角
     printf("\r");
     //显示进度
     for(int i = 0;i<5;i++){
@@ -100,6 +100,8 @@ int main(){
         }
         usleep(100000);
     }
+//    printf("按下任意按键结束\n");
+//    getchar();
     pthread_join(ptr1,NULL);
     pthread_join(ptr2,NULL);
     pthread_join(ptr3,NULL);
