@@ -41,7 +41,18 @@ int main(){
     pthread_create(&ptr2,NULL,(void*(*)(void *))fun,"B");
     pthread_create(&ptr3,NULL,(void*(*)(void *))fun,"C");
 
-    pthread
+    pthread_join(ptr1,NULL);
+    pthread_join(ptr2,NULL);
+    pthread_join(ptr3,NULL);
+
+    int i = 0;
+    while(i<3000){
+        for (int j=0;j<10;j++){
+            printf("%c",buf[i]);
+            i++;
+        }
+        printf("\n");
+    }
 
     return 0;
 }
