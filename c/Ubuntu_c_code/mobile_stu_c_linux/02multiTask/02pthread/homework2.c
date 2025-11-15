@@ -36,15 +36,37 @@ int order(){
     char tmp3;//暂存的
     int n = 1;
     //先排A，再排B，再排C
+    int ch = 65;
     while(n<=3){
         for(int i = tmp1;i<3000;i++){
-            if()
+            //如果是要排的字母，跳过，指针+1
+            if(buf[tmp1]==(char)ch){
+                tmp1++;
+                continue;
+            }else{
+                //如果遇到不是，那就往后找
+                tmp2 = tmp1+1;
+                while(1){
+                    if(buf[tmp2]==(char)ch){
+                        //如果找到了
+                        tmp3 = buf[tmp1];
+                        buf[tmp1] = buf[tmp2];
+                        buf[tmp2] = tmp3;
+                        tmp1++;
+                        break;
+                    }
+                    tmp2++;
+                }
+
+            }
+
         }
         n++;
+        ch++;
     }
 
 
-
+    return 0;
 }
 
 
@@ -69,6 +91,21 @@ int main(){
     pthread_join(ptr3,NULL);
 
     int i = 0;
+    printf("res1:\n");
+    while(i<3000){
+        for (int j=0;j<50;j++){
+            printf("%c",buf[i]);
+            i++;
+        }
+        printf("\n");
+    }
+    printf("\n\n\n");
+
+
+    //排序函数
+    order();
+    printf("res2:\n");
+    i = 0;
     while(i<3000){
         for (int j=0;j<50;j++){
             printf("%c",buf[i]);
