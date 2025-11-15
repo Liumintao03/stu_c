@@ -33,12 +33,13 @@ int fun(char *ch){
 int order(){
     int tmp1 = 0;//头
     int tmp2 = 1;//往后走的
-    char tmp3;//暂存的
+    int tmp_pos;
+    char tmp3 = 0;//暂存的
     int n = 1;
     //先排A，再排B，再排C
     int ch = 65;
     while(n<=3){
-        for(int i = 0;i<3000;i++){
+        for(int i = tmp_pos;i<3000;i++){
             //如果是要排的字母，跳过，指针+1
             tmp1 = i;
             if(buf[tmp1]==(char)ch){
@@ -56,6 +57,7 @@ int order(){
                         tmp3 = buf[tmp1];
                         buf[tmp1] = buf[tmp2];
                         buf[tmp2] = tmp3;
+                        tmp_pos = tmp1;
                         break;
                     }
                     tmp2++;
