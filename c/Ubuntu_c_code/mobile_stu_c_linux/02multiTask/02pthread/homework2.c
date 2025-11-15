@@ -30,52 +30,89 @@ int fun(char *ch){
 
 }
 
+//int order(){
+//    int tmp1 = 0;//头
+//    int tmp2 = 1;//往后走的
+//    int tmp_pos;
+//    char tmp3 = 0;//暂存的
+//    int n = 1;
+//    //先排A，再排B，再排C
+//    int ch = 65;
+//    while(n<=3){
+//        for(int i = tmp_pos;i<3000;i++){
+//            //如果是要排的字母，跳过，指针+1
+//            tmp1 = i;
+//            if(buf[tmp1]==(char)ch){
+//                tmp1++;
+//                continue;
+//            }else{
+//                //如果遇到不是，那就往后找
+//                tmp2 = tmp1+1;
+//                while(1){
+//                    if(tmp2>=3000){
+//                        break;
+//                    }
+//                    if(buf[tmp2]==(char)ch){
+//                        //如果找到了,交换
+//                        tmp3 = buf[tmp1];
+//                        buf[tmp1] = buf[tmp2];
+//                        buf[tmp2] = tmp3;
+//                        tmp_pos = tmp1+1;
+//                        break;
+//                    }
+//                    tmp2++;
+//                }
+//
+//            }
+//
+//        }
+//        n++;
+//        ch++;
+//    }
+//
+//
+//    return 0;
+//}
 int order(){
-    int tmp1 = 0;//头
-    int tmp2 = 1;//往后走的
-    int tmp_pos;
-    char tmp3 = 0;//暂存的
-    int n = 1;
-    //先排A，再排B，再排C
-    int ch = 65;
-    while(n<=3){
-        for(int i = tmp_pos;i<3000;i++){
-            //如果是要排的字母，跳过，指针+1
-            tmp1 = i;
-            if(buf[tmp1]==(char)ch){
-                tmp1++;
-                continue;
-            }else{
-                //如果遇到不是，那就往后找
-                tmp2 = tmp1+1;
-                while(1){
-                    if(tmp2>=3000){
-                        break;
-                    }
-                    if(buf[tmp2]==(char)ch){
-                        //如果找到了,交换
-                        tmp3 = buf[tmp1];
-                        buf[tmp1] = buf[tmp2];
-                        buf[tmp2] = tmp3;
-                        tmp_pos = tmp1;
-                        break;
-                    }
-                    tmp2++;
-                }
+    int countA = 0, countB = 0, countC = 0;
 
-            }
-
-        }
-        n++;
-        ch++;
+    // 先统计每个字符的数量
+    for(int i = 0; i < 3000; i++) {
+        if(buf[i] == 'A') countA++;
+        else if(buf[i] == 'B') countB++;
+        else if(buf[i] == 'C') countC++;
     }
 
+    printf("A=%d, B=%d, C=%d\n", countA, countB, countC);
+
+    // 第一轮：把所有的A移到最前面
+    int current = 0;
+    for(int i = 0; i < 3000; i++) {
+        if(buf[i] == 'A') {
+            // 交换到前面
+            char temp = buf[current];
+            buf[current] = buf[i];
+            buf[i] = temp;
+            current++;
+        }
+    }
+
+    // 第二轮：在A的后面把所有的B移到B区域的前面
+    for(int i = current; i < 3000; i++) {
+        if(buf[i] == 'B') {
+            // 交换到B区域的前面
+            char temp = buf[current];
+            buf[current] = buf[i];
+            buf[i] = temp;
+            current++;
+        }
+    }
+
+    // 第三轮：剩下的自然就是C了
+    // 不需要额外操作
 
     return 0;
 }
-
-
-
 int main(){
     pthread_t ptr1;
     pthread_t ptr2;
