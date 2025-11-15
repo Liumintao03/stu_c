@@ -31,12 +31,18 @@ int fun(char *ch){
 }
 
 int order(){
-    char tmp1;//头
-    char tmp2;//往后走的
+    int tmp1 = 0;//头
+    int tmp2 = 1;//往后走的
     char tmp3;//暂存的
-    for(int i = 0;i<3000;i++){
-        
+    int n = 1;
+    //先排A，再排B，再排C
+    while(n<=3){
+        for(int i = tmp1;i<3000;i++){
+            if()
+        }
+        n++;
     }
+
 
 
 }
