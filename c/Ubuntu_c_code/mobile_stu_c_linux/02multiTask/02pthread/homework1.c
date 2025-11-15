@@ -18,12 +18,12 @@ int arr[5]={0};
 int fun(int *num){
     //下载线程
     while(*num<=100){
-        *num = *num+rand()/3+2;
+        *num = *num+rand()%4+2;
         if (*num>100){
             *num = 100;
         }
         //延迟
-        usleep(100000+(rand()*100000));
+        sleep(1);
 
     }
     return *num;
@@ -41,7 +41,7 @@ void show_display_progress(){
         int width = 100;
         int pos = width*arr[i]/100;
         //循环打印
-        for(int j = 0;i<width;j++){
+        for(int j = 0;j<width;j++){
             if(j<pos)printf("*");//已经完成的部分
             else if(j==pos)printf("->");//完成到的部分
             else printf("=");//未完成的部分
@@ -83,9 +83,27 @@ int main(){
     pthread_create(&ptr4,NULL,(void*(*)(void*))fun,&arr[3]);
     pthread_create(&ptr5,NULL,(void*(*)(void*))fun,&arr[4]);
 
+    printf("查看进度\n");
+    int all_completed = 0;
+    while(all_completed==0){
+        show_display_progress();
+        //检查是否所有线程都完成
+        all_completed = 1;
+        for(int i = 0;i<5;i++){
+            if(arr[i]<100){
+                printf("还没完成\n");
+                all_completed = 0;
+                break;
+            }
+        }
+        usleep(100000);
+    }
 
-
-
+    pthread_join(ptr1,NULL);
+    pthread_join(ptr2,NULL);
+    pthread_join(ptr3,NULL);
+    pthread_join(ptr4,NULL);
+    pthread_join(ptr5,NULL);
 
 
     return 0;
