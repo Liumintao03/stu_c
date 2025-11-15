@@ -42,12 +42,27 @@ void show_display_progress(){
         int pos = width*arr[i]/100;
         //循环打印
         for(int j = 0;i<width;j++){
-            if(j<pos)printf("*");
-            else if(j==pos)printf("->");
-            else printf("=");
+            if(j<pos)printf("*");//已经完成的部分
+            else if(j==pos)printf("->");//完成到的部分
+            else printf("=");//未完成的部分
         }
-        printf()
+        printf("]%3d%%",arr[i]);
+
     }
+
+    //检查是否全部完成
+    int res = 1;
+    for(int i = 0;i<5;i++){
+        if(arr[i]<100){
+            res = 0;
+            break;
+        }
+    }
+
+    if(res){
+        printf("全部完成\n");
+    }
+    fflush(stdout);
 
 }
 
