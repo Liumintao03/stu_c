@@ -38,8 +38,9 @@ int order(){
     //先排A，再排B，再排C
     int ch = 65;
     while(n<=3){
-        for(int i = tmp1;i<3000;i++){
+        for(int i = 0;i<3000;i++){
             //如果是要排的字母，跳过，指针+1
+            tmp1 = i;
             if(buf[tmp1]==(char)ch){
                 tmp1++;
                 continue;
@@ -47,12 +48,14 @@ int order(){
                 //如果遇到不是，那就往后找
                 tmp2 = tmp1+1;
                 while(1){
+                    if(tmp2>=3000){
+                        break;
+                    }
                     if(buf[tmp2]==(char)ch){
-                        //如果找到了
+                        //如果找到了,交换
                         tmp3 = buf[tmp1];
                         buf[tmp1] = buf[tmp2];
                         buf[tmp2] = tmp3;
-                        tmp1++;
                         break;
                     }
                     tmp2++;
