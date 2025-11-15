@@ -7,3 +7,41 @@
 // 如果缺少其他变量, 自行定义
 // 最后打印填充完成后, 主线程打印 buf内容 和 pos 下标表示位置, 分析现象
 // 修改代码, 如何 将因为调度随机产生的字符串乱序 变得有序
+
+#include <stdio.h>
+#include <pthread.h>
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+
+//因为要多线程填充，所以要定义一个全局变量来存
+//多线程要全部变量标志存储位置。
+char buf[3000];
+int pos = 0;
+
+int fun(char ch){
+    while(pos!=3000){
+        buf[pos] = ch;
+        pos ++;
+    }
+
+}
+
+
+
+
+int main(){
+    pthread_t ptr1;
+    pthread_t ptr2;
+    pthread_t ptr3;
+
+    pthread_create(&ptr1,NULL,(void*(*)(void *))fun,"A");
+    pthread_create(&ptr2,NULL,(void*(*)(void *))fun,"B");
+    pthread_create(&ptr3,NULL,(void*(*)(void *))fun,"C");
+
+    pthread
+
+    return 0;
+}
