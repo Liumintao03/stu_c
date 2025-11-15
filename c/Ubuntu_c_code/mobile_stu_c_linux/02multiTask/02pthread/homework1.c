@@ -11,6 +11,8 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include <unistd.h>
+
 int arr[5]={0};
 
 int fun(int *num){
@@ -20,10 +22,19 @@ int fun(int *num){
         if (*num>100){
             *num = 100;
         }
+        //延迟
+        usleep(100000+(rand()*100000));
 
     }
     return *num;
 }
+
+//显示函数
+void show_display_progress(){
+    printf("\r");
+
+}
+
 
 int main(){
     srand(time(NULL));
@@ -35,11 +46,16 @@ int main(){
     pthread_t ptr4;
     pthread_t ptr5;
 
-    pthread_create(&ptr1,NULL,(void*(*)(void*))fun,&arr[1]);
-    pthread_create(&ptr2,NULL,(void*(*)(void*))fun,&arr[2]);
-    pthread_create(&ptr3,NULL,(void*(*)(void*))fun,&arr[3]);
-    pthread_create(&ptr4,NULL,(void*(*)(void*))fun,&arr[4]);
-    pthread_create(&ptr5,NULL,(void*(*)(void*))fun,&arr[5]);
+    pthread_create(&ptr1,NULL,(void*(*)(void*))fun,&arr[0]);
+    pthread_create(&ptr2,NULL,(void*(*)(void*))fun,&arr[1]);
+    pthread_create(&ptr3,NULL,(void*(*)(void*))fun,&arr[2]);
+    pthread_create(&ptr4,NULL,(void*(*)(void*))fun,&arr[3]);
+    pthread_create(&ptr5,NULL,(void*(*)(void*))fun,&arr[4]);
+
+
+
+
+
 
     return 0;
 
