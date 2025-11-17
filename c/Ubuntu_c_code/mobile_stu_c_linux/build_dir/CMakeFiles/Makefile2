@@ -172,18 +172,21 @@ clean: 02multiTask/clean
 # Recursive "all" directory target.
 02multiTask/all: 02multiTask/01progress/all
 02multiTask/all: 02multiTask/02pthread/all
+02multiTask/all: 02multiTask/03pthtread_02/all
 
 .PHONY : 02multiTask/all
 
 # Recursive "preinstall" directory target.
 02multiTask/preinstall: 02multiTask/01progress/preinstall
 02multiTask/preinstall: 02multiTask/02pthread/preinstall
+02multiTask/preinstall: 02multiTask/03pthtread_02/preinstall
 
 .PHONY : 02multiTask/preinstall
 
 # Recursive "clean" directory target.
 02multiTask/clean: 02multiTask/01progress/clean
 02multiTask/clean: 02multiTask/02pthread/clean
+02multiTask/clean: 02multiTask/03pthtread_02/clean
 
 .PHONY : 02multiTask/clean
 
@@ -242,13 +245,35 @@ clean: 02multiTask/clean
 .PHONY : 02multiTask/02pthread/clean
 
 #=============================================================================
+# Directory level rules for directory 02multiTask/03pthtread_02
+
+# Recursive "all" directory target.
+02multiTask/03pthtread_02/all: 02multiTask/03pthtread_02/CMakeFiles/sem.dir/all
+02multiTask/03pthtread_02/all: 02multiTask/03pthtread_02/CMakeFiles/lock.dir/all
+02multiTask/03pthtread_02/all: 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/all
+
+.PHONY : 02multiTask/03pthtread_02/all
+
+# Recursive "preinstall" directory target.
+02multiTask/03pthtread_02/preinstall:
+
+.PHONY : 02multiTask/03pthtread_02/preinstall
+
+# Recursive "clean" directory target.
+02multiTask/03pthtread_02/clean: 02multiTask/03pthtread_02/CMakeFiles/sem.dir/clean
+02multiTask/03pthtread_02/clean: 02multiTask/03pthtread_02/CMakeFiles/lock.dir/clean
+02multiTask/03pthtread_02/clean: 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean
+
+.PHONY : 02multiTask/03pthtread_02/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/mobile_stu_c_linux.dir
 
 # All Build rule for target.
 CMakeFiles/mobile_stu_c_linux.dir/all:
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/depend
 	$(MAKE) -f CMakeFiles/mobile_stu_c_linux.dir/build.make CMakeFiles/mobile_stu_c_linux.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=45,46 "Built target mobile_stu_c_linux"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=47,48 "Built target mobile_stu_c_linux"
 .PHONY : CMakeFiles/mobile_stu_c_linux.dir/all
 
 # Build rule for subdir invocation for target.
@@ -861,6 +886,87 @@ home1: 02multiTask/02pthread/CMakeFiles/home1.dir/rule
 02multiTask/02pthread/CMakeFiles/01pthread.dir/clean:
 	$(MAKE) -f 02multiTask/02pthread/CMakeFiles/01pthread.dir/build.make 02multiTask/02pthread/CMakeFiles/01pthread.dir/clean
 .PHONY : 02multiTask/02pthread/CMakeFiles/01pthread.dir/clean
+
+#=============================================================================
+# Target rules for target 02multiTask/03pthtread_02/CMakeFiles/sem.dir
+
+# All Build rule for target.
+02multiTask/03pthtread_02/CMakeFiles/sem.dir/all:
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/sem.dir/depend
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=49,50 "Built target sem"
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/sem.dir/all
+
+# Build rule for subdir invocation for target.
+02multiTask/03pthtread_02/CMakeFiles/sem.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 02multiTask/03pthtread_02/CMakeFiles/sem.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/sem.dir/rule
+
+# Convenience name for target.
+sem: 02multiTask/03pthtread_02/CMakeFiles/sem.dir/rule
+
+.PHONY : sem
+
+# clean rule for target.
+02multiTask/03pthtread_02/CMakeFiles/sem.dir/clean:
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/sem.dir/clean
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/sem.dir/clean
+
+#=============================================================================
+# Target rules for target 02multiTask/03pthtread_02/CMakeFiles/lock.dir
+
+# All Build rule for target.
+02multiTask/03pthtread_02/CMakeFiles/lock.dir/all:
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/lock.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/lock.dir/depend
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/lock.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/lock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=45,46 "Built target lock"
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/lock.dir/all
+
+# Build rule for subdir invocation for target.
+02multiTask/03pthtread_02/CMakeFiles/lock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 02multiTask/03pthtread_02/CMakeFiles/lock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/lock.dir/rule
+
+# Convenience name for target.
+lock: 02multiTask/03pthtread_02/CMakeFiles/lock.dir/rule
+
+.PHONY : lock
+
+# clean rule for target.
+02multiTask/03pthtread_02/CMakeFiles/lock.dir/clean:
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/lock.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/lock.dir/clean
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/lock.dir/clean
+
+#=============================================================================
+# Target rules for target 02multiTask/03pthtread_02/CMakeFiles/volatile.dir
+
+# All Build rule for target.
+02multiTask/03pthtread_02/CMakeFiles/volatile.dir/all:
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/depend
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=51,52 "Built target volatile"
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/all
+
+# Build rule for subdir invocation for target.
+02multiTask/03pthtread_02/CMakeFiles/volatile.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/rule
+
+# Convenience name for target.
+volatile: 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/rule
+
+.PHONY : volatile
+
+# clean rule for target.
+02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean:
+	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean
+.PHONY : 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

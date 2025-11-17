@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lmt/project/C_lion/stu_linux_c/02multiTask/02pthread/homework2.c
+stdio.h
+-
+pthread.h
+-
+string.h
+-
+time.h
+-
+stdlib.h
+-
+unistd.h
+-
+

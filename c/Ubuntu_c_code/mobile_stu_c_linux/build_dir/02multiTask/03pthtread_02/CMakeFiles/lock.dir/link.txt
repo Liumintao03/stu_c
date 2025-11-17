@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/lock.dir/lock.c.o  -o lock  -lpthread 

@@ -37,3 +37,8 @@
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/02pthread/CMakeFiles/03input.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/02pthread/CMakeFiles/02creatpthread.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/02pthread/CMakeFiles/01pthread.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/sem.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/lock.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/rebuild_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/volatile.dir
