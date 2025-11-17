@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/xinghaoliang.dir/xinghaoliang.c.o  -o xinghaoliang  -lpthread 

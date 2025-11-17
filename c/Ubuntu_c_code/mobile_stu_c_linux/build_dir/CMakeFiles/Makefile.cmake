@@ -137,6 +137,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "02multiTask/02pthread/CMakeFiles/03input.dir/DependInfo.cmake"
   "02multiTask/02pthread/CMakeFiles/02creatpthread.dir/DependInfo.cmake"
   "02multiTask/02pthread/CMakeFiles/01pthread.dir/DependInfo.cmake"
+  "02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/sem.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/lock.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/volatile.dir/DependInfo.cmake"
