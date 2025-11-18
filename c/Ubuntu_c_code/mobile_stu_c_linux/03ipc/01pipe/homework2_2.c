@@ -10,23 +10,51 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+
+
+
+
+char buf_read[1024];
+char buf_write[1024];
+
+
+//创建接收线程
+int receive(int *read_fd){
+    //接收功能
+    while(read(*read_fd,buf_read,sizeof(buf_read)-1)>0){
+        printf("传出结果为：%s\n",buf_read);
+    }
+    return 0;
+}
+
 int main(){
     //有名管道位置
     char *path1 = "/home/lmt/project/pipes/my_fifo1";//只写
-    int fd1 = open(path1,O_WRONLY);
+    int fd1 = open(path1,O_WRONLY|O_TRUNC);
     char *path2 = "/home/lmt/project/pipes/my_fifo2";//只读
-    int fd2 = open(path2,O_RDONLY);
+    int fd2 = open(path2,O_RDONLY|O_TRUNC);
 
     if(fd1<0||fd2<0){
         perror("open");
         return -1;
     }
     printf("fifo1 and fifo2 open success\n");
-    char buf[1024] = {0};
+
+
+    //创建子线程进行监听
+    pthread_t tid;
+    pthread_create(&tid, NULL, (void *(*)(void *)) receive, &fd2);
+
+    //进行写入操作
     while(1){
+        fgets(buf_write,sizeof (buf_write),stdin);
+        if(strcmp(buf_write,"quit")==0){
+            break;
+        }
+        write(fd1,buf_write,strlen(buf_write));
 
     }
 
-
+    pthread_join(tid,NULL);
     return 0;
 }

@@ -34,9 +34,9 @@ int receive(int *read_fd){
 int main(){
     //有名管道位置
     char *path1 = "/home/lmt/project/pipes/my_fifo1";//只读
-    int fd1 = open(path1,O_RDONLY);
+    int fd1 = open(path1,O_RDONLY|O_TRUNC);
     char *path2 = "/home/lmt/project/pipes/my_fifo2";//只写
-    int fd2 = open(path2,O_WRONLY);
+    int fd2 = open(path2,O_WRONLY|O_TRUNC);
 
     if(fd1<0||fd2<0){
         perror("open");
@@ -51,6 +51,7 @@ int main(){
 
     //进行写入操作
     while(1){
+        printf("input:");
         fgets(buf_write,sizeof (buf_write),stdin);
         if(strcmp(buf_write,"quit")==0){
             break;
