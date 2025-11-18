@@ -17,13 +17,20 @@
 
 int main(){
     //有名管道位置
-    char *path = "/home/lmt/project/pipes/my_fifo1";
-    int fd = open(path,O_RDWR);
-    if(fd<0){
+    char *path1 = "/home/lmt/project/pipes/my_fifo1";//只读
+    int fd1 = open(path1,O_RDONLY);
+    char *path2 = "/home/lmt/project/pipes/my_fifo2";//只写
+    int fd2 = open(path2,O_WRONLY);
+
+    if(fd1<0||fd2<0){
         perror("open");
         return -1;
     }
-    printf("fifo1 open success\n");
+    printf("fifo1 and fifo2 open success\n");
+    char buf[1024] = {0};
+    while(1){
+
+    }
 
 
 
