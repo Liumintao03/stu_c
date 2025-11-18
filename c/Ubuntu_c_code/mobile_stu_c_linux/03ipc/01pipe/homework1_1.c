@@ -28,7 +28,32 @@ int main() {
     }
 
 
+    pid_t child[3];
+    for(int i = 0;i<3;i++){
+        child[i] = fork();
+        if(child[i]==0){
+            //进入第i个子进程
+            if(i == 0){
+                //这是发送'A'
+                int n1 = 0;
+                while(n1<1000){
+                    //关闭管道写
+                    close(pipe_fd[1]);
 
+                    n1++
+                    
+                }
+            }else if(i == 1){
+                //这是发送'B'
+
+
+            }else if(i == 2){
+                //这是发送'C'
+
+
+            }
+        }
+    }
 
 
 
