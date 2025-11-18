@@ -145,5 +145,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "02multiTask/03pthtread_02/CMakeFiles/sem.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/lock.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/volatile.dir/DependInfo.cmake"
+  "03ipc/01pipe/CMakeFiles/homework2_2.dir/DependInfo.cmake"
+  "03ipc/01pipe/CMakeFiles/homework2_1.dir/DependInfo.cmake"
+  "03ipc/01pipe/CMakeFiles/homework1_1.dir/DependInfo.cmake"
   "03ipc/01pipe/CMakeFiles/pipe_base.dir/DependInfo.cmake"
   )
