@@ -52,10 +52,14 @@ int main() {
 
 
     //父进程
+    //关闭写入管道
     close(pipe_fd[1]);
-    int fd = open("abc.txt",O_)
-
-
+    int fd = open("abc.txt",O_CREAT|O_RDWR|O_TRUNC,0644);
+    if(fd<0){
+        perror("open");
+        return -1;
+    }
+    while(read(pipe_fd[0],))
 
 
 
