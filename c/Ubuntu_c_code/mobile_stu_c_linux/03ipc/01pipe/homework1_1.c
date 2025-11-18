@@ -13,11 +13,11 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-pthread_mutex_t mutex;
+//pthread_mutex_t mutex;
 
 int main() {
-    //初始化锁
-    pthread_mutex_init(&mutex, NULL);
+//    //初始化锁
+//    pthread_mutex_init(&mutex, NULL);
     //先创建管道，使得子进程和父进程都能使用
     int pipe_fd[2];
     int ret = pipe(pipe_fd);
@@ -26,91 +26,125 @@ int main() {
         perror("pipe");
         return -1;
     }
-    int status;
-    int cnt = 0;
-    //创建三个子进程
-    int child01 = fork();
-    int child02 = fork();
-    int child03 = fork();
-
-    if (child01 == 0) {
-
-        //第一个子进程
-
-        int i1 = 0;
-        while(i1<1000){
-            //锁上
-            pthread_mutex_lock(&mutex);
-//            //关闭读管道
-//            close(buf[0]);
-            //写入管道
-            char *a = "A";
-            ret = write(pipe_fd[1],a,1);
-            printf("child1_write:A\n");
-            cnt++;
-            pthread_mutex_unlock(&mutex);
-        }
-        exit(0);
-
-    } else if (child02 == 0) {
-        int i2 = 0;
-        while(i2<1000){
-            //锁上
-            pthread_mutex_lock(&mutex);
-//            //关闭读管道
-//            close(buf[0]);
-            //写入管道
-            char *a = "B";
-            ret = write(pipe_fd[1],a,1);
-            printf("child2_write:B\n");
-            cnt++;
-
-            pthread_mutex_unlock(&mutex);
-        }
-
-
-
-
-    } else if (child03 == 0) {
-        int i3 = 0;
-        while(i3<1000){
-            //锁上
-            pthread_mutex_lock(&mutex);
-//            //关闭读管道
-//            close(buf[0]);
-            //写入管道
-            char *a = "C";
-            ret = write(pipe_fd[1],a,1);
-            printf("child3_write:C\n");
-            cnt++;
-
-            pthread_mutex_unlock(&mutex);
-        }
-
-
-    }else{
-        //父进程
-        //定下buf
-        char buf[10000];
-
-//        //等待子进程全部完成，不然每次都要去读很麻烦
-//        ret = waitpid(child01,&status, WNOHANG);
-//        ret = waitpid(child02,&status, WNOHANG);
-//        ret = waitpid(child03,&status, WNOHANG);
-        //打开文件
-        int fb = open("abc.txt",O_CREAT|O_RDWR,0664);
-        if(fb<0){
-            perror("open");
-            return -1;
-        }
-        ret = read(pipe_fd[0],buf,1);
 
 
 
 
 
-    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    int status;
+//    int cnt = 0;
+//    //创建三个子进程
+//    int child01 = fork();
+//    int child02 = fork();
+//    int child03 = fork();
+//
+//    if (child01 == 0) {
+//
+//        //第一个子进程
+//
+//        int i1 = 0;
+//        while(i1<1000){
+////            //锁上
+////            pthread_mutex_lock(&mutex);
+////            //关闭读管道
+////            close(buf[0]);
+//            //写入管道
+//            char *a = "A";
+//            ret = write(pipe_fd[1],a,1);
+//            printf("child1_write:A\n");
+//            cnt++;
+////            pthread_mutex_unlock(&mutex);
+//        }
+//        exit(0);
+//
+//    } else if (child02 == 0) {
+//        int i2 = 0;
+//        while(i2<1000){
+////            //锁上
+////            pthread_mutex_lock(&mutex);
+////            //关闭读管道
+////            close(buf[0]);
+//            //写入管道
+//            char *a = "B";
+//            ret = write(pipe_fd[1],a,1);
+//            printf("child2_write:B\n");
+//            cnt++;
+//
+////            pthread_mutex_unlock(&mutex);
+//        }
+//
+//
+//
+//
+//    } else if (child03 == 0) {
+//        int i3 = 0;
+//        while(i3<1000){
+////            //锁上
+////            pthread_mutex_lock(&mutex);
+////            //关闭读管道
+////            close(buf[0]);
+//            //写入管道
+//            char *a = "C";
+//            ret = write(pipe_fd[1],a,1);
+//            printf("child3_write:C\n");
+//            cnt++;
+//
+////            pthread_mutex_unlock(&mutex);
+//        }
+//
+//
+//    }else{
+//        //父进程
+//        //定下buf
+//        char buf[10000];
+//
+////        //等待子进程全部完成，不然每次都要去读很麻烦
+////        ret = waitpid(child01,&status, WNOHANG);
+////        ret = waitpid(child02,&status, WNOHANG);
+////        ret = waitpid(child03,&status, WNOHANG);
+//        //打开文件
+//        int fb = open("abc.txt",O_CREAT|O_RDWR,0664);
+//        if(fb<0){
+//            perror("open");
+//            return -1;
+//        }
+//        ret = read(pipe_fd[0],buf,1);
+//
+//
+//
+//
+//
+//    }
+//
 
     return 0;
 }
