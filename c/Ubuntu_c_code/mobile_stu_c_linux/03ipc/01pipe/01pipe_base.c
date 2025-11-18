@@ -39,7 +39,7 @@ int main(){
         close(pipe_fd[1]);//最后关闭子进程写
     } else{
         //父进程先读
-        close(pipe_fd[1]);//关闭父进程读取
+        close(pipe_fd[1]);//关闭父进程写入
         char buf[256];
         ret = read(pipe_fd[0],buf,sizeof (buf)-1);
         buf[ret] = 0;//给结尾加0表示结尾
