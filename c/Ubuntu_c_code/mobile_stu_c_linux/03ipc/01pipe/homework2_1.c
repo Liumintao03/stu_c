@@ -28,9 +28,7 @@ int main(){
     }
     printf("fifo1 and fifo2 open success\n");
     char buf[1024] = {0};
-    while(1){
-
-    }
+    
 
 
 
