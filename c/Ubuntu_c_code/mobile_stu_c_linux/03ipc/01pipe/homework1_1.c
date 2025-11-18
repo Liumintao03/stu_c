@@ -37,7 +37,8 @@ int main() {
             if(i == 0)ch = 'A';
             else if(i == 1)ch = 'B';
             else if(i == 2)ch = 'C';
-            for(int j = 0;i<1000;i++){
+            close(pipe_fd[0]);
+            for(int j = 0;j<1000;j++){
                 lockf(pipe_fd[1],F_LOCK,0);//锁上
                 write(pipe_fd[1],&ch,1);
                 lockf(pipe_fd[1],F_ULOCK,0);
@@ -59,120 +60,17 @@ int main() {
         perror("open");
         return -1;
     }
-    while(read(pipe_fd[0],))
 
+    char ch;
+    int cnt = 0;
+    while(read(pipe_fd[0],&ch,1)){//因为管道写入端还没有关闭，所以不会返回EOF
+        write(fd,&ch,1);//每次写入1个字节
+        cnt++;
+    }
+    printf("cnt = %d\n",cnt);
+    close(pipe_fd[0]);
+    close(fd);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    int status;
-//    int cnt = 0;
-//    //创建三个子进程
-//    int child01 = fork();
-//    int child02 = fork();
-//    int child03 = fork();
-//
-//    if (child01 == 0) {
-//
-//        //第一个子进程
-//
-//        int i1 = 0;
-//        while(i1<1000){
-////            //锁上
-////            pthread_mutex_lock(&mutex);
-////            //关闭读管道
-////            close(buf[0]);
-//            //写入管道
-//            char *a = "A";
-//            ret = write(pipe_fd[1],a,1);
-//            printf("child1_write:A\n");
-//            cnt++;
-////            pthread_mutex_unlock(&mutex);
-//        }
-//        exit(0);
-//
-//    } else if (child02 == 0) {
-//        int i2 = 0;
-//        while(i2<1000){
-////            //锁上
-////            pthread_mutex_lock(&mutex);
-////            //关闭读管道
-////            close(buf[0]);
-//            //写入管道
-//            char *a = "B";
-//            ret = write(pipe_fd[1],a,1);
-//            printf("child2_write:B\n");
-//            cnt++;
-//
-////            pthread_mutex_unlock(&mutex);
-//        }
-//
-//
-//
-//
-//    } else if (child03 == 0) {
-//        int i3 = 0;
-//        while(i3<1000){
-////            //锁上
-////            pthread_mutex_lock(&mutex);
-////            //关闭读管道
-////            close(buf[0]);
-//            //写入管道
-//            char *a = "C";
-//            ret = write(pipe_fd[1],a,1);
-//            printf("child3_write:C\n");
-//            cnt++;
-//
-////            pthread_mutex_unlock(&mutex);
-//        }
-//
-//
-//    }else{
-//        //父进程
-//        //定下buf
-//        char buf[10000];
-//
-////        //等待子进程全部完成，不然每次都要去读很麻烦
-////        ret = waitpid(child01,&status, WNOHANG);
-////        ret = waitpid(child02,&status, WNOHANG);
-////        ret = waitpid(child03,&status, WNOHANG);
-//        //打开文件
-//        int fb = open("abc.txt",O_CREAT|O_RDWR,0664);
-//        if(fb<0){
-//            perror("open");
-//            return -1;
-//        }
-//        ret = read(pipe_fd[0],buf,1);
-//
-//
-//
-//
-//
-//    }
-//
 
     return 0;
 }
