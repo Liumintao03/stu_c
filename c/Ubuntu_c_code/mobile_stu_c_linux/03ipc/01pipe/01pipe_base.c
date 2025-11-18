@@ -4,6 +4,10 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
+
+//子进程和父进程通信
+//子进程写，父进程读
+
 int main(){
     //声明子进程
     pid_t pid;
