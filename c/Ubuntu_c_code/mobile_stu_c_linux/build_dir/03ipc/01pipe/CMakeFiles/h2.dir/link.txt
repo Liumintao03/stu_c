@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/h2.dir/h2.c.o  -o h2  -lpthread 

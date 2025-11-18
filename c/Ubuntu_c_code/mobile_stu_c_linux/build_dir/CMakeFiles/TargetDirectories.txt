@@ -47,7 +47,9 @@
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/CMakeFiles/edit_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/rebuild_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/h2.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/homework2_2.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/homework2_1.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/homework1_1.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/h1.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/pipe_base.dir

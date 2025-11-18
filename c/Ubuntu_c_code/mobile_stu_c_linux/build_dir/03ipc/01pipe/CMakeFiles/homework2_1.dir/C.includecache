@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lmt/project/C_lion/stu_linux_c/03ipc/01pipe/homework2_1.c
+unistd.h
+-
+stdio.h
+-
+string.h
+-
+pthread.h
+-
+stdlib.h
+-
+sys/wait.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+
