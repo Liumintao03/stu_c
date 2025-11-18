@@ -22,23 +22,37 @@ int main() {
         perror("pipe");
         return -1;
     }
+    //定下buf
+    char buf[128];
     //创建三个子进程
     int child01 = fork();
     int child02 = fork();
     int child03 = fork();
-    if (child01 == 0) {
-        //锁上
-        pthread_mutex_lock(&mutex);
-        //第一个子进程
-        //定下buf
-        char buf[128];
 
+    if (child01 == 0) {
+
+        //第一个子进程
+
+        int i1 = 0;
+        while(i1<1000){
+            //锁上
+            pthread_mutex_lock(&mutex);
+//            //关闭读管道
+//            close(buf[0]);
+            //写入管道
+            char *a = "A";
+            ret = write(pipe_fd[1],a,1);
+            printf("child1_write:A\n");
+            pthread_mutex_unlock(&mutex);
+        }
 
         pthread_mutex_unlock(&mutex);
     } else if (child02 == 0) {
         //锁上
         pthread_mutex_lock(&mutex);
         //第二个子进程
+        //定下buf
+        char buf[128];
 
 
 
@@ -48,9 +62,11 @@ int main() {
         //锁上
         pthread_mutex_lock(&mutex);
         //第三个子进程
+        //定下buf
+        char buf[128];
 
 
-        
+
         //解锁
         pthread_mutex_unlock(&mutex);
     }
