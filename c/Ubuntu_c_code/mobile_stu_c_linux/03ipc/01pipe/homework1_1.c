@@ -33,25 +33,15 @@ int main() {
         child[i] = fork();
         if(child[i]==0){
             //进入第i个子进程
-            if(i == 0){
-                //这是发送'A'
-                int n1 = 0;
-                while(n1<1000){
-                    //关闭管道写
-                    close(pipe_fd[1]);
-
-                    n1++
-                    
-                }
-            }else if(i == 1){
-                //这是发送'B'
-
-
-            }else if(i == 2){
-                //这是发送'C'
-
-
+            char ch;
+            if(i == 0)ch = 'A';
+            else if(i == 1)ch = 'B';
+            else if(i == 2)ch = 'C';
+            for(int j = 0;i<1000;i++){
+                lockf(pipe_fd[1],F_LOCK,0);//锁上写
             }
+
+
         }
     }
 
