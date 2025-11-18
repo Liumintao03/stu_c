@@ -56,12 +56,14 @@ CMAKE_BINARY_DIR = /home/lmt/project/C_lion/stu_linux_c/build_dir
 all: CMakeFiles/mobile_stu_c_linux.dir/all
 all: 01fileIO/all
 all: 02multiTask/all
+all: 03ipc/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: 01fileIO/preinstall
 preinstall: 02multiTask/preinstall
+preinstall: 03ipc/preinstall
 
 .PHONY : preinstall
 
@@ -69,6 +71,7 @@ preinstall: 02multiTask/preinstall
 clean: CMakeFiles/mobile_stu_c_linux.dir/clean
 clean: 01fileIO/clean
 clean: 02multiTask/clean
+clean: 03ipc/clean
 
 .PHONY : clean
 
@@ -267,6 +270,42 @@ clean: 02multiTask/clean
 02multiTask/03pthtread_02/clean: 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean
 
 .PHONY : 02multiTask/03pthtread_02/clean
+
+#=============================================================================
+# Directory level rules for directory 03ipc
+
+# Recursive "all" directory target.
+03ipc/all: 03ipc/01pipe/all
+
+.PHONY : 03ipc/all
+
+# Recursive "preinstall" directory target.
+03ipc/preinstall: 03ipc/01pipe/preinstall
+
+.PHONY : 03ipc/preinstall
+
+# Recursive "clean" directory target.
+03ipc/clean: 03ipc/01pipe/clean
+
+.PHONY : 03ipc/clean
+
+#=============================================================================
+# Directory level rules for directory 03ipc/01pipe
+
+# Recursive "all" directory target.
+03ipc/01pipe/all: 03ipc/01pipe/CMakeFiles/pipe_base.dir/all
+
+.PHONY : 03ipc/01pipe/all
+
+# Recursive "preinstall" directory target.
+03ipc/01pipe/preinstall:
+
+.PHONY : 03ipc/01pipe/preinstall
+
+# Recursive "clean" directory target.
+03ipc/01pipe/clean: 03ipc/01pipe/CMakeFiles/pipe_base.dir/clean
+
+.PHONY : 03ipc/01pipe/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mobile_stu_c_linux.dir
@@ -896,7 +935,7 @@ home1: 02multiTask/02pthread/CMakeFiles/home1.dir/rule
 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/all:
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/depend
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=53,54 "Built target xinghaoliang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=55,56 "Built target xinghaoliang"
 .PHONY : 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/all
 
 # Build rule for subdir invocation for target.
@@ -923,7 +962,7 @@ xinghaoliang: 02multiTask/03pthtread_02/CMakeFiles/xinghaoliang.dir/rule
 02multiTask/03pthtread_02/CMakeFiles/sem.dir/all:
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/sem.dir/depend
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/sem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=49,50 "Built target sem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=51,52 "Built target sem"
 .PHONY : 02multiTask/03pthtread_02/CMakeFiles/sem.dir/all
 
 # Build rule for subdir invocation for target.
@@ -977,7 +1016,7 @@ lock: 02multiTask/03pthtread_02/CMakeFiles/lock.dir/rule
 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/all:
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/depend
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=51,52 "Built target volatile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=53,54 "Built target volatile"
 .PHONY : 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/all
 
 # Build rule for subdir invocation for target.
@@ -996,6 +1035,33 @@ volatile: 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/rule
 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean:
 	$(MAKE) -f 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/build.make 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean
 .PHONY : 02multiTask/03pthtread_02/CMakeFiles/volatile.dir/clean
+
+#=============================================================================
+# Target rules for target 03ipc/01pipe/CMakeFiles/pipe_base.dir
+
+# All Build rule for target.
+03ipc/01pipe/CMakeFiles/pipe_base.dir/all:
+	$(MAKE) -f 03ipc/01pipe/CMakeFiles/pipe_base.dir/build.make 03ipc/01pipe/CMakeFiles/pipe_base.dir/depend
+	$(MAKE) -f 03ipc/01pipe/CMakeFiles/pipe_base.dir/build.make 03ipc/01pipe/CMakeFiles/pipe_base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles --progress-num=49,50 "Built target pipe_base"
+.PHONY : 03ipc/01pipe/CMakeFiles/pipe_base.dir/all
+
+# Build rule for subdir invocation for target.
+03ipc/01pipe/CMakeFiles/pipe_base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 03ipc/01pipe/CMakeFiles/pipe_base.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmt/project/C_lion/stu_linux_c/build_dir/CMakeFiles 0
+.PHONY : 03ipc/01pipe/CMakeFiles/pipe_base.dir/rule
+
+# Convenience name for target.
+pipe_base: 03ipc/01pipe/CMakeFiles/pipe_base.dir/rule
+
+.PHONY : pipe_base
+
+# clean rule for target.
+03ipc/01pipe/CMakeFiles/pipe_base.dir/clean:
+	$(MAKE) -f 03ipc/01pipe/CMakeFiles/pipe_base.dir/build.make 03ipc/01pipe/CMakeFiles/pipe_base.dir/clean
+.PHONY : 03ipc/01pipe/CMakeFiles/pipe_base.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

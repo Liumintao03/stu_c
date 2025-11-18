@@ -43,3 +43,8 @@
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/lock.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/rebuild_cache.dir
 /home/lmt/project/C_lion/stu_linux_c/build_dir/02multiTask/03pthtread_02/CMakeFiles/volatile.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/CMakeFiles/rebuild_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/rebuild_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/edit_cache.dir
+/home/lmt/project/C_lion/stu_linux_c/build_dir/03ipc/01pipe/CMakeFiles/pipe_base.dir

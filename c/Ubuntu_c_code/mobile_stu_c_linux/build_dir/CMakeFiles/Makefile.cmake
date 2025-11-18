@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../02multiTask/02pthread/CMakeLists.txt"
   "../02multiTask/03pthtread_02/CMakeLists.txt"
   "../02multiTask/CMakeLists.txt"
+  "../03ipc/01pipe/CMakeLists.txt"
+  "../03ipc/CMakeLists.txt"
   "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -110,6 +112,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "02multiTask/01progress/CMakeFiles/CMakeDirectoryInformation.cmake"
   "02multiTask/02pthread/CMakeFiles/CMakeDirectoryInformation.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "03ipc/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "03ipc/01pipe/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -141,4 +145,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "02multiTask/03pthtread_02/CMakeFiles/sem.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/lock.dir/DependInfo.cmake"
   "02multiTask/03pthtread_02/CMakeFiles/volatile.dir/DependInfo.cmake"
+  "03ipc/01pipe/CMakeFiles/pipe_base.dir/DependInfo.cmake"
   )

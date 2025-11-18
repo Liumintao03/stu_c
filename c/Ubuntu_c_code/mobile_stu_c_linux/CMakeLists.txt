@@ -7,3 +7,5 @@ add_executable(mobile_stu_c_linux main.c)
 add_subdirectory(01fileIO)
 
 add_subdirectory(02multiTask)
+
+add_subdirectory(03ipc)
