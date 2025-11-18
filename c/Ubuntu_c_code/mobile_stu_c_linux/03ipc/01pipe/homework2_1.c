@@ -15,6 +15,19 @@
 #include <fcntl.h>
 
 
+
+char buf_read[1024];
+char buf_write[1024];
+
+
+//创建接收线程
+int receive(int *read_fd){
+    //接收功能
+    while(read(read_fd,buf_read,sizeof))
+}
+
+
+
 int main(){
     //有名管道位置
     char *path1 = "/home/lmt/project/pipes/my_fifo1";//只读
@@ -27,8 +40,7 @@ int main(){
         return -1;
     }
     printf("fifo1 and fifo2 open success\n");
-    char buf[1024] = {0};
-    
+
 
 
 
