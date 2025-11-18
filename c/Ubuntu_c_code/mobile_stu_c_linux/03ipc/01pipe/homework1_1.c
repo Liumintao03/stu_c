@@ -48,27 +48,37 @@ int main() {
 
         pthread_mutex_unlock(&mutex);
     } else if (child02 == 0) {
-        //锁上
-        pthread_mutex_lock(&mutex);
-        //第二个子进程
-        //定下buf
-        char buf[128];
+        int i2 = 0;
+        while(i2<1000){
+            //锁上
+            pthread_mutex_lock(&mutex);
+//            //关闭读管道
+//            close(buf[0]);
+            //写入管道
+            char *a = "B";
+            ret = write(pipe_fd[1],a,1);
+            printf("child1_write:A\n");
+            pthread_mutex_unlock(&mutex);
+        }
 
 
 
-        //解锁
-        pthread_mutex_unlock(&mutex);
+
     } else if (child03 == 0) {
-        //锁上
-        pthread_mutex_lock(&mutex);
-        //第三个子进程
-        //定下buf
-        char buf[128];
+        int i2 = 0;
+        while(i2<1000){
+            //锁上
+            pthread_mutex_lock(&mutex);
+//            //关闭读管道
+//            close(buf[0]);
+            //写入管道
+            char *a = "C";
+            ret = write(pipe_fd[1],a,1);
+            printf("child1_write:A\n");
+            pthread_mutex_unlock(&mutex);
+        }
 
 
-
-        //解锁
-        pthread_mutex_unlock(&mutex);
     }
 
     return 0;
