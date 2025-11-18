@@ -12,8 +12,6 @@ int main(){
     //声明子进程
     pid_t pid;
 
-
-
     //定下管道的流入和流出
     int pipe_fd[2];
     //创建管道
