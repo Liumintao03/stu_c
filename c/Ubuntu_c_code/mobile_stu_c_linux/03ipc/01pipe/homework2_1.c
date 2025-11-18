@@ -23,7 +23,7 @@ int main(){
         perror("open");
         return -1;
     }
-    printf("reader open success\n");
+    printf("fifo1 open success\n");
 
 
 
