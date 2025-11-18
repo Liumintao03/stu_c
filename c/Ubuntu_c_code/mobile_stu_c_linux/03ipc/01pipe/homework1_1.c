@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <pthread.h>
+#include <stdlib.h>
+#include <sys/wait.h>
 
 
 pthread_mutex_t mutex;
@@ -22,8 +24,8 @@ int main() {
         perror("pipe");
         return -1;
     }
-    //定下buf
-    char buf[128];
+//    int status;
+    int cnt = 0;
     //创建三个子进程
     int child01 = fork();
     int child02 = fork();
@@ -43,10 +45,11 @@ int main() {
             char *a = "A";
             ret = write(pipe_fd[1],a,1);
             printf("child1_write:A\n");
+            cnt++;
             pthread_mutex_unlock(&mutex);
         }
+        exit(0);
 
-        pthread_mutex_unlock(&mutex);
     } else if (child02 == 0) {
         int i2 = 0;
         while(i2<1000){
@@ -57,7 +60,9 @@ int main() {
             //写入管道
             char *a = "B";
             ret = write(pipe_fd[1],a,1);
-            printf("child1_write:A\n");
+            printf("child2_write:B\n");
+            cnt++;
+
             pthread_mutex_unlock(&mutex);
         }
 
@@ -65,8 +70,8 @@ int main() {
 
 
     } else if (child03 == 0) {
-        int i2 = 0;
-        while(i2<1000){
+        int i3 = 0;
+        while(i3<1000){
             //锁上
             pthread_mutex_lock(&mutex);
 //            //关闭读管道
@@ -74,12 +79,33 @@ int main() {
             //写入管道
             char *a = "C";
             ret = write(pipe_fd[1],a,1);
-            printf("child1_write:A\n");
+            printf("child3_write:C\n");
+            cnt++;
+
             pthread_mutex_unlock(&mutex);
         }
 
 
+    }else{
+        //父进程
+        //定下buf
+        char buf[10000];
+
+
+        int i = 0;
+//        ret = waitpid(child01,&status, WNOHANG);
+//        ret = waitpid(child02,&status, WNOHANG);
+//        ret = waitpid(child03,&status, WNOHANG);
+        while(i<cnt){
+            //加锁
+            pthread_mutex_lock(&mutex);
+            ret = read(pipe_fd[0],buf,1);
+
+        }
+
+
     }
+
 
     return 0;
 }
