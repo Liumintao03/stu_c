@@ -9,7 +9,9 @@
 #include <pthread.h>
 #include <stdlib.h>
 #include <sys/wait.h>
-
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 pthread_mutex_t mutex;
 
@@ -24,7 +26,7 @@ int main() {
         perror("pipe");
         return -1;
     }
-//    int status;
+    int status;
     int cnt = 0;
     //创建三个子进程
     int child01 = fork();
@@ -91,17 +93,20 @@ int main() {
         //定下buf
         char buf[10000];
 
-
-        int i = 0;
+//        //等待子进程全部完成，不然每次都要去读很麻烦
 //        ret = waitpid(child01,&status, WNOHANG);
 //        ret = waitpid(child02,&status, WNOHANG);
 //        ret = waitpid(child03,&status, WNOHANG);
-        while(i<cnt){
-            //加锁
-            pthread_mutex_lock(&mutex);
-            ret = read(pipe_fd[0],buf,1);
-
+        //打开文件
+        int fb = open("abc.txt",O_CREAT|O_RDWR,0664);
+        if(fb<0){
+            perror("open");
+            return -1;
         }
+        ret = read(pipe_fd[0],buf,1);
+
+
+
 
 
     }
