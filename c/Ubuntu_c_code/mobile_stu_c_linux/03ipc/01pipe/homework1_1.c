@@ -38,13 +38,22 @@ int main() {
             else if(i == 1)ch = 'B';
             else if(i == 2)ch = 'C';
             for(int j = 0;i<1000;i++){
-                lockf(pipe_fd[1],F_LOCK,0);//锁上写
+                lockf(pipe_fd[1],F_LOCK,0);//锁上
+                write(pipe_fd[1],&ch,1);
+                lockf(pipe_fd[1],F_ULOCK,0);
             }
+            close(pipe_fd[1]);
+            exit(0);
 
 
         }
     }
 
+
+
+    //父进程
+    close(pipe_fd[1]);
+    int fd = open("abc.txt",O_)
 
 
 
