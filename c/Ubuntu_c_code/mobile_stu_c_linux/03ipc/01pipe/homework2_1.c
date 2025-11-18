@@ -23,7 +23,10 @@ char buf_write[1024];
 //创建接收线程
 int receive(int *read_fd){
     //接收功能
-    while(read(read_fd,buf_read,sizeof))
+    while(read(*read_fd,buf_read,sizeof(buf_read)-1)>0){
+        printf("传出结果为：%s\n",buf_read);
+    }
+    return 0;
 }
 
 
@@ -42,8 +45,20 @@ int main(){
     printf("fifo1 and fifo2 open success\n");
 
 
+    //创建子线程进行监听
+    pthread_t tid;
+    pthread_create(&tid, NULL, (void *(*)(void *)) receive, &fd1);
 
+    //进行写入操作
+    while(1){
+        fgets(buf_write,sizeof (buf_write),stdin);
+        if(strcmp(buf_write,"quit")==0){
+            break;
+        }
+        write(fd2,buf_write,strlen(buf_write));
 
+    }
 
+    pthread_join(tid,NULL);
     return 0;
 }
