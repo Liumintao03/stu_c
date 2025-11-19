@@ -32,10 +32,10 @@ int main(){
     //有名管道位置
     char *path1 = "/home/lmt/project/pipes/my_fifo1";//只写
     mkfifo(path1,0777);
-    int fd1 = open(path1,O_WRONLY);
+    int fd1 = open(path1,O_WRONLY|O_TRUNC);
     char *path2 = "/home/lmt/project/pipes/my_fifo2";//只读
     mkfifo(path2,0777);
-    int fd2 = open(path2,O_RDONLY);
+    int fd2 = open(path2,O_RDONLY|O_TRUNC);
 
     if(fd1<0||fd2<0){
         perror("open");
@@ -58,7 +58,8 @@ int main(){
         write(fd1,buf_write,strlen(buf_write));
 
     }
-
+    close(fd1);
+    close(fd2);
     pthread_join(tid,NULL);
     return 0;
 }
